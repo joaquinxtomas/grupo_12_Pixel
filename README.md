@@ -2,7 +2,7 @@ Pixel
 
 Nuestra tienda se basa en la oferta de todo tipo de productos de hardware para PC. Estamos orientados a un público que haga uso cotidiano de las computadoras, ya sea en ambito familiar, de trabajo o para divertirse.
 
-Descripcion de los integrandtes del grupo:
+Descripcion de los integrantes del grupo:
 
 -julián Salvá:Soy Julián Salvá y tengo 29 años. Nacido y criado en la ciudad Medellín, Colombia, ingeniero, músico y ahora programador.
 
