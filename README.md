@@ -1,2 +1,2 @@
-# Proyecto-integrador
+Pixel 
 Proyecto integrador E-commerce
