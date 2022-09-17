@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -11,48 +9,304 @@
 body {
     font-family: 'Roboto', Arial;
     font-size: 12px;
-    background-color: #666;
+    background-color: rgb(40, 40, 40);
 }
 
-.logo{
-    font-family:'Press Start 2P' ;
-    color:#7EFF00;
-    padding: 1rem 2rem;
-    text-shadow: 0.2rem 0.5rem 0.5rem black;
-    font-size: 18px;
+
+/* HEADER TOP BAR */
+.logo {
+    font-family: 'Press Start 2P';
+    letter-spacing: 2px;
+    color: #7EFF00;
+    padding: 10px 10px;
+    text-shadow: 0.2rem 0.5rem 0.5rem rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: center;
+
 }
 
-.search-bar{
-    display:flex;
-    width:60%;
+.search-bar {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 60px;
+    padding: 10px 10px;
+    margin: auto
 }
 
-.search-bar input{
-    width:80%
-}
-.main-header-top-bar{
-    display:flex;
-    background-color: rgba(34, 34, 34, 0.6);
-    border-bottom: solid 1px #ebebeb;
-    justify-content: space-between
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 12px;
+    color: #cac7ff;
+    padding: 5px
 }
 
-.icons-top-bar a{
+.search-bar input::placeholder {
+    color: #cac7ff
+}
+
+.search-bar button i {
+    font-size: 14px;
+    color: #cac7ff
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(128, 255, 0, 0.7);
+    cursor: pointer;
+}
+
+
+.main-header-top-bar {
+    background-color: rgb(100, 100, 100);
+    padding: 10px;
+    width: 100%;
+
+}
+
+.icons-top-bar a {
     text-decoration: none;
-    color:#7EFF00;
-    font-size: 16px;
-    padding:10px
-}
-
-.icons-top-bar{
-    display:flex;
+    color: #7EFF00;
+    font-size: 14px;
     align-items: center;
+    padding: 10px
 }
-@media (min-width: 361px){
+
+.icons-top-bar {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.icons-top-bar a i {
+    font-size: 18px;
 
 }
 
-@media (min-width: 761px){
+.badge:after {
+    content: attr(value);
+    font-size: 10px;
+    background: red;
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+    left: -4px;
+    top: -16px;
+    opacity: 0.9;
+}
+
+/* NAVIGATION BAR */
+
+.nav-bar li {
+    background-color: #4A4A4A;
+    padding: 10px;
+    width: 110px;
+    text-align: center;
+    margin: 5px 0;
+    list-style-type: none;
+    border-radius: 15px;
+    display: none;
+    transition: background-color 400ms ease;
+}
+
+.nav-bar li:hover {
+    background-color: #7EFF00;
+
+}
+
+.nav-bar li:hover a {
+    color: #4A4A4A;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #cac7ff;
+    transition: color 400ms ease;
+}
+
+
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around
+}
+
+/* BURGUER MENU */
+.burger-menu {
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: solid 1px #cac7ff;
+    background-color: rgb(100, 100, 100)
+}
+
+.burger-menu i {
+    text-align: center;
+    border-radius: 15%;
+    border: solid 1px #7EFF00;
+    padding: 10px;
+    color: #7EFF00;
+    margin-bottom: 15px
+}
+
+/* BANNER SLIDER */
+
+.banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: none
+}
+
+/* MAIN */
+
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.inSale h2,.recomended h2 {
+    color: #7EFF00;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+
+.products article {
+    margin: 10px auto;
+    background-color: rgb(180, 180, 180);
+    box-shadow: 0 0.2rem 0.5rem rgba(255, 255, 255, 0.2);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0;
+    transition: box-shadow 400ms ease;
+    cursor: pointer;
+}
+
+.products article:hover {
+    box-shadow: 0 0.3rem 0.5rem rgba(255, 255, 255, 0.8);
+}
+
+.products article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+/* WHATSAPP */
+.whatsapp{
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    background-color: rgba(102, 102, 102, 0.75);
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.whatsapp i{
+    font-size: 35px;
+    color:#7EFF00;
+    position:fixed;
+    bottom:28px;
+    right:28px;
+    font-weight: bold;
+
+}
+
+/* FOOTER */
+
+.footer{
+    height: 150px;
+    width:100%;
+    background-color: black;
     
+}
+
+
+@media (min-width: 361px) {
+
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article {
+
+        width: 48%
+    }
+}
+
+@media (min-width: 767px) {
+    .nav-bar li {
+        display: initial;
+        width: 110px;
+    }
+
+    .main-header-top-bar {
+        display: flex;
+        border-bottom: solid 1px #efefef;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .icons-top-bar {
+        display: flex;
+        align-items: flex-end;
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .search-bar {
+        width: 30%;
+    }
+
+    .icons-top-bar a {
+        text-decoration: none;
+        color: #7EFF00;
+        font-size: 14px;
+    }
+
+    .banner img {
+        display: initial
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main {
+        width: 95%
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article {
+
+        width: 23%
+    }
+
 }
