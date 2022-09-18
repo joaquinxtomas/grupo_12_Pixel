@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
-    max-width: 300px;
+    max-width: 500px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 60px;
     padding: 10px 10px;
@@ -108,40 +108,32 @@ body {
 
 /* NAVIGATION BAR */
 
-.nav-bar li {
-    background-color: #4A4A4A;
-    padding: 10px;
-    width: 110px;
-    text-align: center;
-    margin: 5px 0;
-    list-style-type: none;
-    border-radius: 15px;
+.nav-bar{
+    display:flex;
+    justify-content: space-around;
     display: none;
-    transition: background-color 400ms ease;
 }
 
-.nav-bar li:hover {
-    background-color: #7EFF00;
-
-}
-
-.nav-bar li:hover a {
-    color: #4A4A4A;
-
-}
-
-.nav-bar a {
+.nav-bar a{
     text-decoration: none;
     color: #cac7ff;
-    transition: color 400ms ease;
 }
 
-
-
-.nav-bar ul {
-    display: flex;
-    justify-content: space-around
+.nav-bar-button{
+    background-color: #4A4A4A;
+    padding:10px;
+    width:110px;
+    text-align: center;
+    margin: 5px 0;
+    border-radius: 15px;
+    transition: all 400ms ease;
 }
+
+.nav-bar-button:hover{
+    color:#4A4A4A;
+    background-color: #7EFF00;
+}
+
 
 /* BURGUER MENU */
 .burger-menu {
@@ -197,7 +189,7 @@ main {
 }
 
 .products article:hover {
-    box-shadow: 0 0.3rem 0.5rem rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0.4rem 0.6rem #7EFF00;
 }
 
 .products article img {
@@ -254,10 +246,10 @@ main {
 }
 
 @media (min-width: 767px) {
-    .nav-bar li {
-        display: initial;
-        width: 110px;
+    .nav-bar{
+        display:flex
     }
+
 
     .main-header-top-bar {
         display: flex;
@@ -309,4 +301,16 @@ main {
         width: 23%
     }
 
+}
+
+@media (min-width: 1020px) {
+    .search-bar{
+        width:50%;
+        max-width: 700px;
+    }
+
+    .icons-top-bar {
+
+        width: 25%;
+    }
 }
