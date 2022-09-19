@@ -1,0 +1,6 @@
+Paleta de colores
+
+Verde lima #7EFF00
+Gris claro #4A4A4A
+Gris oscuro #020202
+Negro footer-header #080808
