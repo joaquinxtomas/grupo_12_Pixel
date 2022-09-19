@@ -222,11 +222,86 @@ main {
 
 /* FOOTER */
 
-.footer{
-    height: 150px;
-    width:100%;
-    background-color: black;
-    
+footer {
+    background-color: #000;
+}
+
+footer div h3 {
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.redes {
+    border-bottom: 1px solid #4A4A4A;
+    border-radius: 1px;
+}
+
+.iconos {
+    text-align: center;
+}
+
+
+.iconos i {
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.iconos i:hover {
+    color: #7EFF00;
+}
+
+.informacion {
+    display: flex;
+    height: 100%;
+    margin: auto;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+.informacion ul li {
+    font-size: 10px;
+    color: #7EFF00;
+    list-style-type: none;
+}
+
+.informacion ul li:hover {
+    text-decoration: underline;
+}
+
+.lista1 {
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.lista1 h4{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+.lista2 {
+    padding: 15px;
+}
+
+.lista2 h4{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+.lista3 {
+    padding: 15px;
+}
+
+.lista3 h4{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 8px;
 }
 
 
