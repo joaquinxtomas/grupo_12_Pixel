@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+.logo{
+    font-family: 'Bangers', cursive;
+    font-size: 45px;
+    color: #7EFF00;
+}
+
+*{
+    color:black;
+    font-size: 15px; 
+    box-sizing: border-box;
+    color:aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.main-header-top-bar{
+    background-color: #080808;
+    color: aliceblue;
+}
+.main-header-top-bar i{
+    color: aliceblue
+}
+img{
+    width: 90%;
+    padding: 5px;
+}
+.boton{
+    background-color: #4A4A4A;
+    border-radius: 10px;
+    padding: 5px;
+    color: #cac7ff;
+    width: 35%;
+    font-weight: 535;
+}
+a{
+    font-size: 14px;
+    color: aliceblue;
+}
+form{
+    color: aliceblue;
+    text-align: center;
+    justify-content: center ;
+    background-color: rgb(100, 100, 100);
+    padding: 5px;
+    
+    font-size: 17px;
+}
+.medios-de-pago-padre{
+    flex-flow: wrap;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+    min-height: 100px;
+    height: auto;
+    border-radius: 4px;
+    text-align: left;
+}
+@media (min-width: 361px) {
+
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article {
+
+        width: 48%
+    }
+}
+
+@media (min-width: 767px) {
+    .nav-bar li {
+        display: initial;
+        width: 110px;
+    }
+
+    .main-header-top-bar {
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .icons-top-bar {
+        display: flex;
+        align-items: flex-end;
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .search-bar {
+        width: 30%;
+    }
+
+    .icons-top-bar a {
+        text-decoration: none;
+        color: #7EFF00;
+        font-size: 14px;
+    }
+
+    .banner img {
+        display: initial
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main {
+        width: 95%
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article {
+
+        width: 23%
+    }
+
+}

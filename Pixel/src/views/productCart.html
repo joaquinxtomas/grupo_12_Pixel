@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/productCart.css">
+    <title>Pixel E-Comerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header-top-bar">
+            <h1 class="logo">Pixel!</h1>
+            <form action='https://www.google.com/search?q=' method="get" class="search-bar">
+                <input type="text" placeholder="Monitores, teclados, tarjetas de video" name="q">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="icons-top-bar">
+                <a href="#"><i class="fa-regular fa-user"></i>Ingresar</a>
+                <a href="#">Registrarse</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </div>
+
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <h1>Mi carrito</h1>
+        <article>
+            <form action="/" method="post">
+                <form class="form1">
+                    <img src="/img/lenovo.jpg" alt="producto">
+                    <div class="productInfo">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$137.500</p>
+                        <p class="description">Laptop Lenovo</p>
+                        <p>Cantidad de productos</p>
+                        <input type="number" id="numero" class="boton"><br>
+                        <button class="boton" type="reset">Borrar</button>
+                </form>
+                <form class="form2">
+                    <img src="/img/bangho.jpg" alt="producto">
+                    <div class="productInfo">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$145.999</p>
+                        <p class="description">Laptop Bangho</p>
+                        <p>Cantidad de productos</p>
+                        <input type="number" id="numero" class="boton"><br>
+                        <button class="boton" type="reset">Borrar</button><br>
+
+                        <div class="medios-de-pago-padre">
+                            <p>Medios de medios de pago</p><br>
+                            <label>
+                                <input type="radio" name="medios-de-pago" class="medios-de-pago"
+                                    value="deposito-trasferencia">
+                                Deposito o Transferencia Bancaria</label><br>
+                            <label><input type="radio" name="medios-de-pago" class="medios-de-pago"
+                                    value="mercado-pago">
+                                Mercadopago - Tarjetas Online, PagoFacil, RapiPago</label><br>
+                            <label><input type="radio" name="medios-de-pago" class="medios-de-pago" value="pago-gamer">
+                                Pago Gamer - Tarjetas Visa o MasterCard</label>
+                        </div>
+                </form>
+                <button class="boton" type="submit">Comprar</button>
+                </div>
+            </form>
+        </article>
+
+
+
+        </form>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
