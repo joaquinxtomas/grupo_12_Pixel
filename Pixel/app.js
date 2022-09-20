@@ -12,5 +12,11 @@ app.get('/', (req,res) => {
 app.get('/productCart', (req,res) => {
        res.sendFile(path.resolve(__dirname,'./src/views/productCart.html'))
 })
+   app.get('/login', (req,res)=>{
+       res.sendFile(__dirname + '/views/login.html');
+   });
+   app.post('/login', (req,res)=>{
+       res.redirect('/index');
+   });
+   app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
 
-app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'))
