@@ -1,32 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-.logo {
-    font-family: 'Bangers', cursive;
-    font-size: 45px;
-    color: #7EFF00;
-}
-
 * {
-    color: black;
-    font-size: 15px;
-    box-sizing: border-box;
-    color: aliceblue;
-    font-family: 'Open Sans', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
 body {
+    font-family: 'Roboto', Arial;
+    font-size: 12px;
     background-color: #080808;
 }
 
+
+/* HEADER TOP BAR */
 .logo {
+    font-family: 'Press Start 2P';
     letter-spacing: 2px;
     color: #7EFF00;
     padding: 10px 10px;
     text-shadow: 0.2rem 0.5rem 0.5rem rgb(0, 0, 0);
+    font-size: 24px;
     text-align: center;
-
 }
 
 .search-bar {
@@ -71,24 +69,15 @@ body {
 
 
 .main-header-top-bar {
+    background-color: rgb(100, 100, 100);
     padding: 10px;
     width: 100%;
-    background-color: #080808;
-    color: aliceblue;
-}
 
-h2 {
-    border-radius: 5px;
-    border-top: #7EFF00 solid 2px;
-    font-size: 20px;
-    color: #7EFF00;
-    background-color: #080808;
-    padding: 15px;
 }
 
 .icons-top-bar a {
     text-decoration: none;
-    color: aliceblue;
+    color: #7EFF00;
     font-size: 14px;
     align-items: center;
     padding: 10px
@@ -107,10 +96,84 @@ h2 {
 
 }
 
+.badge:after {
+    content: attr(value); /* value is the number displayed next to the cart */
+    font-size: 10px;
+    background: red;
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+    left: -4px;
+    top: -16px;
+    opacity: 0.9;
+}
+
+/* NAVIGATION BAR */
+
+.nav-bar{
+    display:flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #cac7ff;
+}
+
+.nav-bar-button{
+    background-color: #4A4A4A;
+    padding:10px;
+    width:110px;
+    text-align: center;
+    margin: 5px 0;
+    border-radius: 15px;
+    transition: all 400ms ease;
+}
+
+.nav-bar-button:hover{
+    color:#4A4A4A;
+    background-color: #7EFF00;
+}
 
 
-.main-header-top-bar i {
-    color: aliceblue
+/* BURGUER MENU */
+.burger-menu {
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: solid 1px #cac7ff;
+    background-color: rgb(100, 100, 100)
+}
+
+.burger-menu i {
+    text-align: center;
+    border-radius: 15%;
+    border: solid 1px #7EFF00;
+    padding: 10px;
+    color: #7EFF00;
+    margin-bottom: 15px
+}
+
+
+ /* MAIN */
+
+
+ main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+/* CARRITO */
+
+
+h2 {
+    border-radius: 5px;
+    border-top: #7EFF00 solid 2px;
+    font-size: 20px;
+    color: #7EFF00;
+    background-color: #080808;
+    padding: 15px;
 }
 
 img {
@@ -118,9 +181,6 @@ img {
     padding: 5px;
 }
 
-.icons-top-bar a {
-    color: aliceblue;
-}
 .boton-compra {
     background-color: #4A4A4A;
     border-radius: 10px;
@@ -160,17 +220,18 @@ img {
     border-radius: 5px;
 }
 
-a {
+/* a {
     font-size: 14px;
     color: aliceblue;
-}
+} */
+
 
 .formulario-padre {
     color: aliceblue;
     text-align: center;
     justify-content: center;
     background-color: rgb(100, 100, 100);
-    padding: 5px;
+    /* padding: 5px; */
 
     font-size: 17px;
 }
@@ -293,13 +354,14 @@ footer div h3 {
 }
 
 @media (min-width: 767px) {
-    .nav-bar {
-        display: flex
+    .nav-bar{
+        display:flex
     }
 
 
     .main-header-top-bar {
         display: flex;
+        border-bottom: solid 1px #efefef;
         padding: 15px;
         align-items: center;
         justify-content: space-between;
@@ -320,12 +382,25 @@ footer div h3 {
 
     .icons-top-bar a {
         text-decoration: none;
+        color: #7EFF00;
         font-size: 14px;
     }
 
-    .main-header-top-bar {
-        border-bottom: none;
+    .banner img {
+        display: initial
     }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main {
+        width: 95%
+    }
+
+    /* .main-header-top-bar {
+        border-bottom: none;
+    } */
 
     .productInfo {
         display: flex;
@@ -356,4 +431,16 @@ footer div h3 {
         max-width: 160px;
     }
     
+}
+
+@media (min-width: 1020px) {
+    .search-bar{
+        width:45%;
+        max-width: 700px;
+    }
+
+    .icons-top-bar {
+
+        width: 30%;
+    }
 }
