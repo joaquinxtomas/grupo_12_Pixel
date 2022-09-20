@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/productCart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:ital@1&family=Roboto:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Pixel E-Comerce</title>
 </head>
 
@@ -21,7 +26,7 @@
             </form>
             <div class="icons-top-bar">
                 <a href="/login"><i class="fa-regular fa-user"></i> Ingresar</a>
-                <a href="#">Registrarse</a>
+                <a href="/register">Registrarse</a>
                 <a href="/productCart"><i class="fa badge" style="font-size:24px" value=2>&#xf07a;</i></a>
             </div>
         </div>
@@ -63,47 +68,35 @@
 
     </header>
     <main>
-        <h2>Mi carrito</h2>
-        <article>
-            <form action="/#" method="get" class="formulario-padre">
-                <div class="productInfo">
-                    <img src="/img/lenovo.jpg" alt="producto">
-                    <p class="description">Laptop Lenovo</p>
-                    <p class="price">$137.500</p>
-                    <p>Cantidad de productos</p>
-                    <input type="number" id="numero" class="boton">
-                    <button class="boton" type="reset">Borrar</button>
-                </div>
+        <!-- ingresa -->
+        <form action="/login" method="post" class="form-login">
+            <h5>Iniciar Sesión con mi mail</h5>
+            <input class="cajita" type="checkbox" name="" value=""> 
+            <input class="controls" type="text" style="color: rgb(255, 255, 255) ;" name="usuario" value="" placeholder="Usuario" required minlength="3" >
+            <input class="controls" type="password"  style="color: rgb(255, 255, 255);" name="contrasena" value="" placeholder="Contraseña" autocomplete="current-password" required minlength="3">
+            <a style="color: rgb(36, 31, 31); padding: 6px;; " href="/register"> Registrame</a>
+            <a class="contraseña" style="color: rgb(36, 31, 31);" href="#"> ¿Olvidastes tu Contraseña?</a>
+            <div class="button-container">
+                <a style="text-decoration: none;" href="/index"><button type="submit"
+                        style="color: #000;">LOGIN</button></a>
+            </div>
+            <p></p>
+            <div class="redes">
+                <h5 class="google" style="padding-bottom: 32px">Ingresar con Google
+                    <i class="fab fa-google"></i>
+                </h5>
+                <h5 class="facebook" style="padding-bottom: 32px;">Ingresar con Facebook
+                    <i class="fab fa-facebook-square"></i>
+                </h5>
+            </div>
+            </sección>
 
-                <div class="productInfo">
-                    <img src="/img/bangho.jpg" alt="producto">
-
-                    <p class="description">Laptop Bangho</p>
-                    <p class="price">$145.999</p>
-                    <p>Cantidad de productos</p>
-                    <input type="number" id="numero" class="boton">
-                    <button class="boton" type="reset">Borrar</button>
-                </div>
-                <div class="medios-de-pago-padre">
-                    <p>Medios de medios de pago</p>
-                    <label>
-                        <input type="radio" name="medios-de-pago" class="medios-de-pago" value="deposito-trasferencia">
-                        Deposito o Transferencia Bancaria</label><br>
-                    <label><input type="radio" name="medios-de-pago" class="medios-de-pago" value="mercado-pago">
-                        Mercadopago - Tarjetas Online, PagoFacil, RapiPago</label><br>
-                    <label><input type="radio" name="medios-de-pago" class="medios-de-pago" value="pago-gamer">
-                        Pago Gamer - Tarjetas Visa o MasterCard</label><br>
-                </div>
-
-                <button class="boton-compra" type="submit">Comprar</button>
-
-            </form>
-        </article>
-        </div>
-        <div class="whatsapp">
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
     </main>
+    </header>
+    <div class="whatsapp">
+        <a href="https://support.google.com/?hl=es"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
     <footer>
         <div class="footer">
 
