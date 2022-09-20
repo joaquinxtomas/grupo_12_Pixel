@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', Arial;
     font-size: 12px;
-    background-color: rgb(40, 40, 40);
+    background-color: #080808;
 }
 
 
@@ -22,7 +22,6 @@ body {
     text-shadow: 0.2rem 0.5rem 0.5rem rgb(0, 0, 0);
     font-size: 24px;
     text-align: center;
-
 }
 
 .search-bar {
@@ -95,7 +94,7 @@ body {
 }
 
 .badge:after {
-    content: attr(value);
+    content: attr(value); /* value is the number displayed next to the cart */
     font-size: 10px;
     background: red;
     border-radius: 50%;
@@ -339,7 +338,7 @@ footer div h3 {
     .icons-top-bar {
         display: flex;
         align-items: flex-end;
-        width: 40%;
+        width: 45%;
         justify-content: flex-end;
     }
 
@@ -380,12 +379,12 @@ footer div h3 {
 
 @media (min-width: 1020px) {
     .search-bar{
-        width:50%;
+        width:45%;
         max-width: 700px;
     }
 
     .icons-top-bar {
 
-        width: 25%;
+        width: 30%;
     }
 }
