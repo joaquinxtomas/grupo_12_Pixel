@@ -95,6 +95,7 @@ body {
 
 }
 
+
 .badge:after {
     content: attr(value);
     font-size: 10px;
