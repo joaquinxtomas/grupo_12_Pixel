@@ -14,14 +14,15 @@
 <body>
     <header>
         <div class="main-header-top-bar">
-            <h1 class="logo">Pixel!</h1>
+            <!-- <a href="./" class="logo"> Pixel!</a> LOGO ALTERNATIVO-->
+            <a href="./" class="logo"> <img src="/img/logo-pixel.png" alt="logo"></a>
             <form action='https://www.google.com/search?q=' method="get" class="search-bar">
                 <input type="text" placeholder="Monitores, teclados, tarjetas de video" name="q">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div class="icons-top-bar">
                 <a href="/login"><i class="fa-regular fa-user"></i> Ingresar</a>
-                <a href="#">Registrarse</a>
+                <a href="/register">Registrarse</a>
                 <a href="/productCart"><i class="fa badge" style="font-size:24px" value=2>&#xf07a;</i></a>
             </div>
         </div>
@@ -62,7 +63,14 @@
         </nav>
 
         <div class="banner">
-            <img src="/img/banner1.jpg" alt="banner">
+            <img src="/img/banner2.jpg" alt="banner">
+            <i class="fa-solid fa-angle-left" id="left"></i>
+            <i class="fa-solid fa-angle-right" id="right"></i>
+            <div class="dots">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+            </div>
             <!-- <img src="/img/banner2.jpg" alt="banner"> -->
 
         </div>
@@ -81,7 +89,7 @@
                         <p class="discount">25% off</p>
                         <p class="description">Laptop</p>
                     </div>
-                </article> 
+                </article>
 
                 <article>
                     <img src="/img/lenovo.jpg" alt="producto">
