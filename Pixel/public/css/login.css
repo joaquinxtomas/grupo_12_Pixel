@@ -166,6 +166,23 @@ body {
     background-image: url('bg.png');
 }
 
+.contraseña {
+    position: relative;
+    left: 300px;
+}
+
+.contraseña:hover {
+    color: #7EFF00;
+}
+
+.registrarme  {
+    color:  rgb(168, 168, 168);
+}
+
+.registrarme:hover {
+    color: #7EFF00;
+}
+
 .form-login h5 {
     margin: 0;
     text-align: center;
