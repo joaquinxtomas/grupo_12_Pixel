@@ -116,7 +116,7 @@ body {
     display: flex;
     justify-content: space-around;
     display: none;
-    box-shadow: 3px 3px 30px 5px  #7EFF00;
+    box-shadow: 1rem 1rem 3rem 1rem  #7EFF00;
     background-color: #000;
     border-top: solid 1px #cac7ff;
 }
@@ -164,6 +164,23 @@ body {
 body {
     font-family: arial;
     background-image: url('bg.png');
+}
+
+.contraseña {
+    position: relative;
+    left: 300px;
+}
+
+.contraseña:hover {
+    color: #7EFF00;
+}
+
+.registrarme  {
+    color:  rgb(168, 168, 168);
+}
+
+.registrarme:hover {
+    color: #7EFF00;
 }
 
 .form-login h5 {
