@@ -20,3 +20,6 @@ app.get('/login', (req,res) => {
    });
    app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
 
+   app.get("/",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"./views/register.html"))
+})

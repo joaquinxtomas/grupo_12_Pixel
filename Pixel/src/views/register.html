@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL! | REGISTER </title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="https://kit.fontawesome.com/d47e928f31.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:ital@1&family=Roboto:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="main-header-top-bar">
+            <h1 class="logo">Pixel!</h1>
+            <form action='https://www.google.com/search?q=' method="get" class="search-bar">
+                <input type="text" placeholder="Monitores, teclados, tarjetas de video" name="q">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="icons-top-bar">
+                <a href="/login"><i class="fa-regular fa-user"></i> Ingresar</a>
+                <a href="#">Registrarse</a>
+                <a href="/productCart"><i class="fa badge" style="font-size:24px" value=2>&#xf07a;</i></a>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-bar">
+
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Productos</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Arma tu PC</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>PC listos</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Quiénes somos</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Ayuda</p>
+                </div>
+            </a>
+        </nav>
+
+        <div class="banner">
+            <img src="/img/banner1.jpg" alt="banner">
+            <!-- <img src="/img/banner2.jpg" alt="banner"> -->
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <form action="/" method="get">
+            <div class="caja-padre">
+                <div class="registrate">
+                    <h2>¡Registrate!</h2>
+                </div>
+                
+                <div>
+                    <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" id="nombre-apellido"
+                        required>
+                </div>
+
+                <div>
+                    <input type="text" name="username" placeholder="Nombre de usuario" required>
+                </div>
+
+                <div>
+                    <input type="email" name="email" placeholder="E-mail" id="email" required>
+                </div>
+
+                <div>
+                    <h4 class="nacimiento">Fecha de nacimiento</h4>
+                    <input type="date" name="nacimiento" id="nacimiento" required>
+                </div>
+
+                <div>
+                    <input type="text" name="domicilio" placeholder="Domicilio" required>
+                </div>
+
+                <div>
+                    <h4 class="foto">Foto de usuario</h4>
+                <div class="file-select">
+                <input type="file" name="foto-user" accept=".png, .jpg">
+                </div>
+
+                <div class="contraseña">
+                    <input class="password" type="password" name="password" placeholder="Contraseña" required>
+                </div>
+
+                <div class="contraseña">
+                    <input class="password" type="password" name="re-password" placeholder="Confirmar contraseña" required>
+                </div>
+
+                <div>
+                    <button class="enviar" type="submit">Enviar</button>
+                </div>
+                <div class="borrar-datos">
+                    <button class="borrar" type="reset">Borrar datos</button>
+                </div>
+
+                <div class="ingreso">
+                    <h5 class="google">Ingresar con Google
+                        <i class="fab fa-google"></i>
+                    </h5>
+                    <h5 class="facebook">Ingresar con Facebook
+                        <i class="fab fa-facebook-square"></i>
+                    </h5>
+                </div>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+
+            <div class="redes">
+
+                <div>
+                    <h3>¡Seguinos en nuestras redes sociales!</h3>
+                </div>
+                <div class="iconos">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="informacion">
+                <ul class="lista1">
+                    <h4>Atención al cliente</h4>
+                    <li>+54 (011) 7079-9965</li>
+                    <li>Whatsapp: +54 (911) 3934-5678</li>
+                    <li>Nosotros</li>
+                    <li>Contáctanos</li>
+                </ul>
+                <ul class="lista2">
+                    <h4>Términos y condiciones</h4>
+                    <li>Condiciones de uso</li>
+                    <li>Politicas de garantía</li>
+                    <li>Políticas de privacidad</li>
+                </ul>
+
+                <ul class="lista3">
+                    <h4>Preguntas frecuentes</h4>
+                    <li>Preguntas frecuentes</li>
+                    <li>¿Cómo comprar?</li>
+                    <li>Envíos</li>
+
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2022 Pixel! E-commerce.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
