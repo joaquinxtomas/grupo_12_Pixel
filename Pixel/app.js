@@ -20,8 +20,13 @@ app.get('/login', (req,res) => {
    });
    app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
 
+<<<<<<< HEAD
    app.get('/register', (req,res) => {
     res.sendFile(path.resolve(__dirname,'./src/views/register.html'))
+=======
+   app.get('/register',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"./src/views/register.html"))
+>>>>>>> 735cd836a6903b614e8f499219fce92ade0716cc
 })
 
 app.post('/register', (req,res)=>{
