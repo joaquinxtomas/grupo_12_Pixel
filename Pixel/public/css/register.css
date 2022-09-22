@@ -12,12 +12,13 @@ body {
 /*header*/
 /* HEADER TOP BAR */
 
-header{
+header {
     background-color: black;
 }
 
-.top-header{
+.top-header {
     display: flex;
+    width: 90vw;
 }
 
 .logo2 img {
@@ -39,7 +40,7 @@ header{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 60px;
     padding: 10px 10px;
-    margin: auto
+    margin: auto;
 }
 
 .search-bar input {
@@ -153,7 +154,7 @@ header{
 .burger-menu {
     text-align: center;
     font-size: 1.5em;
-    border-bottom: solid 1px #61a120 ;
+    border-bottom: solid 1px #61a120;
     padding-top: 10px;
     background: black;
 }
@@ -177,64 +178,62 @@ header{
     display: none
 }
 
-.banner{
-    position:relative
+.banner {
+    position: relative
 }
 
-#left{
-    color:#7EFF00;
-    width:50px;
+#left {
+    color: #7EFF00;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgba(74, 74, 74, 0.6);
     text-align: center;
     font-size: 50px;
     position: absolute;
-    top:40%;
-    left:0;
+    top: 40%;
+    left: 0;
     z-index: 1;
-    opacity:0.6;
-    display:none
+    opacity: 0.6;
+    display: none
 }
 
 
-#right{
-    color:#7EFF00;
-    width:50px;
+#right {
+    color: #7EFF00;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgba(74, 74, 74, 0.6);
     text-align: center;
     font-size: 50px;
     position: absolute;
-    top:40%;
-    right:0;
+    top: 40%;
+    right: 0;
     z-index: 1;
-    opacity:0.6;
-    display:none
+    opacity: 0.6;
+    display: none
 }
 
 .dots {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    color:#7EFF00;
+    color: #7EFF00;
     font-size: 12px;
-    padding:3px;
-    width:100px;
+    padding: 3px;
+    width: 100px;
     height: 30px;
     background-color: rgba(74, 74, 74, 0.6);
     justify-content: space-evenly;
     align-items: center;
     border-radius: 30px;
-    position:absolute;
-    top:90%;
-    left:50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    opacity:0.6;
-    display:none
-
-
+    opacity: 0.6;
+    display: none
 }
 
 
@@ -243,18 +242,18 @@ main {
     background-color: #1e1e22;
     width: 100%;
     min-width: 260px;
-    box-shadow:0rem -0.6rem -3rem -0.5rem #7eff00
+    box-shadow: 0rem 0.6rem 3rem 0.5rem #7eff00;
 }
 
 form {
     padding: 30px;
 }
 
-.registrate{
+.registrate {
     border-bottom: 1px solid #666;
 }
 
-.caja-padre div input  {
+.caja-padre div input {
     background-color: #252323;
     color: #757272;
     font-size: 18px;
@@ -290,7 +289,7 @@ form div {
     position: relative;
     display: inline-block;
     margin-bottom: 5px;
-  }
+}
 
 .file-select::before {
     background-color: #7EFF00;
@@ -301,26 +300,26 @@ form div {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    content: 'Subir archivo'; 
+    content: 'Subir archivo';
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     box-shadow: 0px 0px 10px black;
-  }
+}
 
-  
-  .file-select input[type="file"] {
+
+.file-select input[type="file"] {
     opacity: 0;
     width: 120px;
     height: 10px;
     display: inline-block;
-  }
-  
-  #src-file1::before {
+}
+
+#src-file1::before {
     content: 'Seleccionar Archivo 1';
-  }
+}
 
 .contraseña {
     display: flex;
@@ -351,7 +350,7 @@ form div button {
     font-size: 15px;
     width: 100%;
     height: 30px;
-    background:#7EFF00 ;
+    background: #7EFF00;
     font-weight: bold;
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
@@ -383,7 +382,7 @@ form div button {
     box-shadow: 0px 0px 10px #000;
 }
 
-.borrar-datos{
+.borrar-datos {
     border-bottom: 1px solid #666;
     padding-top: 5px;
 }
@@ -443,7 +442,7 @@ footer {
     background-color: #000;
 }
 
-.texto-redes  {
+.texto-redes {
     color: #fff;
     padding: 15px;
     font-size: 18px;
@@ -495,7 +494,7 @@ footer {
     padding-left: 20px;
 }
 
-.lista1 h4{
+.lista1 h4 {
     color: #667;
     font-size: 20px;
     padding-bottom: 8px;
@@ -505,7 +504,7 @@ footer {
     padding: 15px;
 }
 
-.lista2 h4{
+.lista2 h4 {
     color: #667;
     font-size: 20px;
     padding-bottom: 8px;
@@ -515,13 +514,13 @@ footer {
     padding: 15px;
 }
 
-.lista3 h4{
+.lista3 h4 {
     color: #667;
     font-size: 20px;
     padding-bottom: 10px;
 }
 
-.copyright{
+.copyright {
     color: #666666;
     font-size: 14px;
     padding-top: 10px;
@@ -558,14 +557,14 @@ footer {
 
 }
 
-@media (min-width:767px){
+@media (min-width:767px) {
     /* HEADER */
 
     .logo2 img {
         display: none;
         height: 100px;
     }
-    
+
     .logo1 {
         display: flex;
         height: 100px;
@@ -609,10 +608,18 @@ footer {
     }
 
     .nav-bar {
-        display: flex
+        display: flex;
+        box-shadow: 0rem 0.6rem 3rem 0.5rem #7EFF00;
     }
 
-   
+    /*MAIN*/
+
+    main {
+        box-shadow: unset;
+    }
+
+
+
 
 
     /* FOOTER */
@@ -623,49 +630,49 @@ footer {
 
     }
 
-    .redes{
+    .redes {
         display: flex;
         justify-content: center;
         align-items: center;
 
         border-bottom: 1px solid #4A4A4A;
-      }
+    }
 
-      .texto-redes{
+    .texto-redes {
         padding: 20px;
-      }
+    }
 
     .lista1 {
         padding: 15px;
         padding-left: 5px;
     }
 
-    
+
     .lista3 {
         padding-right: 5px;
     }
 
-    
+
 }
 
-@media (min-width:1020px){
+@media (min-width:1020px) {
 
     .search-bar {
         width: 700px;
         max-width: 700px;
     }
 
-    .search-bar input::placeholder{
+    .search-bar input::placeholder {
         font-size: 16px;
     }
 
 
-    .caja-padre{
+    .caja-padre {
         max-width: 700px;
-       
+
     }
 
-    .caja-padre div input{
+    .caja-padre div input {
         max-width: 700px;
         font-size: 18px;
     }
@@ -676,35 +683,35 @@ footer {
         width: 150px;
         margin-bottom: 5px;
         height: 40px;
-      }
+    }
 
-      .file-select::before{
+    .file-select::before {
         font-size: 14px;
-      }
+    }
 
-      .enviar {
+    .enviar {
         font-size: 18px;
-      }
+    }
 
-      .ingreso{
+    .ingreso {
         display: flex;
         margin-bottom: -10px;
         margin-top: 10px;
-      }
+    }
 
-      .google{
+    .google {
         flex: 5;
-      }
+    }
 
-      .facebook{
+    .facebook {
         flex: 5;
-      }
+    }
 
 
-      .informacion {
+    .informacion {
         margin-left: 10px;
         margin-right: 10px;
-      }
+    }
 
 
 }
