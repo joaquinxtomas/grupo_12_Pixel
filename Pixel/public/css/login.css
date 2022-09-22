@@ -15,10 +15,17 @@ body {
 
 
 /* HEADER TOP BAR */
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 8%;
+
+
+
+.logo2 img {
+    display: flex;
+    height: 100px;
+}
+
+.logo1 {
+    display: none;
+    height: 100px;
 }
 
 .cajita {
@@ -404,6 +411,16 @@ footer div h3 {
 
 @media (min-width:320px) {
 
+
+    .logo2 img {
+        display: flex;
+        height: 100px;
+        padding-bottom: 5px;
+    }
+    .contraseña{
+        left: 60px;
+    }
+
     .cajita {
         position: relative;
         left: 240px;
@@ -518,6 +535,20 @@ footer div h3 {
 }
 
 @media (min-width: 767px) {
+    .logo2 img {
+        display: none;
+        height: 100px;
+    }
+    
+    .logo1 {
+        display: flex;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-right: 5px;
+    }
+
+
 
     .burger-menu {
         display: none;
