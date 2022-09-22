@@ -11,14 +11,23 @@ body {
 
 /*header*/
 /* HEADER TOP BAR */
-.logo {
-    font-family: 'Press Start 2P';
-    letter-spacing: 2px;
-    color: #7EFF00;
-    padding: 10px 10px;
-    text-shadow: 0.2rem 0.5rem 0.5rem rgb(0, 0, 0);
-    font-size: 24px;
-    text-align: center;
+
+header{
+    background-color: black;
+}
+
+.top-header{
+    display: flex;
+}
+
+.logo2 img {
+    height: 70px;
+    margin-right: 40px;
+}
+
+.logo1 {
+    display: none;
+    height: 100px;
 }
 
 .search-bar {
@@ -63,6 +72,11 @@ body {
 
 
 .main-header-top-bar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     padding: 10px;
     width: 100%;
@@ -81,7 +95,7 @@ body {
     display: flex;
     align-items: baseline;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 15px;
 }
 
@@ -91,7 +105,8 @@ body {
 }
 
 .badge:after {
-    content: attr(value); /* value is the number displayed next to the cart */
+    content: attr(value);
+    /* value is the number displayed next to the cart */
     font-size: 10px;
     background: red;
     border-radius: 50%;
@@ -104,29 +119,32 @@ body {
 
 /* NAVIGATION BAR */
 
-.nav-bar{
-    display:flex;
+.nav-bar {
+    display: flex;
     justify-content: space-around;
     display: none;
+    align-items: center;
+    box-shadow: 0rem 0.6rem 3rem 0.5rem #7EFF00;
 }
 
-.nav-bar a{
+.nav-bar a {
     text-decoration: none;
     color: #cac7ff;
+
 }
 
-.nav-bar-button{
+.nav-bar-button {
     background-color: #4A4A4A;
-    padding:10px;
-    width:110px;
+    padding: 10px;
+    width: 110px;
     text-align: center;
     margin: 5px 0;
     border-radius: 15px;
     transition: all 400ms ease;
 }
 
-.nav-bar-button:hover{
-    color:#4A4A4A;
+.nav-bar-button:hover {
+    color: #4A4A4A;
     background-color: #7EFF00;
 }
 
@@ -135,17 +153,18 @@ body {
 .burger-menu {
     text-align: center;
     font-size: 1.5em;
-    border-bottom: solid 1px #cac7ff;
-    background-color: rgb(100, 100, 100)
+    border-bottom: solid 1px #61a120 ;
+    padding-top: 10px;
+    background: black;
 }
 
 .burger-menu i {
     text-align: center;
     border-radius: 15%;
-    border: solid 1px #7EFF00;
+    border: solid 2px #7eff00;
     padding: 10px;
-    color: #7EFF00;
-    margin-bottom: 15px
+    color: #7eff00;
+    margin-bottom: 15px;
 }
 
 /* BANNER SLIDER */
@@ -158,16 +177,77 @@ body {
     display: none
 }
 
+.banner{
+    position:relative
+}
+
+#left{
+    color:#7EFF00;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(74, 74, 74, 0.6);
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top:40%;
+    left:0;
+    z-index: 1;
+    opacity:0.6;
+    display:none
+}
+
+
+#right{
+    color:#7EFF00;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(74, 74, 74, 0.6);
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top:40%;
+    right:0;
+    z-index: 1;
+    opacity:0.6;
+    display:none
+}
+
+.dots {
+    display:flex;
+    flex-direction: row;
+    color:#7EFF00;
+    font-size: 12px;
+    padding:3px;
+    width:100px;
+    height: 30px;
+    background-color: rgba(74, 74, 74, 0.6);
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity:0.6;
+    display:none
+
+
+}
+
 
 /* main*/
 main {
     background-color: #1e1e22;
     width: 100%;
     min-width: 260px;
+    box-shadow:0rem -0.6rem -3rem -0.5rem #7eff00
 }
 
 form {
-    padding: 20px;
+    padding: 30px;
 }
 
 .registrate{
@@ -177,7 +257,7 @@ form {
 .caja-padre div input  {
     background-color: #252323;
     color: #757272;
-    font-size: 14px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     height: 35px;
@@ -209,6 +289,7 @@ form div {
 .file-select {
     position: relative;
     display: inline-block;
+    margin-bottom: 5px;
   }
 
 .file-select::before {
@@ -233,7 +314,7 @@ form div {
   .file-select input[type="file"] {
     opacity: 0;
     width: 120px;
-    height: 15px;
+    height: 10px;
     display: inline-block;
   }
   
@@ -254,6 +335,8 @@ form div h2 {
 form div h4 {
     text-align: left;
     margin-bottom: 5px;
+    font-size: 20px;
+    padding-bottom: 8px;
     font-weight: normal;
     color: white;
 }
@@ -266,12 +349,13 @@ form div button {
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    width: 100px;
+    width: 100%;
     height: 30px;
     background:#7EFF00 ;
     font-weight: bold;
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
+    max-width: 300px;
 }
 
 .enviar:hover {
@@ -282,13 +366,14 @@ form div button {
 .borrar {
     border: none;
     border-radius: 5px;
-    font-size: 12px;
-    width: 80px;
-    height: 23px;
+    font-size: 14px;
+    width: 50%;
+    height: 27px;
     background-color: #7EFF00;
     font-weight: bold;
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
+    max-width: 150px;
 
 }
 
@@ -311,7 +396,10 @@ form div button {
 .google {
     background-color: #1e1e22;
     border: none;
-    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     border-radius: 3px;
     color: white;
     font-weight: normal;
@@ -330,7 +418,10 @@ form div button {
 .facebook {
     background-color: #1e1e22;
     border: none;
-    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     border-radius: 3px;
     color: white;
     font-weight: normal;
@@ -346,15 +437,16 @@ form div button {
     margin-left: 10px;
 }
 
+/* FOOTER */
 
 footer {
     background-color: #000;
 }
 
-footer div h3 {
+.texto-redes  {
     color: #fff;
     padding: 15px;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -382,16 +474,16 @@ footer div h3 {
 
 .informacion {
     display: flex;
+    flex-direction: column;
     height: 100%;
-    margin: auto;
-    max-width: 900px;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .informacion ul li {
-    font-size: 10px;
+    font-size: 16px;
     color: #7EFF00;
     list-style-type: none;
+    justify-content: center;
 }
 
 .informacion ul li:hover {
@@ -404,8 +496,8 @@ footer div h3 {
 }
 
 .lista1 h4{
-    color: #fff;
-    font-size: 12px;
+    color: #667;
+    font-size: 20px;
     padding-bottom: 8px;
 }
 
@@ -414,8 +506,8 @@ footer div h3 {
 }
 
 .lista2 h4{
-    color: #fff;
-    font-size: 12px;
+    color: #667;
+    font-size: 20px;
     padding-bottom: 8px;
 }
 
@@ -424,39 +516,195 @@ footer div h3 {
 }
 
 .lista3 h4{
-    color: #fff;
-    font-size: 12px;
-    padding-bottom: 8px;
+    color: #667;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .copyright{
     color: #666666;
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 10px;
 }
 
-@media (min-width:680px) {
+@media (min-width:361px) {
+
+    .caja-padre div input {
+        font-size: 16px;
+    }
+
+    .aclaracion {
+        font-size: 18px;
+    }
 
     .informacion {
         justify-content: space-between;
     }
 
     .lista1 h4 {
-        color: #fff;
         padding-bottom: 10px;
         font-size: 18px;
     }
 
     .lista2 h4 {
-        color: #fff;
         padding-bottom: 10px;
         font-size: 18px;
     }
 
     .lista3 h4 {
-        color: #fff;
         padding-bottom: 10px;
         font-size: 18px;
     }
+
+}
+
+@media (min-width:767px){
+    /* HEADER */
+
+    .logo2 img {
+        display: none;
+        height: 100px;
+    }
+    
+    .logo1 {
+        display: flex;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-right: 5px;
+    }
+
+
+
+    .main-header-top-bar {
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid 1px #cac7ff;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .icons-top-bar {
+        display: flex;
+        align-items: flex-end;
+        width: 45%;
+        justify-content: flex-end;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+
+    .icons-top-bar a {
+        text-decoration: none;
+        color: #7EFF00;
+        font-size: 14px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex
+    }
+
+   
+
+
+    /* FOOTER */
+    .informacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-bottom: 1px solid #4A4A4A;
+      }
+
+      .texto-redes{
+        padding: 20px;
+      }
+
+    .lista1 {
+        padding: 15px;
+        padding-left: 5px;
+    }
+
+    
+    .lista3 {
+        padding-right: 5px;
+    }
+
+    
+}
+
+@media (min-width:1020px){
+
+    .search-bar {
+        width: 700px;
+        max-width: 700px;
+    }
+
+    .search-bar input::placeholder{
+        font-size: 16px;
+    }
+
+
+    .caja-padre{
+        max-width: 700px;
+       
+    }
+
+    .caja-padre div input{
+        max-width: 700px;
+        font-size: 18px;
+    }
+
+    .file-select {
+        display: flex;
+        left: 100px;
+        width: 150px;
+        margin-bottom: 5px;
+        height: 40px;
+      }
+
+      .file-select::before{
+        font-size: 14px;
+      }
+
+      .enviar {
+        font-size: 18px;
+      }
+
+      .ingreso{
+        display: flex;
+        margin-bottom: -10px;
+        margin-top: 10px;
+      }
+
+      .google{
+        flex: 5;
+      }
+
+      .facebook{
+        flex: 5;
+      }
+
+
+      .informacion {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
 
 }
