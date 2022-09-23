@@ -13,6 +13,11 @@ body {
     background-color: rgb(40, 40, 40);
 }
 
+.mover{
+    display: flex;
+    justify-content: center;
+}
+
 
 /* HEADER TOP BAR */
 
@@ -177,9 +182,9 @@ body {
     background-image: url('bg.png');
 }
 
-.contraseña {
-    position: relative;
-    left: 300px;
+.texto-login{
+    display: flex;
+    justify-content: space-between;
 }
 
 .contraseña:hover {
@@ -468,10 +473,6 @@ footer {
         height: 100px;
         padding-bottom: 5px;
     }
-    .contraseña{
-        left: 50px;
-    }
-
     .cajita {
         position: relative;
         left: 240px;
@@ -594,19 +595,13 @@ footer {
         border-radius: 100px;
     }
 
-    .contraseña {
-        position: relative;
-        left: 30px;
-    }
-
     .redes {
         padding-top: 10px;
     }
 
     .form-login {
         border-radius: 5px;
-        position: relative;
-        left: 78px;
+        width: 70%;
         height: 500px;
         background: #4a4a4a;
         margin-bottom: 90px;
@@ -749,8 +744,35 @@ footer {
     }
 
 }
-
+ 
 @media (min-width: 1023px) {
+
+    .mover{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-login {
+
+        background: #4e4d4d;
+        margin-bottom: 90px;
+        margin-top: 90px;
+        box-shadow: 7px 13px 37px #000;
+        padding: 20px 30px;
+        border-top: 4px solid #7EFF00;
+        color: white;
+    }
+
+    .form-login h5 {
+        margin: 0;
+        text-align: center;
+        height: 40px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+        font-size: 19px;
+    }
+
+}
 
     .cajita {
         position: relative;
@@ -760,19 +782,13 @@ footer {
     }
 
     .form-login {
-        left: 120px;
         max-width: 800px;
     }
 
-    .contraseña {
-        position: relative;
-        left: 520px;
-    }
-}
 
 @media (min-width: 1439px) {
     .form-login {
-        left: 570px;
         max-width: 800px;
+        width: 60%;
     }
 }
