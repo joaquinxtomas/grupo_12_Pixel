@@ -1,3 +1,7 @@
+Enlace al tablero de trabajo:
+
+https://trello.com/b/MRgKXw2m/pixel-ecomerce
+
 Pixel 
 
 Nuestra tienda se basa en la oferta de todo tipo de productos de hardware para PC. Estamos orientados a un público que haga uso cotidiano de las computadoras, ya sea en ambito familiar, de trabajo o para divertirse.
