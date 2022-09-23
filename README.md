@@ -2,7 +2,7 @@ Pixel
 
 Nuestra tienda se basa en la oferta de todo tipo de productos de hardware para PC. Estamos orientados a un público que haga uso cotidiano de las computadoras, ya sea en ambito familiar, de trabajo o para divertirse.
 
-Descripcion de los integrantes del grupo:
+Descripción de los integrantes del grupo:
 
 -Julián Salvá: Soy Julián Salvá y tengo 29 años. Nacido y criado en la ciudad Medellín, Colombia, ingeniero, músico y ahora programador.
 
@@ -12,16 +12,21 @@ Descripcion de los integrantes del grupo:
 
 -Juaquin Palacios: Me llamo Joaquín, tengo 19 años, nací en Buenos Aires, Argentina, soy estudiante de programación y aficionado del cine y la lectura.
 
--Jorge Hernández:Soy Jorge Hernández, tengo 50 años, de Rosario, Santa Fe, diseñador gráfico y estudiante de programación.
+-Jorge Hernández: Soy Jorge Hernández, tengo 50 años, de Rosario, Santa Fe, diseñador gráfico y estudiante de programación.
 
-Nuestro sitio se veria influenciado por los sieguientes sitios web:
+Nuestro sitio se vería influenciado por los sieguientes sitios web:
 
--maximus gaming: La paleta de colores.
+-Maximus gaming: La paleta de colores.
+https://www.maximus.com.ar/
 
--compra gamer: estructura del sitio para ayudar a los potenciales clientes.
+-Compra gamer: estructura del sitio para ayudar a los potenciales clientes.
+https://compragamer.com/index.php
 
--venex: La presentacion de los productos.
+-Venex: La presentacion de los productos.
+https://www.venex.com.ar/ 
 
--newegg: el menu de navegacion es una opcion muy comoda para los usuarios.
+-Newegg: el menu de navegacion es una opcion muy comoda para los usuarios.
+https://www.newegg.com/
 
--fullh4ar: la simpleza de la pagina para poder ser entendible por todas las personas.
+-Fullh4ar: la simpleza de la pagina para poder ser entendible por todas las personas.
+https://www.fullh4rd.com.ar/
