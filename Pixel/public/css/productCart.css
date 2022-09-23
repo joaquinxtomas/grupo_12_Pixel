@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -12,19 +10,29 @@
 body {
     font-family: 'Roboto', Arial;
     font-size: 12px;
-    background-color: #080808;
+    background-color:black;
 }
 
 
 /* HEADER TOP BAR */
-.logo {
-    font-family: 'Press Start 2P';
-    letter-spacing: 2px;
-    color: #7EFF00;
-    padding: 10px 10px;
-    text-shadow: 0.2rem 0.5rem 0.5rem rgb(0, 0, 0);
-    font-size: 24px;
-    text-align: center;
+.logo2 img {
+    display: flex;
+    width:95px;
+    height: 85px;
+    margin: 10px 0px 10px 35%;
+   border-radius: 16px;
+    border: #7EFF00 0.5px solid;
+    box-shadow:  -0.2rem -0.2rem 0.0rem -0.1rem #7EFF00;
+}
+
+.logo1 {
+    display: none;
+    height: 85px;
+    width: 180px;
+    margin-left: 2%;
+    padding-left: 2%;
+    border-radius: 64%;
+    box-shadow: inset 0rem 3em 3em -2.8em #7eff00;
 }
 
 .search-bar {
@@ -69,7 +77,7 @@ body {
 
 
 .main-header-top-bar {
-    background-color: rgb(100, 100, 100);
+    background-color: black;
     padding: 10px;
     width: 100%;
 
@@ -114,6 +122,7 @@ body {
     display:flex;
     justify-content: space-around;
     display: none;
+    box-shadow: 0rem 0.6rem 1rem 0.5rem #7EFF00;
 }
 
 .nav-bar a{
@@ -141,8 +150,8 @@ body {
 .burger-menu {
     text-align: center;
     font-size: 1.5em;
-    border-bottom: solid 1px #cac7ff;
-    background-color: rgb(100, 100, 100)
+    
+    background-color: black
 }
 
 .burger-menu i {
@@ -161,12 +170,18 @@ body {
  main {
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
     width: 90%
 }
 
 /* CARRITO */
-
-
+section{
+    display: none;
+    
+}
+section p{
+    flex: 1;
+}
 h2 {
     border-radius: 5px;
     border-top: #7EFF00 solid 2px;
@@ -179,16 +194,20 @@ h2 {
 img {
     width: 90%;
     padding: 5px;
+    border-radius: 15px;
 }
-
+/*Botones*/
 .boton-compra {
-    background-color: #4A4A4A;
+    background-color:#7EFF00 ;
     border-radius: 10px;
     padding: 5px;
-    color: #cac7ff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
     width: 35%;
     font-weight: 535;
     transition: all 0.5s;
+    border: none;
 }
 .boton {
     background-color: #4A4A4A;
@@ -198,6 +217,7 @@ img {
     width: 35%;
     font-weight: 535;
     transition: all 0.5s;
+    border: none;
 }
 
 .boton:hover{
@@ -218,10 +238,6 @@ img {
     border-radius: 5px;
 }
 
-/* a {
-    font-size: 14px;
-    color: aliceblue;
-} */
 
 
 .formulario-padre {
@@ -229,9 +245,10 @@ img {
     text-align: center;
     justify-content: center;
     background-color: rgb(100, 100, 100);
-    /* padding: 5px; */
-
+    border-radius: 5px;
+    margin-bottom: 10px;
     font-size: 17px;
+    padding-bottom: 10px;
 }
 
 .medios-de-pago-padre {
@@ -248,9 +265,14 @@ img {
     color: #7EFF00;
     border-top: #7EFF00 2px solid;
 }
+.medios-de-pago-padre p{
+    color: aliceblue;
+}
 
 footer {
     background-color: #000;
+    box-shadow: 0rem 0.6rem 3rem 0.3rem #7eff00;
+    margin-top: 10px;
 }
 
 footer div h3 {
@@ -355,11 +377,36 @@ footer div h3 {
     .nav-bar{
         display:flex
     }
-
-
+    .logo2 img {
+        display: none;
+    }
+    
+    .logo1 {
+        display: flex;
+       
+    }
+section{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 30%;
+    
+    
+}
+section p{
+    margin-left: 2%;
+    margin-top: 19px;
+    font-size: 19px;
+}
+.p-precio{
+    margin-left: 12%;
+}
     .main-header-top-bar {
         display: flex;
-        border-bottom: solid 1px #efefef;
+        
         padding: 15px;
         align-items: center;
         justify-content: space-between;
@@ -384,9 +431,6 @@ footer div h3 {
         font-size: 14px;
     }
 
-    .banner img {
-        display: initial
-    }
 
     .burger-menu {
         display: none;
@@ -396,9 +440,6 @@ footer div h3 {
         width: 95%
     }
 
-    /* .main-header-top-bar {
-        border-bottom: none;
-    } */
 
     .productInfo {
         display: flex;
@@ -412,6 +453,7 @@ footer div h3 {
     .formulario-padre img {
         max-width: 200px;
         flex-grow: 1;
+        border-radius: 15px  ;
     }
 
     .description,
@@ -428,10 +470,20 @@ footer div h3 {
     .boton-compra{
         max-width: 160px;
     }
-    
 }
 
 @media (min-width: 1020px) {
+    .medios-de-pago-padre{
+        font-size: 20px;
+        
+    }
+    .formulario-padre p{
+        font-size: 20px;
+    }
+    .medios-de-pago-padre p{
+        text-align: center;
+        margin-top: 5px;
+    }
     .search-bar{
         width:45%;
         max-width: 700px;
@@ -440,5 +492,15 @@ footer div h3 {
     .icons-top-bar {
 
         width: 30%;
+    }
+    section{
+        margin-left: 27%;
+    }
+    section p{
+        margin-left: 0%;
+        margin-top: 5px;
+    }
+    .p-precio{
+        margin-left: 21%;
     }
 }
