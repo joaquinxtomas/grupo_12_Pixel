@@ -570,10 +570,7 @@ footer {
         height: 100px;
         padding: 10px;
         margin-bottom: 30px;
-        margin-right: 5px;
     }
-
-
 
     .main-header-top-bar {
         display: flex;
@@ -619,9 +616,6 @@ footer {
     }
 
 
-
-
-
     /* FOOTER */
     .informacion {
         display: flex;
@@ -656,9 +650,7 @@ footer {
 }
 
 @media (min-width:1020px) {
-
     .search-bar {
-        width: 700px;
         max-width: 700px;
     }
 
@@ -706,7 +698,6 @@ footer {
     .facebook {
         flex: 5;
     }
-
 
     .informacion {
         margin-left: 10px;
