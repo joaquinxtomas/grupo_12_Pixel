@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,12 @@
     <link rel="stylesheet" href="css/productDetail.css">
     <title>Detalle Producto</title>
 </head>
+
 <body>
-    <!--    <header class="cabecera">
-            <section class="logo">
-                <img class="logo" src="img/logo.PNG" alt="logo">
-                <h1 class="titulo">Detalle Producto</h1>
-            </section>
-            <ol class="lista">
-                <li><a href="./">Home</a></li>
-                <li><a href="./detalle1_producto">Cambio</a></li>
-            </ol>
-        </header>-->
-        <header>
-            <div class="main-header-top-bar">
-                <div class="top-header">
+
+    <header>
+        <div class="main-header-top-bar">
+            <div class="top-header">
                 <!-- <a href="./" class="logo"> Pixel!</a> LOGO ALTERNATIVO-->
                 <a href="./" class="logo1"> <img src="/img/pixel-logo.png" alt="logo"></a>
                 <!-- logo-mobile -->
@@ -29,168 +22,136 @@
                 <form action='https://www.google.com/search?q=' method="get" class="search-bar">
                     <input type="text" placeholder="Monitores, teclados, tarjetas de video" name="q">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                </form>
-                <div class="icons-top-bar">
-                    <a href="/login"><i class="fa-regular fa-user"></i> Ingresar</a>
-                    <a href="/register">Registrarse</a>
-                    <a href="/productCart"><i class="fa badge" style="font-size:24px" value=2>&#xf07a;</i></a>
-                </div>
             </div>
-            <div class="burger-menu">
-                <i class="fa-solid fa-bars"></i>
+            </form>
+            <div class="icons-top-bar">
+                <a href="/login"><i class="fa-regular fa-user"></i> Ingresar</a>
+                <a href="/register">Registrarse</a>
+                <a href="/productCart"><i class="fa badge" style="font-size:24px" value=2>&#xf07a;</i></a>
             </div>
-            <nav class="nav-bar">
-                <a href="#">
-                    <div class="nav-bar-button">
-                        <p>Productos</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-button">
-                        <p>Arma tu PC</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-button">
-                        <p>PC listos</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-button">
-                        <p>Quiénes somos</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-button">
-                        <p>Ayuda</p>
-                    </div>
-                </a>
-            </nav>
-<!--             <div class="banner">
-                <img src="/img/banner2.jpg" alt="banner">
-                <i class="fa-solid fa-angle-left" id="left"></i>
-                <i class="fa-solid fa-angle-right" id="right"></i>
-                <div class="dots">
-                    <i class="fa-solid fa-circle" id="bn1"></i>
-                    <i class="fa-solid fa-circle" id="bn2"></i>
-                    <i class="fa-solid fa-circle" id="bn3"></i>
+        </div>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-bar">
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Productos</p>
                 </div>
-                <img src="/img/banner2.jpg" alt="banner">
-            </div> -->
-        </header>
-<!--        <div class="contenedor_central"> -->
-        <main class="contenedor_central">
+            </a>
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Arma tu PC</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>PC listos</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Quiénes somos</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-bar-button">
+                    <p>Ayuda</p>
+                </div>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="contenedor_central">
             <section class="subtitulo">
-                <h2 class="subtitulo_prod">PC Armada - Volver a la vista-></h2>
+                <h2>PC Armada - Volver a la vista</h2>
             </section>
-            <section class="contenedor_imagenes">                         
-                <div class="contenedor_imagen_prod"></div>
+            <section>
+                <div class="contenedor_imagen_prod">
                     <img class="imagen_prod" src="img/hp.jpg" alt="img_hp">
-                </div><!--contenedor_imagen_principal-->
+                </div>
                 <div class="contenedor_texto_pago">
+                    <div class="vistas">
+                        <img class="vista" src="img/hp.jpg" alt="img_hp">
+                        <img class="vista" src="img/hp.jpg" alt="img_hp">
+                        <img class="vista" src="img/hp.jpg" alt="img_hp">
+                    </div>
+
+                    <div class="precio-producto">
+                        $154.699
+                    </div>
+
+                    <div class="descripcion-producto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates excepturi ex eaque
+                            illo explicabo dolorum hic alias adipisci, omnis nemo consectetur repudiandae, sapiente,
+                            ullam optio ipsa quidem distinctio quo.</p>
+
+                    </div>
+
+                    <div class="boton-comprar">
+                        <button type="submit" class="comprar">Agregar al carrito</button>
+                    </div>
+
                     <div class="box_texto_pago">
                         <h3 class="subtitulo_texto_pago">Medios de Pago</h3>
-                        <p class="texto_pago">Lorem ipsum dolor sit amet.</p>
-                        <p class="texto_pago">Quam nobis ad aut possimus?</p>
-                    </div>
-                   
-                    <div class="box_texto_pago">
-                        <h3 class="subtitulo_texto_pago">Formas de Pago</h3>
-                        <p class="texto_pago">Lorem ipsum dolor sit amet.</p>
-                        <p class="texto_pago">Quam nobis ad aut possimus?</p>
+                        <p class="texto_pago">Lorem ipsum dolor sit amet.
+                            Quam nobis ad aut possimus?
+                        </p>
                     </div>
                     <div class="box_texto_pago">
-                        <h3 class="subtitulo_texto_pago">Comprar</h3>
-                        <p class="texto_pago">Lorem ipsum dolor sit amet.</p>
-                        <p class="texto_pago">Quam nobis ad aut possimus?</p>
+                        <h3 class="subtitulo_texto_pago">Forma de retiro</h3>
+                        <p class="texto_pago">Lorem ipsum dolor sit amet.
+                            Quam nobis ad aut possimus?
+                        </p>
                     </div>
-                    <button class="btn_compra">COMPRAR</button>
 
                 </div>
-           </section><!--contenedor_imagenes -->
-                <section class="box_contenedor_ofertas">
-                    <div class="box">
-                                <h3 class="h3_oferta">Ofertas</h3>
-                                <img src="img/asus.jpg" alt="img_oferta" height="70px">
-                                <h3 class="nombre_oferta">ASUS</h3>
-                                <p>Lorem ipsum dolor sit.</p>
-                                <p>Velit eum culpa quas?</p>
-                                <p>Quod tenetur inventore amet?</p>
-                                <p>Harum suscipit dolorem nesciunt?</p>
-                    </div>
-                    <div class="box">
-                                <h3 class="h3_oferta">Ofertas</h3>
-                                <img src="img/lenovo.jpg" alt="img_oferta" height="70px">
-                                <h3 class="nombre_oferta">LENOVO</h3>
-                                <p>Lorem ipsum dolor sit.</p>
-                                <p>Velit eum culpa quas?</p>
-                                <p>Quod tenetur inventore amet?</p>
-                                <p>Harum suscipit dolorem nesciunt?</p>
-                    </div>
-                    <div class="box">
-                                <h3 class="h3_oferta">Ofertas</h3>
-                                <img src="img/macbook.jpg" alt="img_oferta" height="70px">
-                                <h3 class="nombre_oferta">MACBOOK</h3>
-                                <p>Lorem ipsum dolor sit.</p>
-                                <p>Velit eum culpa quas?</p>
-                                <p>Quod tenetur inventore amet?</p>
-                                <p>Harum suscipit dolorem nesciunt?</p>
-                    </div>
-                </section><!--box_contenedor_ofertas-->
-                    <section class="contenedor_descripcion_prod">
-                        <h3 class="titulo_descripcion_prod">Descripción Producto</h3>
-                        <p class="desc">Lorem ipsum dolor  sitamet consectetur adipisicing elit. Recusandae!</p>
-                        <p class="desc">Tempore fugit, consectetusit! Beatae ullex, accusantium distinctio nostrum incidunt.</p>
-                        <p class="desc">Quasi vel rem ut aspernatur ea dignissimos.tis est accusantium quas molestias!</p>
-                        <p class="desc">Porro reiciendis at nulla vntium nobis eveniet esse animi illo, nisi aliquid.</p>
-                        <p class="desc">Hic, nam. Corporiis fugiat, ipsa esse obcaecati, itaque eveniet deleniti culpa.</p>
-                        <p class="desc">Atque impedit, esse ex es ipsam, dolor sunt nihil facilis tempore?</p>
-                        <p class="desc">Labore, perferendis nulla ilum explictes numquam quas commodi.</p>
-                    </section>
-        </main>
-<!--        <footer class="pie_de_pagina">
-            <div class="aclaracion">
-                <p class="texto_final">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus praesentium, soluta quos ex officia ab doloremque? Voluptatum, iure fuga? Distinctio assumenda minus neque illo ipsum sint repudiandae vero nulla nisi.</p>
-            </div>
-        </footer>  -->
-        <footer>
-            <div class="footer">
-                <div class="redes">
-                    <div>
-                        <h3 class="texto-redes">¡Seguinos en nuestras redes sociales!</h3>
-                    </div>
-                    <div class="iconos">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                    </div>
+        </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="redes">
+                <div>
+                    <h3 class="texto-redes">¡Seguinos en nuestras redes sociales!</h3>
                 </div>
-                <div class="informacion">
-                    <ul class="lista1">
-                        <h4>Atención al cliente</h4>
-                        <li>+54 (011) 7079-9965</li>
-                        <li>Whatsapp: +54 (911) 3934-5678</li>
-                        <li>Nosotros</li>
-                        <li>Contáctanos</li>
-                    </ul>
-                    <ul class="lista2">
-                        <h4>Términos y condiciones</h4>
-                        <li>Condiciones de uso</li>
-                        <li>Politicas de garantía</li>
-                        <li>Políticas de privacidad</li>
-                    </ul>
-                    <ul class="lista3">
-                        <h4>Preguntas frecuentes</h4>
-                        <li>Preguntas frecuentes</li>
-                        <li>¿Cómo comprar?</li>
-                        <li>Envíos</li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p>Copyright © 2022 Pixel! E-commerce.</p>
+                <div class="iconos">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
-        </footer>
+            <div class="informacion">
+                <ul class="lista1">
+                    <h4>Atención al cliente</h4>
+                    <li>+54 (011) 7079-9965</li>
+                    <li>Whatsapp: +54 (911) 3934-5678</li>
+                    <li>Nosotros</li>
+                    <li>Contáctanos</li>
+                </ul>
+                <ul class="lista2">
+                    <h4>Términos y condiciones</h4>
+                    <li>Condiciones de uso</li>
+                    <li>Politicas de garantía</li>
+                    <li>Políticas de privacidad</li>
+                </ul>
+                <ul class="lista3">
+                    <h4>Preguntas frecuentes</h4>
+                    <li>Preguntas frecuentes</li>
+                    <li>¿Cómo comprar?</li>
+                    <li>Envíos</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2022 Pixel! E-commerce.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
