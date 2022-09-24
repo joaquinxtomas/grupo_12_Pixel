@@ -24,6 +24,9 @@ header {
 .logo2 img {
     height: 70px;
     margin-right: 40px;
+    border-radius: 16px;
+    border: #7EFF00 0.5px solid;
+    box-shadow:  -0.2rem -0.2rem 0.0rem -0.1rem #7EFF00;
 }
 
 .logo1 {
@@ -125,7 +128,6 @@ header {
     justify-content: space-around;
     display: none;
     align-items: center;
-    box-shadow: 0rem 0.6rem 3rem 0.5rem #7EFF00;
 }
 
 .nav-bar a {
@@ -606,7 +608,6 @@ footer {
 
     .nav-bar {
         display: flex;
-        box-shadow: 0rem 0.6rem 3rem 0.5rem #7EFF00;
         font-size: 13px;
     }
 

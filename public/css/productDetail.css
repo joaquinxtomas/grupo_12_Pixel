@@ -152,6 +152,7 @@ body {
     border-radius: 5px;
     justify-content: center;
     background-color: #4E4D4D;
+    max-width: 800px;
 }
 .subtitulo h2 {
     color: #ffffff;
@@ -402,6 +403,10 @@ footer {
     }
 }
 @media (min-width: 1020px) {
+
+    .imagen_prod{
+        max-width: 90%;
+    }
     .search-bar {
         width: 60%;
         max-width: 700px;
