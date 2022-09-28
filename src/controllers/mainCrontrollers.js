@@ -1,18 +1,18 @@
 const mainControllers = {
     index: (req,res) => {
-        return res.render('rutamain.index');
+        return res.render('index');
     },
     login: (req,res) => {
-        return res.render('rutamain.login');
+        return res.render('login');
     },
     register: (req,res) => {
-        return res.render('rutamain.register');
+        return res.render('register');
     },
     productCart: (req,res) => {
-        return res.render('rutamain.productCart');
+        return res.render('productCart');
     },
     productDetail: (req,res) => {
-        return res.render('rutamain.productDetail');
+        return res.render('productDetail');
     },
     
 };
