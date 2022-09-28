@@ -1,3 +1,5 @@
+Retrospectiva del sprint 1:
+
 1. Comenzar a hacer: Prodriamos mejorar la comunicacion del equipo para ser mas ordenados.
 
 
