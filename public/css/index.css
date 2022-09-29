@@ -313,6 +313,9 @@ main {
     color: black;
     font-weight: bold;
 }
+.description:hover{
+    color:#7EFF00
+}
 
 .productInfo {
     padding: 5px
@@ -327,7 +330,7 @@ main {
     background-color: rgba(102, 102, 102, 0.75);
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 19px;
 }
 
 .whatsapp i {

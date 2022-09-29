@@ -1,6 +1,6 @@
 const express = require('express');
-let mainControllers = require('../controllers/mainCrontrollers');
 const router = express.Router();
+let mainControllers = require('../controllers/mainCrontrollers');
 
 router.get('/', mainControllers.index);
 
