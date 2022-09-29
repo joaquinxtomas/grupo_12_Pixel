@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    font-family: sans-serif;
+}
+.contenedor{
+/*    margin: 0 auto; */
+    padding: 0;
+}
+header{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background-color: darkolivegreen;
+    justify-content: center;
+}
+h1.titulo{
+    font-size: 40pt;
+    color: chartreuse;
+}
+ol{ /* Para que los números tomen color */
+    color: white;
+}
+li a {
+    color: white;
+    font-size: 24pt;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+   height: 100px 
+}
+.contenedor_central{
+/*    display: flex;  */
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0; 
+    justify-content: center;
+    background-color: gray;
+/*    background-color: #ebebeb; */ 
+    border: 5px dashed blue; 
+}
+/*
+main{
+   
+}
+.central main{
+   
+} */
+.contenedor_imagenes{
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    border: 2px solid violet;
+}
+.no{justify-content: center;}
+.contenedor_muestra{
+    width: 25%;
+    height: 100%;
+    background-color: yellow;
+}
+/*
+.img_muestra{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+*/
+.box_muestra{
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contenedor_imagen_principal{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+/*    border: 5px dashed blue; */
+}
+.imagen_prod{
+    width: 450px;
+    height: auto;
+    margin-left: 15%;
+}
+.subtitulo_prod{
+    background-color: red;
+    margin-left: 15%; 
+}
+/*
+.box_separa_de_ofertas{
+    width: 100%;
+    height: 35%;
+    background-color: orange;
+}
+*/
+section.box_contenedor_ofertas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: cyan;
+    border: 5px solid pink;
+    
+    justify-content: space-around;
+}
+
+.box{
+    width: 20%;
+    height: auto;
+    background-color: white;
+    border: 2px solid black;
+    box-sizing: border-box;  
+ /*   align-items: center; */
+}
+.h3_oferta{
+    color: red;
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 5px;
+}
+.img_oferta{
+    width: 50px;
+    height: auto;
+    margin:0 auto;
+
+}
+h4.nombre_oferta{
+    font-size: 22pt;
+    color: black;
+}
+
+section.contenedor_descripcion_prod{
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border: 5px solid chocolate;
+    padding-left: 15%; 
+}
+/*
+h3.titulo_descrip_prod {
+    font-size: 22pt;
+    color: white;
+}
+*/
+.pie_de_pagina{
+    background-color: darkolivegreen;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding:0;
+}
+
+
+p.texto_final{
+    font-size: 22pt;
+    color: #ebebeb;
+}
