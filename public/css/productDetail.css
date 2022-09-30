@@ -211,6 +211,7 @@ main {
 .prod-image{
     width:100%;
     margin-bottom: 10px;
+    box-shadow: 0 0.2rem 0.5rem black;
 }
 
 .images{
@@ -229,6 +230,7 @@ main {
 
 .view_prod{
     width:30%;
+    box-shadow: 0 0.2rem 0.5rem black;
 
 }
 
