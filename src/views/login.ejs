@@ -14,61 +14,42 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/login.css">
     <title>Ingresa</title>
-</head>
+</head> 
 
 <body>
     <%- include('./partials/header'); %>
-    <div class="whatsapp">
-        <a href="https://support.google.com/?hl=es"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-
-    <footer>
-        <div class="footer">
-
-            <div class="redes">
-
-                <div>
-                    <h3 class="texto-redes">¡Seguinos en nuestras redes sociales!</h3>
+    <%- include('./partials/whatsapp'); %>
+    <main>
+        <!-- ingresa -->
+        <div class="mover">
+            <form action="/login" method="post" class="form-login">
+                <h5>Iniciar sesión con mi email</h5>
+                <!--<input class="cajita" type="checkbox" name="" value="">  -->
+                <input class="controls" type="text" style="color: rgb(255, 255, 255) ;" name="usuario" value=""
+                    placeholder="Usuario" required minlength="3">
+                <input class="controls" type="password" style="color: rgb(255, 255, 255);" name="contrasena"
+                    value="" placeholder="Contraseña" autocomplete="current-password" required minlength="3">
+                    <div class="texto-login">
+                <a class="registrarme" ; padding: 6px;; href="/register"> Registrame</a>
+                <a class="contraseña" ; href="#"> ¿Olvidaste tu Contraseña?</a>
+            </div>
+                <div class="button-container">
+                    <a style="text-decoration: none;" href="/index"><button type="submit"
+                            style="color: #000;">LOGIN</button></a>
                 </div>
-                <div class="iconos">
-                    <i class="fab fa-whatsapp"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
+                <p></p>
+                <div class="social">
+                    <h5 class="google" style="padding-bottom: 32px">Ingresar con Google
+                        <i class="fab fa-google"></i>
+                    </h5>
+                    <h5 class="facebook" style="padding-bottom: 32px;">Ingresar con Facebook
+                        <i class="fab fa-facebook-square"></i>
+                    </h5>
                 </div>
-            </div>
-
-            <div class="informacion">
-                <ul class="lista1">
-                    <h4>Atención al cliente</h4>
-                    <li>+54 (011) 7079-9965</li>
-                    <li>Whatsapp: +54 (911) 3934-5678</li>
-                    <li>Nosotros</li>
-                    <li>Contáctanos</li>
-                </ul>
-                <ul class="lista2">
-                    <h4>Términos y condiciones</h4>
-                    <li>Condiciones de uso</li>
-                    <li>Politicas de garantía</li>
-                    <li>Políticas de privacidad</li>
-                </ul>
-
-                <ul class="lista3">
-                    <h4>Preguntas frecuentes</h4>
-                    <li>Preguntas frecuentes</li>
-                    <li>¿Cómo comprar?</li>
-                    <li>Envíos</li>
-
-                </ul>
-            </div>
-
-            <div class="copyright">
-                <p>Copyright © 2022 Pixel! E-commerce.</p>
-
-            </div>
-
+            </form>
         </div>
-
-    </footer>
+        <%- include('./partials/footer'); %>
+    </main>
 </body>
 
 </html>
