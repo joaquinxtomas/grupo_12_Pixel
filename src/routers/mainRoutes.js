@@ -4,7 +4,8 @@ let mainControllers = require('../controllers/mainCrontrollers');
 let loginController = require('../controllers/loginController');
 let registerController = require('../controllers/registerCrontroller');
 let productCartController = require('../controllers/productCartController');
-// let productDetailController = require('../controllers/productDetailController');
+let addProductController = require('../controllers/addProductController');
+
 
 router.get('/', mainControllers.index);
 
@@ -14,6 +15,6 @@ router.get('/register', registerController.register);
 
 router.get('/productCart', productCartController.productCart);
 
-// router.get('/productDetail', productDetailController.productDetail);
+router.get("/addProduct", addProductController.add)
 
 module.exports = router;

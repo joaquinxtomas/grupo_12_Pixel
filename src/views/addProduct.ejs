@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/addProduct.css">
+    <title>Pixel E-Comerce</title>
+</head>
+
+<body>
+
+    <!--  HEADER -->
+    <%- include ("partials/header") %>
+        <!--  HEADER -->
+
+        <main>
+            <form action="/" method="get">
+                <div class="caja-padre">
+                    <div class="añadir-producto">
+                        <h2>Añadir producto</h2>
+                    </div>
+
+                    <div>
+                        <input type="text" name="nameProduct" placeholder="Nombre del producto" required>
+                    </div>
+
+                    <div>
+                        <input type="text" name="description" placeholder="Descripcion breve" id="description" required>
+                    </div>
+
+                    <div>
+                        <textarea class= "large-description" name="large-description" placeholder="Descripcion extensa" id="large-description" required></textarea>
+                    </div>
+
+
+                    <h4 class="aclaracion">Imagen del producto</h4>
+                    <div class="file-select">
+                        <input type="file" name="foto-user" accept=".png, .jpg">
+                    </div>
+
+
+                    <div>
+                        <select class="category" name="category" id="category">
+                            <option value="PC">PC</option>
+                            <option value="notebook">Notebook</option>
+                            <option value="Monitores">Monitores</option>
+                            <option value="Teclados">Teclados</option>
+                            <option value="Mouse">Mouse</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="number" name="price" placeholder="Precio" required>
+                    </div>
+
+                    <div class="botonera">
+                        <div>
+                            <button class="agregar" type="submit">Agregar (+)</button>
+                        </div>
+                        <div>
+                            <button class="borrar" type="reset">Borrar datos</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </main>
+
+        <!-- WHATSAPP -->
+        <%- include('./partials/whatsapp'); %>
+
+            <!-- FOOTER -->
+            <%- include('./partials/footer'); %>
+
+
+
+</body>
