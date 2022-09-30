@@ -16,59 +16,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="main-header-top-bar">
-            <div class="top-header">
-                <!-- <a href="./" class="logo"> Pixel!</a> LOGO ALTERNATIVO-->
-                <a href="./" class="logo1"> <img src="/img/pixel-logo.png" alt="logo"></a>
-                <!-- logo-mobile -->
-                <a href="./" class="logo2"> <img src="/img/logo-pixel-mobile.png" alt="logo"></a>
-                <form action='https://www.google.com/search?q=' method="get" class="search-bar">
-                    <input type="text" placeholder="Monitores, teclados, tarjetas de video" name="q">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            </form>
-            <div class="icons-top-bar">
-                <a href="/login"><i class="fa-regular fa-user"></i> Ingresar</a>
-                <a href="/register">Registrarse</a>
-                <a href="/productCart"><i class="fa badge" style="font-size:24px" value=2>&#xf07a;</i></a>
-            </div>
-        </div>
-        <div class="burger-menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <nav class="nav-bar">
 
-            <a href="#">
-                <div class="nav-bar-button">
-                    <p>Productos</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="nav-bar-button">
-                    <p>Arma tu PC</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="nav-bar-button">
-                    <p>PC listos</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="nav-bar-button">
-                    <p>Quiénes somos</p>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="nav-bar-button">
-                    <p>Ayuda</p>
-                </div>
-            </a>
-        </nav>
+    <%- include('./partials/header'); %>
 
         <div class="banner">
             <img src="/img/banner2.jpg" alt="banner">
@@ -84,7 +33,6 @@
         </div>
 
     </header>
-
     <main>
 
         <form action="/" method="get">
@@ -148,56 +96,9 @@
                 </div>
 
         </form>
-
+        <%- include('./partials/whatsapp'); %>
     </main>
-
-    <footer>
-        <div class="footer">
-
-            <div class="redes">
-
-                <div>
-                    <h3 class="texto-redes">¡Seguinos en nuestras redes sociales!</h3>
-                </div>
-                <div class="iconos">
-                    <i class="fab fa-whatsapp"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                </div>
-            </div>
-
-            <div class="informacion">
-                <ul class="lista1">
-                    <h4>Atención al cliente</h4>
-                    <li>+54 (011) 7079-9965</li>
-                    <li>Whatsapp: +54 (911) 3934-5678</li>
-                    <li>Nosotros</li>
-                    <li>Contáctanos</li>
-                </ul>
-                <ul class="lista2">
-                    <h4>Términos y condiciones</h4>
-                    <li>Condiciones de uso</li>
-                    <li>Politicas de garantía</li>
-                    <li>Políticas de privacidad</li>
-                </ul>
-
-                <ul class="lista3">
-                    <h4>Preguntas frecuentes</h4>
-                    <li>Preguntas frecuentes</li>
-                    <li>¿Cómo comprar?</li>
-                    <li>Envíos</li>
-
-                </ul>
-            </div>
-
-            <div class="copyright">
-                <p>Copyright © 2022 Pixel! E-commerce.</p>
-
-            </div>
-
-        </div>
-
-    </footer>
+        <%- include('./partials/footer'); %>
 </body>
 
 </html>
