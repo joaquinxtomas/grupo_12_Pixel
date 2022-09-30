@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 
 const rutaMain = require('./src/routers/mainRoutes');
-const rutaProductDetail = require('./src/routers/productDetailRoutes');
+const rutaProduct = require('./src/routers/productRoutes');
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 
@@ -18,6 +18,6 @@ app.use('/register', rutaMain);
 
 app.use('/productCart', rutaMain);
 
-app.use('/productDetail', rutaProductDetail);
+app.use('/productDetail', rutaProduct);
 
 app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
