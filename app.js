@@ -20,4 +20,6 @@ app.use('/productCart', rutaMain);
 
 app.use('/productDetail', rutaProduct);
 
+app.use('/addProduct', rutaProduct);
+
 app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
