@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/productList.css">
+    <title>Pixel E-Comerce</title>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION BAR-->
+    <%- include('partials/header') %>
+        <!-- BANNER -->
+        <!--         <div class="banner">
+            <img src="/img/banner2.jpg" alt="banner">
+            <i class="fa-solid fa-angle-left" id="left"></i>
+            <i class="fa-solid fa-angle-right" id="right"></i>
+            <div class="dots">
+                <i class="fa-solid fa-circle" id="bn1"></i>
+                <i class="fa-solid fa-circle" id="bn2"></i>
+                <i class="fa-solid fa-circle" id="bn3"></i>
+            </div>
+            <img src="/img/banner2.jpg" alt="banner"> -->
+
+        </div> -->
+        <main>
+
+            <section class="Category">
+
+                <h2>PRODUCTOS </h2>
+
+                <div class="products">
+                    <% productos.forEach(producto=> { %>
+
+
+                        <article>
+                            <div class="container-top">
+                                <img src=<%="/img/" +producto.img %> alt="producto">
+                                <div class="productInfo">
+                                    <a href="/productDetail" class="productName">
+                                        <%= producto.titulo %>
+                                    </a>
+                                    <p class="final-value">
+                                        <%= producto.valorFinal %>
+                                    </p>
+                                    <p class="discount">
+                                        <%= producto.descuento %>
+                                    </p>
+                                    <p class="price">
+                                        <%= producto.precio %>
+                                    </p>
+                                    <p class="short-description">
+                                        <%= producto.descripcionCorta %>
+                                    </p>
+                                    <p class="long-description">
+                                        <%= producto.descripcionDetallada %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edit-button-container">
+                                <button type="submit" class="Edit-button">Editar</button>
+                            </div>
+                        </article>
+                        <% }) %>
+                </div>
+            </section>
+
+
+
+        </main>
+        </div>
+        </section>
+        <!-- WHATSAPP -->
+        <%- include('./partials/whatsapp'); %>
+
+
+            </main>
+            <!-- FOOTER -->
+            <%- include('./partials/footer'); %>
+</body>
+
+</html>
