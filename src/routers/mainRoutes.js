@@ -4,7 +4,7 @@ let mainControllers = require('../controllers/mainCrontrollers');
 let loginController = require('../controllers/loginController');
 let registerController = require('../controllers/registerCrontroller');
 let productCartController = require('../controllers/productCartController');
-let addProductController = require('../controllers/addProductController');
+// let addProductController = require('../controllers/addProductController');
 
 
 
