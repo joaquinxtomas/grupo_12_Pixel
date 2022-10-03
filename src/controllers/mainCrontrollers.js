@@ -16,6 +16,7 @@ let productos = [
         titulo: 'Computador',
         descripcionCorta: 'Computador de escritorio',
         descripcionDetallada: 'La laptop HP 245 sigue el ritmo de estilos de trabajo móviles gracias a un diseño delgado y ligero. La hermosa pantalla con su angosto borde y relación de pantalla y cuerpo grande brinda amplio espacio para trabajar o reproducir contenido.',
+        precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
         img: 'pc2.jpg'
