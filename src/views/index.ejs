@@ -17,7 +17,7 @@
     <%- include('partials/header') %>
         <!-- BANNER -->
         <div class="banner">
-            <img src="/img/banner2.jpg" alt="banner">
+            <img src="/img/banner1.jpg" alt="banner">
             <i class="fa-solid fa-angle-left" id="left"></i>
             <i class="fa-solid fa-angle-right" id="right"></i>
             <div class="dots">
@@ -33,16 +33,27 @@
             <section class="inSale">
                 <h2>LO MEJOR DEL DÍA</h2>
                 <div class="products">
+                    <% // Shuffle array
+                    const shuffled = productos.sort(() => 0.5 - Math.random());
+                    
+                    // Get sub-array of first n elements after shuffled
+                    let n=4;
+                    let selected = shuffled.slice(0, n); %> 
+
+                    <% selected.forEach(producto => { %>
+                     
+                    
                     <article>
-                        <img src="/img/asus.jpg" alt="producto">
+                        <img src=<%="/img/" +producto.img %> alt="producto" alt="producto">
                         <div class="productInfo">
-                            <p class="price">$59.99</p>
-                            <p class="discount">25% off</p>
-                            <a href="/productDetail" class="description">Laptop</a>
+                            <p class="final-value"><%= producto.valorFinal %></p>
+                            <p class="price"><%= producto.precio %></p>
+                            <p class="discount"><%= producto.descuento %></p>
+                            <a href="/productDetail" class="description"><%= producto.titulo %></a>
                         </div>
                     </article>
-
-                    <article>
+                    <% }) %>
+<!--                     <article>
                         <img src="/img/lenovo.jpg" alt="producto">
                         <div class="productInfo">
                             <p class="price">$59.99</p>
@@ -67,7 +78,7 @@
                             <p class="discount">25% off</p>
                             <a href="/productDetail" class="description">Laptop</a>
                         </div>
-                    </article>
+                    </article> -->
 
 
         <section class="recomended">
@@ -76,7 +87,8 @@
                 <article>
                     <img src="/img/asus.jpg" alt="producto">
                     <div class="productInfo">
-                        <p class="price">$59.99</p>
+                        <p class="final-value">$116.000</p>
+                        <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
                         <a href="/productDetail" class="description">Laptop</a>
                     </div>
@@ -85,7 +97,8 @@
                 <article>
                     <img src="/img/lenovo.jpg" alt="producto">
                     <div class="productInfo">
-                        <p class="price">$59.99</p>
+                        <p class="final-value">$116.000</p>
+                        <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
                         <a href="/productDetail" class="description">Laptop</a>
                     </div>
@@ -94,7 +107,8 @@
                 <article>
                     <img src="/img/hp.jpg" alt="producto">
                     <div class="productInfo">
-                        <p class="price">$59.99</p>
+                        <p class="final-value">$116.000</p>
+                        <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
                         <a href="/productDetail" class="description">Laptop</a>
                     </div>
@@ -103,7 +117,8 @@
                 <article>
                     <img src="/img/bangho.jpg" alt="producto">
                     <div class="productInfo">
-                        <p class="price">$59.99</p>
+                        <p class="final-value">$116.000</p>
+                        <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
                         <a href="/productDetail" class="description">Laptop</a>
                     </div>

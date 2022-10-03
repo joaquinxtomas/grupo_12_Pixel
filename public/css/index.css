@@ -274,6 +274,9 @@ main {
 }
 
 .products article {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin: 10px auto;
     background-color: #4A4A4A;
     box-shadow: 0 0.2rem 0.5rem rgba(202, 199, 255, 0.771);
@@ -298,24 +301,47 @@ main {
     width: 100%
 }
 
-.price {
+.discount{
+    background-color: darkred;
+    width: 50px;
+    color:whitesmoke;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    bottom:62px
+}
+
+.productName {
+    font-size: 14px;
+    color: #cac7ff;
+    font-weight: bold;
+}
+
+.final-value {
     font-size: 16px;
     color: #7EFF00
 }
 
-.discount {
-    color: black;
-    font-weight: bold;
+.price{
+    color:#cac7ff;
+    font-size: 14px;
+    text-decoration:line-through 
 }
+
 
 .description {
     font-size: 14px;
     color: black;
     font-weight: bold;
 }
+
 .description:hover{
     color:#7EFF00
 }
+
+
+
 
 .productInfo {
     padding: 5px

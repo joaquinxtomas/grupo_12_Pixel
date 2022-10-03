@@ -139,7 +139,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'mouse4.jpg'
+        img: 'mouse4.png'
     },
     {
         id: 14,
