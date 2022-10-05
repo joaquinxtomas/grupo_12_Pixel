@@ -244,7 +244,6 @@ main {
     background-color: #1e1e22;
     width: 100%;
     min-width: 260px;
-    box-shadow: 0rem 0.6rem 3rem 0.5rem #7eff00;
 }
 
 form {
@@ -253,6 +252,14 @@ form {
 
 .registrate {
     border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.registrate img{
+    width: 100px;
+    display: none;
 }
 
 .caja-padre div input {
@@ -584,6 +591,10 @@ footer {
 @media (min-width:767px) {
     /* HEADER */
 
+    .registrate img {
+        display: initial;
+    }
+
     .logo2 img {
         display: none;
         height: 100px;
@@ -626,6 +637,7 @@ footer {
     .nav-bar {
         display: flex;
         font-size: 13px;
+
     }
 
     /*MAIN* hola/
@@ -723,6 +735,5 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
-
 
 }
