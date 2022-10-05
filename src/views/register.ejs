@@ -32,72 +32,73 @@
 
         </div>
 
-    </header>
-    <main>
+        </header>
+        <main>
 
-        <form action="/" method="get">
-            <div class="caja-padre">
-                <div class="registrate">
-                    <h2>¡Registrate!</h2>
-                </div>
-
-                <div>
-                    <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" id="nombre-apellido"
-                        required>
-                </div>
-
-                <div>
-                    <input type="text" name="username" placeholder="Nombre de usuario" required>
-                </div>
-
-                <div>
-                    <input type="email" name="email" placeholder="E-mail" id="email" required>
-                </div>
-
-                <div>
-                    <h4 class="aclaracion">Fecha de nacimiento</h4>
-                    <input type="date" name="nacimiento" id="nacimiento" required>
-                </div>
-
-                <div>
-                    <input type="text" name="domicilio" placeholder="Domicilio" required>
-                </div>
-
-                <div>
-                    <h4 class="aclaracion">Foto de usuario</h4>
-                    <div class="file-select">
-                        <input type="file" name="foto-user" accept=".png, .jpg">
+            <form action="/" method="get">
+                <div class="caja-padre">
+                    <div class="registrate">
+                        <h2>¡Registrate!</h2>
+                        <img src="/img/form.svg" alt="undraw-form">
                     </div>
 
-                    <div class="contraseña">
-                        <input class="password" type="password" name="password" placeholder="Contraseña" required>
-                    </div>
-
-                    <div class="contraseña">
-                        <input class="password" type="password" name="re-password" placeholder="Confirmar contraseña"
+                    <div>
+                        <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" id="nombre-apellido"
                             required>
                     </div>
 
                     <div>
-                        <button class="enviar" type="submit">Enviar</button>
-                    </div>
-                    <div class="borrar-datos">
-                        <button class="borrar" type="reset">Borrar datos</button>
+                        <input type="text" name="username" placeholder="Nombre de usuario" required>
                     </div>
 
-                    <div class="ingreso">
-                        <h5 class="google">Ingresar con Google
-                            <i class="fab fa-google"></i>
-                        </h5>
-                        <h5 class="facebook">Ingresar con Facebook
-                            <i class="fab fa-facebook-square"></i>
-                        </h5>
+                    <div>
+                        <input type="email" name="email" placeholder="E-mail" id="email" required>
                     </div>
-                </div>
 
-        </form>
-        <%- include('./partials/whatsapp'); %>
-    </main>
+                    <div>
+                        <h4 class="aclaracion">Fecha de nacimiento</h4>
+                        <input type="date" name="nacimiento" id="nacimiento" required>
+                    </div>
+
+                    <div>
+                        <input type="text" name="domicilio" placeholder="Domicilio" required>
+                    </div>
+
+                    <div>
+                        <h4 class="aclaracion">Foto de usuario</h4>
+                        <div class="file-select">
+                            <input type="file" name="foto-user" accept=".png, .jpg">
+                        </div>
+
+                        <div class="contraseña">
+                            <input class="password" type="password" name="password" placeholder="Contraseña" required>
+                        </div>
+
+                        <div class="contraseña">
+                            <input class="password" type="password" name="re-password"
+                                placeholder="Confirmar contraseña" required>
+                        </div>
+
+                        <div>
+                            <button class="enviar" type="submit">Enviar</button>
+                        </div>
+                        <div class="borrar-datos">
+                            <button class="borrar" type="reset">Borrar datos</button>
+                        </div>
+
+                        <div class="ingreso">
+                            <h5 class="google">Ingresar con Google
+                                <i class="fab fa-google"></i>
+                            </h5>
+                            <h5 class="facebook">Ingresar con Facebook
+                                <i class="fab fa-facebook-square"></i>
+                            </h5>
+                        </div>
+                    </div>
+
+            </form>
+            <%- include('./partials/whatsapp'); %>
+        </main>
         <%- include('./partials/footer'); %>
 </body>
 
