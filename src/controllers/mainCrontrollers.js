@@ -8,7 +8,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'pc1.jpg'
+        img: 'pc1.png'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'pc2.jpg'
+        img: 'pc2.png'
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'pc3.jpg'
+        img: 'pc3.png'
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'pc4.jpg'
+        img: 'pc4.png'
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'asus.jpg'
+        img: 'asus.png'
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'bangho.jpg'
+        img: 'bangho.png'
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'hp.jpg'
+        img: 'hp.png'
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'lenovo.jpg'
+        img: 'lenovo.png'
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'macbook.jpg'
+        img: 'macbook.png'
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'mouse1.jpg'
+        img: 'mouse1.png'
     },
     {
         id: 11,
@@ -118,7 +118,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'mouse2.jpg'
+        img: 'mouse2.png'
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'mouse3.jpg'
+        img: 'mouse3.png'
     },
     {
         id: 13,
@@ -151,7 +151,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'teclado1.jpg'
+        img: 'teclado1.png'
     },
     {
         id: 15,
@@ -195,7 +195,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'monitor1.jpg'
+        img: 'monitor1.png'
     },
     {
         id: 19,
@@ -206,7 +206,7 @@ let productos = [
         precio: '$154.699',
         descuento: '25% off',
         valorFinal: '116.000',
-        img: 'monitor2.jpg'
+        img: 'monitor2.png'
     },
     {
         id: 20,
