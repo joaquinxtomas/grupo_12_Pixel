@@ -232,7 +232,7 @@ let productos = [
 
 ]
 
-const productDetailController = {
+const productController = {
 
     productDetail: (req, res) => {
         return res.render('productDetail');
@@ -241,6 +241,9 @@ const productDetailController = {
     productList: (req, res) => {
         return res.render('productList', { productos });
     },
+    productCreate : (req,res)=> {
+        return res.render('addProduct')
+    }
 };
 
-module.exports = productDetailController;
+module.exports = productController;

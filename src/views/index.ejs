@@ -43,13 +43,13 @@
                     <% selected.forEach(producto => { %>
                      
                     
-                    <article onclick="location.href='/productDetail';" style="cursor: pointer;">
-                        <img src=<%="/img/" +producto.img %> alt="producto" alt="producto">
+                    <article onclick="location.href='/product/detail';" style="cursor: pointer;">
+                        <img src=<%="/img/" +producto.img %> alt="producto" class="prod-image">
                         <div class="productInfo">
                             <p class="final-value"><%= producto.valorFinal %></p>
                             <p class="price"><%= producto.precio %></p>
                             <p class="discount"><%= producto.descuento %></p>
-                            <a href="/productDetail" class="description"><%= producto.titulo %></a>
+                            <a href="/product/detail" class="description"><%= producto.titulo %></a>
                         </div>
                     </article>
                     <% }) %>
@@ -84,43 +84,43 @@
         <section class="recomended">
             <h2>RECOMENDACIONES</h2>
             <div class="products">
-                <article onclick="location.href='/productDetail';" style="cursor: pointer;">
+                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
                     <img src="/img/asus.png" alt="producto">
                     <div class="productInfo">
                         <p class="final-value">$116.000</p>
                         <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
-                        <a href="/productDetail" class="description">Laptop</a>
+                        <a href="'/product/detail'" class="description">Laptop</a>
                     </div>
                 </article>
 
-                <article onclick="location.href='/productDetail';" style="cursor: pointer;">
+                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
                     <img src="/img/lenovo.png" alt="producto">
                     <div class="productInfo">
                         <p class="final-value">$116.000</p>
                         <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
-                        <a href="/productDetail" class="description">Laptop</a>
+                        <a href="/product/detail" class="description">Laptop</a>
                     </div>
                 </article>
 
-                <article onclick="location.href='/productDetail';" style="cursor: pointer;">
+                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
                     <img src="/img/hp.png" alt="producto">
                     <div class="productInfo">
                         <p class="final-value">$116.000</p>
                         <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
-                        <a href="/productDetail" class="description">Laptop</a>
+                        <a href="/product/detail" class="description">Laptop</a>
                     </div>
                 </article>
 
-                <article onclick="location.href='/productDetail';" style="cursor: pointer;">
+                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
                     <img src="/img/bangho.png" alt="producto">
                     <div class="productInfo">
                         <p class="final-value">$116.000</p>
                         <p class="price">$154.699</p>
                         <p class="discount">25% off</p>
-                        <a href="/productDetail" class="description">Laptop</a>
+                        <a href="/product/detail" class="description">Laptop</a>
                     </div>
                 </article>
             </div>

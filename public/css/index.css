@@ -277,11 +277,10 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     margin: 10px auto;
-    background-color: #4A4A4A;
+    background: linear-gradient(whitesmoke , #4A4A4A 60%);
     box-shadow: 0 0.2rem 0.5rem rgba(202, 199, 255, 0.771);
     margin: 1rem 0;
     border-radius: 0.5rem;
-    padding: 0.4rem 0;
     transition: box-shadow 400ms ease;
     cursor: pointer;
     border-top: #7EFF00 solid 3px;
@@ -297,7 +296,11 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%
+    width: 100%;
+    border-top-left-radius:0.5rem; 
+    border-top-right-radius: 0.5rem;
+
+
 }
 
 .discount{
