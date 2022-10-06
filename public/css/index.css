@@ -185,9 +185,12 @@ body {
 /* NEW BANNER SLIDER */
 
 .banner {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1576px;
     display:none;
 }
 
