@@ -16,6 +16,48 @@
     <!-- HEADER AND NAVIGATION BAR-->
     <%- include('partials/header') %>
         <!-- BANNER -->
+<!-- NEW BANNER SLIDER -->
+<div class="banner">
+    <div class="container-all">
+        <input type="radio" name="image-slide" id="1" hidden>
+        <input type="radio" name="image-slide" id="2" hidden>
+        <input type="radio" name="image-slide" id="3" hidden>
+
+        <div class="slide">
+            <div class="item-slide">
+                <img src="/img/banner1.jpg" alt="img1">
+            </div>
+            <div class="item-slide">
+                <img src="/img/banner2.jpg" alt="img2">
+            </div>
+            <div class="item-slide">
+                <img src="/img/banner3.jpg" alt="img3">
+            </div>
+
+        </div>
+
+        <div class="pagination">
+
+            <label for="1" class="pagination-item">
+                <img src="/img/banner1.jpg" alt="img1">
+            </label>
+            <label for="2" class="pagination-item">
+                <img src="/img/banner2.jpg" alt="img2">
+            </label>
+            <label for="3" class="pagination-item">
+                <img src="/img/banner3.jpg" alt="img2">
+            </label>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- OLD BANNER -->
+<!-- 
         <div class="banner">
             <img src="/img/banner1.jpg" alt="banner">
             <i class="fa-solid fa-angle-left" id="left"></i>
@@ -25,9 +67,7 @@
                 <i class="fa-solid fa-circle" id="bn2"></i>
                 <i class="fa-solid fa-circle" id="bn3"></i>
             </div>
-            <!-- <img src="/img/banner2.jpg" alt="banner"> -->
-
-        </div>
+        </div> -->
         <main>
 
             <section class="inSale">
