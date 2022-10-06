@@ -4,13 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 body {
     font-family: 'Roboto', Arial;
     font-size: 12px;
-    background-color: rgb(40, 40, 40);
+    background-color: #080808;
 }
 
 .mover{
@@ -21,7 +21,7 @@ body {
 
 /* HEADER TOP BAR */
 
-.top-header {
+/* .top-header {
     display: flex;
     width: 68vw;
 }
@@ -38,7 +38,7 @@ body {
 .logo1 {
     display: none;
     height: 100px;
-}
+} */
 
 .cajita {
     position: relative;
@@ -47,7 +47,7 @@ body {
     border-radius: 100px;
 }
 
-.search-bar {
+/* .search-bar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,11 +127,11 @@ body {
     left: -4px;
     top: -16px;
     opacity: 0.9;
-}
+} */
 
 /* NAVIGATION BAR */
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
     justify-content: space-around;
     display: none;
@@ -158,11 +158,11 @@ body {
 .nav-bar-button:hover {
     color: #4A4A4A;
     background-color: #7EFF00;
-}
+} */
 
 
 /* BURGUER MENU */
-.burger-menu {
+/* .burger-menu {
     text-align: center;
     font-size: 1.5em;
     border-bottom: solid 1px #cac7ff;
@@ -176,7 +176,7 @@ body {
     padding: 10px;
     color: #7EFF00;
     margin-bottom: 15px
-}
+} */
 
 /* login */
 
@@ -428,7 +428,7 @@ footer {
 }
 @media (min-width:320px) {
 
-    .search-bar {
+    /* .search-bar {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -476,7 +476,7 @@ footer {
         left: 0px;
         height: 100px;
         padding-bottom: 5px;
-    }
+    } */
     .cajita {
         position: relative;
         left: 240px;
@@ -757,13 +757,13 @@ footer {
     .mover{
         display: flex;
         justify-content: center;
+        padding: 30px;
     }
 
     .form-login {
 
         background: #4e4d4d;
-        margin-bottom: 90px;
-        margin-top: 90px;
+        margin:90px 30px;
         box-shadow: 7px 13px 37px #000;
         padding: 20px 30px;
         border-top: 4px solid #7EFF00;
