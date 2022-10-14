@@ -34,6 +34,12 @@
 
                 <h2>PRODUCTOS </h2>
 
+                <a href="/product/create">
+                    <div class="nav-bar-button">
+                        <p>Agregar producto</p>
+                    </div>
+                </a>
+
                 <div class="products">
                     <% productos.forEach(producto=> { %>
 
@@ -49,10 +55,10 @@
                                         <%= producto.valorFinal %>
                                     </p>
                                     <p class="discount">
-                                        <%= producto.descuento %>
+                                        <%= producto.descuento %> %OFF
                                     </p>
                                     <p class="price">
-                                        <%= producto.precio %>
+                                        $<%= producto.precio %>
                                     </p>
                                     <p class="short-description">
                                         <%= producto.descripcionCorta %>
@@ -63,7 +69,7 @@
                                 </div>
                             </div>
                             <div class="edit-button-container">
-                                <button type="submit" class="Edit-button">Editar</button>
+                                <a href="/product/edit/<%= producto.id %> " class="Edit-button">Editar</a>
                             </div>
                         </article>
                         <% }) %>

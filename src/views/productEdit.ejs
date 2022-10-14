@@ -18,23 +18,22 @@
         <!--  HEADER -->
 
         <main>
-            <form action="/product/create" method="POST">
+            <form action="/" method="get">
                 <div class="caja-padre">
                     <div class="añadir-producto">
-                        <h2>Añadir producto</h2>
+                        <h2>Estás editando el producto <%= producto.id %> </h2>
                     </div>
 
                     <div>
-                        <input type="text" name="titulo" placeholder="Nombre del producto">
+                        <input type="text" name="titulo" placeholder="Nombre del producto" value=<%= producto.titulo %> >
                     </div>
 
                     <div>
-                        <input type="text" name="descripcionCorta" placeholder="Descripcion breve" id="description">
+                        <input type="text" name="descripcionCorta" placeholder="Descripcion breve" id="description" value=<%= producto.descripcionCorta %> >
                     </div>
 
                     <div>
-                        <textarea class="large-description" name="descripcionDetallada" placeholder="Descripcion extensa"
-                            id="large-description"></textarea>
+                        <textarea class= "large-description" name="descripcionDetallada" placeholder="Descripcion extensa" id="large-description"  > <%= producto.descripcionDetallada %></textarea>
                     </div>
 
 
@@ -45,7 +44,7 @@
 
 
                     <div>
-                        <select class="category" name="categoria" id="category">
+                        <select class="category" name="categoria" id="category" value= <%= producto.categoria %> >
                             <option value="PC">PC</option>
                             <option value="notebook">Notebook</option>
                             <option value="Monitores">Monitores</option>
@@ -55,16 +54,16 @@
                     </div>
 
                     <div>
-                        <input type="number" name="precio" placeholder="Precio">
+                        <input type="number" name="precio" placeholder="Precio" value=<%=producto.precio %> >
                     </div>
 
                     <div>
-                        <input type="number" name="descuento" placeholder="Descuento">
+                        <input type="number" name="descuento" placeholder="Descuento" value=<%= producto.descuento %>>
                     </div>
 
                     <div class="botonera">
                         <div>
-                            <button class="agregar" type="submit">Agregar (+)</button>
+                            <button class="agregar" type="submit">Editar</button>
                         </div>
                         <div>
                             <button class="borrar" type="reset">Borrar datos</button>

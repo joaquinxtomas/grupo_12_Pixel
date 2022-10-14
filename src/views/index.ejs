@@ -75,7 +75,7 @@
                 <h2>LO MEJOR DEL DÍA</h2>
                 <div class="products">
                     <% // Shuffle array
-                    const shuffled = productos.sort(() => 0.5 - Math.random());
+                    let shuffled = productos.sort(() => 0.5 - Math.random());
                     
                     // Get sub-array of first n elements after shuffled
                     let n=4;
@@ -84,12 +84,12 @@
                     <% selected.forEach(producto => { %>
                      
                     
-                    <article onclick="location.href='/product/detail';" style="cursor: pointer;">
+                    <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
                         <img src=<%="/img/" +producto.img %> alt="producto" class="prod-image">
                         <div class="productInfo">
                             <p class="final-value"><%= producto.valorFinal %></p>
                             <p class="price"><%= producto.precio %></p>
-                            <p class="discount"><%= producto.descuento %></p>
+                            <p class="discount"><%= producto.descuento %>%off</p>
                             <a href="/product/detail" class="description"><%= producto.titulo %></a>
                         </div>
                     </article>
@@ -125,45 +125,24 @@
         <section class="recomended">
             <h2>RECOMENDACIONES</h2>
             <div class="products">
-                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
-                    <img src="/img/asus.png" alt="producto">
-                    <div class="productInfo">
-                        <p class="final-value">$116.000</p>
-                        <p class="price">$154.699</p>
-                        <p class="discount">25% off</p>
-                        <a href="'/product/detail'" class="description">Laptop</a>
-                    </div>
-                </article>
+                <% // Shuffle array
+                    shuffled = productos.sort(() => 0.5 - Math.random());
+                    
+                    // Get sub-array of first n elements after shuffled
+                    n=4;
+                    selected = shuffled.slice(0, n); %> 
 
-                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
-                    <img src="/img/lenovo.png" alt="producto">
+                    <% selected.forEach(producto => { %>
+                <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
+                    <img src=<%="/img/" +producto.img %> alt="producto" class="prod-image">
                     <div class="productInfo">
-                        <p class="final-value">$116.000</p>
-                        <p class="price">$154.699</p>
-                        <p class="discount">25% off</p>
-                        <a href="/product/detail" class="description">Laptop</a>
+                        <p class="final-value">10000</p>
+                        <p class="price"><%= producto.precio %> ></p>
+                        <p class="discount"><%= producto.descuento %> %off</p>
+                        <a href="'/product/detail'" class="description"><%= producto.titulo %></a>
                     </div>
                 </article>
-
-                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
-                    <img src="/img/hp.png" alt="producto">
-                    <div class="productInfo">
-                        <p class="final-value">$116.000</p>
-                        <p class="price">$154.699</p>
-                        <p class="discount">25% off</p>
-                        <a href="/product/detail" class="description">Laptop</a>
-                    </div>
-                </article>
-
-                <article onclick="location.href='/product/detail';" style="cursor: pointer;">
-                    <img src="/img/bangho.png" alt="producto">
-                    <div class="productInfo">
-                        <p class="final-value">$116.000</p>
-                        <p class="price">$154.699</p>
-                        <p class="discount">25% off</p>
-                        <a href="/product/detail" class="description">Laptop</a>
-                    </div>
-                </article>
+                <% }) %>
             </div>
         </section>
 

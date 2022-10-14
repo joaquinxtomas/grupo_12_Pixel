@@ -1,248 +1,61 @@
-let productos = [
-    {
-        id: 1,
-        categoria: 'COMPUTADORES',
-        titulo: 'Computador',
-        descripcionCorta: 'Computador de escritorio',
-        descripcionDetallada: 'Nam si pericula sunt in mari, pericula sunt in terra, et pericula in falsis fratribus. ',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'pc1.png'
-    },
-    {
-        id: 2,
-        categoria: 'COMPUTADORES',
-        titulo: 'Computador',
-        descripcionCorta: 'Computador de escritorio',
-        descripcionDetallada: 'La laptop HP 245 sigue el ritmo de estilos de trabajo móviles gracias a un diseño delgado y ligero. La hermosa pantalla con su angosto borde y relación de pantalla y cuerpo grande brinda amplio espacio para trabajar o reproducir contenido.',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'pc2.png'
-    },
-    {
-        id: 3,
-        categoria: 'COMPUTADORES',
-        titulo: 'Computador',
-        descripcionCorta: 'Computador de escritorio',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'pc3.png'
-    },
-    {
-        id: 4,
-        categoria: 'COMPUTADORES',
-        titulo: 'Computador',
-        descripcionCorta: 'Computador de escritorio',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'pc4.png'
-    },
-    {
-        id: 5,
-        categoria: 'NOTEBOOKS',
-        titulo: 'Laptop',
-        descripcionCorta: 'Notebook',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'asus.png'
-    },
-    {
-        id: 6,
-        categoria: 'NOTEBOOKS',
-        titulo: 'Laptop',
-        descripcionCorta: 'Notebook',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'bangho.png'
-    },
-    {
-        id: 7,
-        categoria: 'NOTEBOOKS',
-        titulo: 'Laptop',
-        descripcionCorta: 'Notebook',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'hp.png'
-    },
-    {
-        id: 8,
-        categoria: 'NOTEBOOKS',
-        titulo: 'Laptop',
-        descripcionCorta: 'Notebook',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'lenovo.png'
-    },
-    {
-        id: 9,
-        categoria: 'NOTEBOOKS',
-        titulo: 'Laptop',
-        descripcionCorta: 'Notebook',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'macbook.png'
-    },
-    {
-        id: 10,
-        categoria: 'MOUSE',
-        titulo: 'Mouse',
-        descripcionCorta: 'Mouse económico',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'mouse1.png'
-    },
-    {
-        id: 11,
-        categoria: 'MOUSE',
-        titulo: 'Mouse',
-        descripcionCorta: 'Mouse económico',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'mouse2.png'
-    },
-    {
-        id: 12,
-        categoria: 'MOUSE',
-        titulo: 'Mouse',
-        descripcionCorta: 'Mouse económico',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'mouse3.png'
-    },
-    {
-        id: 13,
-        categoria: 'MOUSE',
-        titulo: 'Mouse',
-        descripcionCorta: 'Mouse económico',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'mouse4.png'
-    },
-    {
-        id: 14,
-        categoria: 'TECLADO',
-        titulo: 'Teclado',
-        descripcionCorta: 'Teclado gamer',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'teclado1.png'
-    },
-    {
-        id: 15,
-        categoria: 'TECLADO',
-        titulo: 'Teclado',
-        descripcionCorta: 'Teclado gamer',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'teclado2.png'
-    },
-    {
-        id: 16,
-        categoria: 'TECLADO',
-        titulo: 'Teclado',
-        descripcionCorta: 'Teclado gamer',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'teclado3.png'
-    },
-    {
-        id: 17,
-        categoria: 'TECLADO',
-        titulo: 'Teclado',
-        descripcionCorta: 'Teclado gamer',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'teclado4.png'
-    },
-    {
-        id: 18,
-        categoria: 'MONITOR',
-        titulo: 'Monitor',
-        descripcionCorta: 'Monitor LED',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'monitor1.png'
-    },
-    {
-        id: 19,
-        categoria: 'MONITOR',
-        titulo: 'Monitor',
-        descripcionCorta: 'Monitor LED',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'monitor2.png'
-    },
-    {
-        id: 20,
-        categoria: 'MONITOR',
-        titulo: 'Monitor',
-        descripcionCorta: 'Monitor LED',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'monitor3.png'
-    },
-    {
-        id: 21,
-        categoria: 'MONITOR',
-        titulo: 'Monitor',
-        descripcionCorta: 'Monitor LED',
-        descripcionDetallada: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        precio: '$154.699',
-        descuento: '25% off',
-        valorFinal: '116.000',
-        img: 'monitor4.png'
-    },
+const fs= require("fs");
+const path =require("path");
 
-]
+const productosJSON = fs.readFileSync(path.resolve(__dirname,'../data/productos.json'))
+const productos= JSON.parse(productosJSON,{encoding:"utf-8"})
+const productsFilePath = path.join(__dirname, '../data/productos.json')
+
 
 const productController = {
 
     productDetail: (req, res) => {
-        return res.render('productDetail');
+        let producto;
+        productos.forEach(productoN => { 
+            if(productoN.id==req.params.id){
+                producto=productoN
+            } 
+        });
+        return res.render('productDetail',{producto});
     },
 
     productList: (req, res) => {
-        return res.render('productList', { productos });
+        return res.render('productList', {productos});
     },
     productCreate : (req,res)=> {
         return res.render('addProduct')
+    },
+
+    productEdit:(req,res)=>{
+        let producto;
+        productos.forEach(productoN => { 
+            if(productoN.id==req.params.id){
+                producto=productoN
+            } 
+        });
+        return res.render('productEdit',{producto});
+    },
+
+    productSave:(req,res)=>{
+        let indexMap = productos.map(product => product.id); 
+
+		let newIndex = Math.max(...indexMap) + 1; 
+
+		let productCreated={
+			id:newIndex,
+			...req.body,
+			
+		}
+
+        productos.push(productCreated); 
+
+		newProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
+		fs.writeFileSync(productsFilePath, newProductsJSON)
+
+        res.redirect("/product/list")  
+    },
+
+    productUpdate:(req,res)=>{
+        res.send("holaa")
     }
 };
 

@@ -6,11 +6,14 @@ const rutaMain = require('./src/routers/mainRoutes');
 const rutaProduct = require('./src/routers/productRoutes');
 const rutaUser = require('./src/routers/userRoutes');
 
+//use cosas nativas
 app.use(express.static(path.resolve(__dirname, 'public')));
+app.use(express.urlencoded({ extended: false }));
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'src/views' ));
 
+//use rutas
 app.use('/', rutaMain);
 
 app.use('/user', rutaUser);

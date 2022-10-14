@@ -6,34 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/productDetail.css"> <!-- OJO SE LE PUSO ../ PREGUNTAR -->
+    <link rel="stylesheet" href="../../css/productDetail.css"> <!-- OJO SE LE PUSO ../ PREGUNTAR -->
     <title>Detalle Producto</title>
 </head>
 
 <body>
     <%- include('./partials/header'); %>
     <main>
+
         <section class="route-container">
-            <h2 class="route-text">NOTEBOOK HP 245 G8 RYZEN 5 5500U 8GB 1TB 14 FREE</h2>
+            <h2 class="route-text"><%= producto.titulo %> </h2>
         </section>
         <section class="main-container">
             <div class="images">
                 <div class="main-image">
-                    <img class="prod-image" src="../img/hp.png" alt="img_hp">
+                    <img class="prod-image" src="../../img/hp.png" alt="img_hp">
                 </div>
                 <div class="container-views">
-                    <img class="view_prod" src="../img/hp1.png" alt="img_hp1">
-                    <img class="view_prod" src="../img/hp2.png" alt="img_hp2">
-                    <img class="view_prod" src="../img/hp3.png" alt="img_hp3">
+                    <img class="view_prod" src="../../img/hp1.png" alt="img_hp1">
+                    <img class="view_prod" src="../../img/hp2.png" alt="img_hp2">
+                    <img class="view_prod" src="../../img/hp3.png" alt="img_hp3">
                 </div>
             </div>
             <div class="text-options">
                 <div class="box_texto_pago">
                     <h3 class="subtitulo_texto_pago">Precio</h3>
-                    <p class="final-value">$116.000</p>
+                    <p class="final-value">100000</p>
                     <div class="discount-container">
-                        <p class="price">$154.699</p>
-                        <p class="discount">25% off</p>
+                        <p class="price"><%= producto.precio %> </p>
+                        <p class="discount"><%= producto.descuento %> %OFF </p>
                     </div>
 
 
