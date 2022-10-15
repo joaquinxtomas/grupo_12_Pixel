@@ -529,6 +529,10 @@ footer {
     text-align: center;
 }
 
+.modal {
+    background-color: white;
+}
+
 @media (min-width:361px) {
     
     .caja-padre div input {

@@ -18,9 +18,9 @@
         <!--  HEADER -->
 
         <main>
-            <form action="/product/create" method="POST">
+            <form action="/product/create" method="POST" enctype="multipart/form-data">
                 <div class="caja-padre">
-                    <div class="añadir-producto">
+                    <div class="añadir-producto" id="añadir-producto">
                         <h2>Añadir producto</h2>
                     </div>
 
@@ -40,7 +40,7 @@
 
                     <h4 class="aclaracion">Imagen del producto</h4>
                     <div class="file-select">
-                        <input type="file" name="foto-user" accept=".png, .jpg">
+                        <input type="file" name="image" id="image">
                     </div>
 
 
@@ -64,14 +64,15 @@
 
                     <div class="botonera">
                         <div>
-                            <button class="agregar" type="submit">Agregar (+)</button>
+                            <button class="agregar" type="submit" id="open">Agregar (+)</button>
                         </div>
                         <div>
                             <button class="borrar" type="reset">Borrar datos</button>
                         </div>
                     </div>
-
                 </div>
+
+                <script src="emergente.js"></script>
 
             </form>
         </main>

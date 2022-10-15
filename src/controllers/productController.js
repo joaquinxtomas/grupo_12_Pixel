@@ -43,6 +43,7 @@ const productController = {
 		let productCreated={
 			id:newIndex,
 			...req.body,
+            img:req.file.filename
 			
 		}
 
@@ -51,7 +52,7 @@ const productController = {
 		newProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
 		fs.writeFileSync(productsFilePath, newProductsJSON)
 
-        res.redirect("/product/list")  
+        res.redirect("/product/list");
     },
 
     productUpdate:(req,res)=>{
