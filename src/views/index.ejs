@@ -54,21 +54,6 @@
 
     </div>
 </div>
-
-
-
-<!-- OLD BANNER -->
-<!-- 
-        <div class="banner">
-            <img src="/img/banner1.jpg" alt="banner">
-            <i class="fa-solid fa-angle-left" id="left"></i>
-            <i class="fa-solid fa-angle-right" id="right"></i>
-            <div class="dots">
-                <i class="fa-solid fa-circle" id="bn1"></i>
-                <i class="fa-solid fa-circle" id="bn2"></i>
-                <i class="fa-solid fa-circle" id="bn3"></i>
-            </div>
-        </div> -->
         <main>
 
             <section class="inSale">
@@ -82,45 +67,19 @@
                     let selected = shuffled.slice(0, n); %> 
 
                     <% selected.forEach(producto => { %>
+                    <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %> 
                      
                     
                     <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
-                        <img src=<%="/img/" +producto.img %> alt="producto" class="prod-image">
+                        <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
                         <div class="productInfo">
-                            <p class="final-value"><%= producto.valorFinal %></p>
-                            <p class="price"><%= producto.precio %></p>
+                            <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
+                            <p class="price">$<%= producto.precio %></p>
                             <p class="discount"><%= producto.descuento %>%off</p>
                             <a href="/product/detail" class="description"><%= producto.titulo %></a>
                         </div>
                     </article>
                     <% }) %>
-<!--                     <article>
-                        <img src="/img/lenovo.jpg" alt="producto">
-                        <div class="productInfo">
-                            <p class="price">$59.99</p>
-                            <p class="discount">25% off</p>
-                            <a href="/productDetail" class="description">Laptop</a>
-
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="/img/hp.jpg" alt="producto">
-                        <div class="productInfo">
-                            <p class="price">$59.99</p>
-                            <p class="discount">25% off</p>
-                            <a href="/productDetail" class="description">Laptop</a>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="/img/bangho.jpg" alt="producto">
-                        <div class="productInfo">
-                            <p class="price">$59.99</p>
-                            <p class="discount">25% off</p>
-                            <a href="/productDetail" class="description">Laptop</a>
-                        </div>
-                    </article> -->
-
 
         <section class="recomended">
             <h2>RECOMENDACIONES</h2>
@@ -133,11 +92,12 @@
                     selected = shuffled.slice(0, n); %> 
 
                     <% selected.forEach(producto => { %>
+                    <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %> 
                 <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
-                    <img src=<%="/img/" +producto.img %> alt="producto" class="prod-image">
+                    <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
                     <div class="productInfo">
-                        <p class="final-value">10000</p>
-                        <p class="price"><%= producto.precio %> ></p>
+                        <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
+                        <p class="price">$<%= producto.precio %> </p>
                         <p class="discount"><%= producto.descuento %> %off</p>
                         <a href="'/product/detail'" class="description"><%= producto.titulo %></a>
                     </div>

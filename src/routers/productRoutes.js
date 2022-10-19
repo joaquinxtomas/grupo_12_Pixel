@@ -18,17 +18,20 @@ const storage= multer.diskStorage({
 
 const upload = multer ({storage});
 
+router.get('/list', productController.productList);
 
 router.get('/detail/:id', productController.productDetail);
 
+//route get create form
 router.get('/create', productController.productCreate);
+//store new product
+router.post('/create', upload.single("image"), productController.productSave); //multer middleware
 
-//agregar UPLOAD cuando este MULTER
-router.post('/create', upload.single("image"), productController.productSave);
 
-router.get('/list', productController.productList);
-
+//route get edit form
 router.get ('/edit/:id', productController.productEdit);
-router.post('/edit/:id', upload.single("foto-user"), productController.productUpdate);
+//update product
+router.put('/edit/:id', upload.single("image"), productController.productUpdate); //multer middleware
+
 
 module.exports = router;

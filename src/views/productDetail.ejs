@@ -20,7 +20,7 @@
         <section class="main-container">
             <div class="images">
                 <div class="main-image">
-                    <img class="prod-image" src="../../img/hp.png" alt="img_hp">
+                    <img class="prod-image" src="../../img/<%= producto.img %>" alt="img_hp">
                 </div>
                 <div class="container-views">
                     <img class="view_prod" src="../../img/hp1.png" alt="img_hp1">
@@ -28,12 +28,13 @@
                     <img class="view_prod" src="../../img/hp3.png" alt="img_hp3">
                 </div>
             </div>
+            <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %>
             <div class="text-options">
                 <div class="box_texto_pago">
                     <h3 class="subtitulo_texto_pago">Precio</h3>
-                    <p class="final-value">100000</p>
+                    <p class="final-value">$<%= valorFinal.toFixed(0) %> </p>
                     <div class="discount-container">
-                        <p class="price"><%= producto.precio %> </p>
+                        <p class="price">$<%= producto.precio %> </p>
                         <p class="discount"><%= producto.descuento %> %OFF </p>
                     </div>
 

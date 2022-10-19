@@ -18,7 +18,7 @@
         <!--  HEADER -->
 
         <main>
-            <form action="/administrar/edit/<%= producto.id %> " method="get">
+            <form  method="POST" action="/product/edit/<%= producto.id %>?_method=PUT" enctype="multipart/form-data"> <!-- se añade query string para PUT y enctype para imagenes-->
                 <div class="caja-padre">
                     <div class="añadir-producto">
                         <h2>Estás editando el producto <%= producto.id %> </h2>
@@ -39,7 +39,7 @@
 
                     <h4 class="aclaracion">Imagen del producto</h4>
                     <div class="file-select">
-                        <input type="file" name="foto-user" accept=".png, .jpg">
+                        <input type="file" name="image" accept=".png, .jpg">
                     </div>
 
 

@@ -1,5 +1,6 @@
 const fs= require("fs");
 const path =require("path");
+const router = require("../routers/mainRoutes");
 
 const productosJSON = fs.readFileSync(path.resolve(__dirname,'../data/productos.json'))
 const productos= JSON.parse(productosJSON,{encoding:"utf-8"})
@@ -25,17 +26,7 @@ const productController = {
         return res.render('addProduct')
     },
 
-    productEdit:(req,res)=>{
-        let producto;
-        productos.forEach(productoN => { 
-            if(productoN.id==req.params.id){
-                producto=productoN
-            } 
-        });
-        return res.render('productEdit',{producto});
-    },
-
-    productSave:(req,res)=>{
+    productSave:(req,res)=>{  //POST del producto, se envía la infomación y se redirige.
         let indexMap = productos.map(product => product.id); 
 
 		let newIndex = Math.max(...indexMap) + 1; 
@@ -55,8 +46,43 @@ const productController = {
         res.redirect("/product/list");
     },
 
-    productUpdate:(req,res)=>{
-        res.send("holaa")
+    productEdit:(req,res)=>{ //Ruta a formulario de edición de producto
+        let producto;
+        productos.forEach(productoN => { 
+            if(productoN.id==req.params.id){
+                producto=productoN;
+            } 
+        });
+        return res.render('productEdit',{producto});
+    },
+
+    productUpdate:(req,res)=>{  //PUT del producto, se envía la infomación actualizada y se redirige.
+        let indexFind = req.params.id;
+
+		let {titulo, descripcionCorta, descripcionDetallada, precio, descuento, categoria } = req.body;
+
+		let indexMap = productos.map(product => product.id);
+
+		let indexEdit = indexMap.indexOf(+indexFind);
+
+        titulo? productos[indexEdit].titulo = titulo: "";
+
+		precio? productos[indexEdit].precio = precio: "";
+
+		descuento? productos[indexEdit].descuento = descuento: "";
+
+		categoria? productos[indexEdit].categoria = categoria: "";
+
+		descripcionCorta? productos[indexEdit].descripcionCorta = descripcionCorta: "";
+
+        descripcionDetallada? productos[indexEdit].descripcionDetallada = descripcionDetallada: "";
+
+        req.file? productos[indexEdit].img=req.file.filename: res.redirect("/product/list");;
+
+        updatedProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
+		fs.writeFileSync(productsFilePath, updatedProductsJSON)
+
+        res.redirect("/product/list");
     }
 };
 
