@@ -43,7 +43,8 @@
                 <div class="products">
                     <% productos.forEach(producto=> { %>
 
-
+                    <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %> 
+                    
                         <article>
                             <div class="container-top">
                                 <img src=<%="/img/" +producto.img %> alt="producto">
@@ -52,7 +53,7 @@
                                         <%= producto.titulo %>
                                     </a>
                                     <p class="final-value">
-                                        <%= producto.valorFinal %>
+                                        $<%= valorFinal.toFixed(0) %>
                                     </p>
                                     <p class="discount">
                                         <%= producto.descuento %> %OFF
