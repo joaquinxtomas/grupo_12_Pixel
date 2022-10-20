@@ -39,7 +39,7 @@ const validations = [
 router.get('/login', userController.login);
 
 router.get('/register', userController.register);
-router.post('/register', upload.single("userImg"), validations, userController.saveRegister);
+router.post('/register', upload.single("userImg"), validations,  userController.saveRegister);
 
 router.get('/productCart', userController.productCart);
 

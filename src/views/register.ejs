@@ -90,9 +90,9 @@
                         <input type="text" name="address" placeholder="Domicilio" class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> " 
                         value="<%= locals.oldData ? oldData.address : null %>">
                     </div>
-                    <% if (locals.errors && errors.adress) { %>
+                    <% if (locals.errors && errors.address) { %>
                         <div class="mensaje-de-error">
-                            <i class="fas fa-exclamation-triangle"></i><%= errors.adress.msg %> 
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.address.msg %> 
                         
                         </div> 
                         <% } %>
