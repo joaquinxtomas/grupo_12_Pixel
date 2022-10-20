@@ -3,7 +3,7 @@ const path =require("path");
 const router = require("../routers/mainRoutes");
 
 const productosJSON = fs.readFileSync(path.resolve(__dirname,'../data/productos.json'))
-const productos= JSON.parse(productosJSON,{encoding:"utf-8"})
+let productos= JSON.parse(productosJSON,{encoding:"utf-8"})
 const productsFilePath = path.join(__dirname, '../data/productos.json')
 
 
@@ -77,7 +77,19 @@ const productController = {
 
         descripcionDetallada? productos[indexEdit].descripcionDetallada = descripcionDetallada: "";
 
-        req.file? productos[indexEdit].img=req.file.filename: res.redirect("/product/list");;
+        req.file? productos[indexEdit].img=req.file.filename: res.redirect("/product/list");
+
+        updatedProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
+		fs.writeFileSync(productsFilePath, updatedProductsJSON)
+
+        res.redirect("/product/list");
+    },
+
+    productDelete:(req,res)=>{ //Metodo eleminar producto
+        let deleteId=req.params.id;
+        let productosFiltered=productos.filter(producto=>producto.id!=deleteId);
+
+        productos = productosFiltered;
 
         updatedProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
 		fs.writeFileSync(productsFilePath, updatedProductsJSON)
@@ -85,5 +97,4 @@ const productController = {
         res.redirect("/product/list");
     }
 };
-
 module.exports = productController;

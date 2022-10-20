@@ -32,6 +32,8 @@ router.post('/create', upload.single("image"), productController.productSave); /
 router.get ('/edit/:id', productController.productEdit);
 //update product
 router.put('/edit/:id', upload.single("image"), productController.productUpdate); //multer middleware
+//delete product
+router.delete('/delete/:id', productController.productDelete); 
 
 
 module.exports = router;
