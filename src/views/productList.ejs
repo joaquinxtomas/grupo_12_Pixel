@@ -35,7 +35,7 @@
                 <h2>PRODUCTOS </h2>
 
                 <a href="/product/create">
-                    <div class="nav-bar-button">
+                    <div class="add-button">
                         <p>Agregar producto</p>
                     </div>
                 </a>
@@ -70,11 +70,11 @@
                                 </div>
                             </div>
                             <div class="edit-button-container">
-                                <a href="/product/edit/<%= producto.id %> " class="Edit-button">Editar</a>
+                                <a href="/product/edit/<%= producto.id %> " class="edit-button">Editar</a>
                             </div>
 
                             <form action="/product/delete/<%= producto.id %>?_method=DELETE" method="POST" >
-                                <button type="submit" class="action-button-delete">ELIMINAR</button>
+                                <button type="submit" class="action-button-delete" onclick="return confirm('Está seguro que desea eliminar <%= producto.titulo %>?');">Eliminar</button>
                             </form>
                         </article>
                         <% }) %>
