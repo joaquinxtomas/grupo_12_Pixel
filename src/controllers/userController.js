@@ -1,10 +1,10 @@
 const {validationResult}=require("express-validator")
 const fs = require ("fs")
+const bcrypt=require("bcryptjs")
+
+const User=require("../../models/User")
 
 const userController = {
-    login: (req,res) => { 
-        return res.render('login');
-    },
     register: (req,res) => {
         return res.render('register');
     },
@@ -15,9 +15,41 @@ const userController = {
                 errors:resultValidation.mapped(),
                 oldData:req.body
             })
-        } res.redirect ("/")
+        }
+
+        let userInDb = User.findByField("email", req.body.email)
+
+        if (userInDb){
+            return res.render("register",{
+                errors: {
+                    email: {
+                        msg:"Este email ya ha sido registrado"
+                    }
+                },
+                oldData:req.body
+            })
+        }
+
+        let userToCreate = {
+            ...req.body,
+            password:bcrypt.hashSync(req.body.password,10),
+            passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
+            avatar: req.file.filename
+        }
+
+        let userCreated = User.create(userToCreate);
+        
+        return res.redirect("/user/login");
 
     },
+    login: (req,res) => { 
+        return res.render('login');
+    },
+
+    saveLogin:(req,res)=>{
+        
+    },
+
     productCart: (req,res) => {
         return res.render('productCart');
     }

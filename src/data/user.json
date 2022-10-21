@@ -1,12 +1,13 @@
 [
-    {
-        "fullName": "roberto carlos",
-        "username": "robertocar",
-        "email": "juancarlos@perez.com",
-        "dateOfBirth": "15/12/1998",
-        "address": "calle falsa 123",
-        "password": "123456asd",
-        "passwordConfirm": "123456asd",
-        "userImg": "default.jpg"
-    }
+ {
+  "id": 1,
+  "fullName": "Joaquin Palacios",
+  "username": "joaquinxtomas",
+  "email": "jtppalacios@gmail.com",
+  "dateOfBirth": "2002-09-29",
+  "address": "2317",
+  "password": "$2a$10$5LTat6dO/adu1UVaWxQOQOOQW6zVQ.POIIC.KerU2EMacIfWEtHLi",
+  "passwordConfirm": "$2a$10$ZjlPQqe/oS0uOWJWgAlzH.OEQ40RADFKH7whQELm7RQaX.j80zzfa",
+  "avatar": "AVATAR-IMG1666377474615.jpg"
+ }
 ]

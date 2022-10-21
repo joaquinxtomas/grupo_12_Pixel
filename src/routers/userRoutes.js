@@ -37,6 +37,7 @@ const validations = [
 ]
 
 router.get('/login', userController.login);
+router.post('/login', userController.saveLogin)
 
 router.get('/register', userController.register);
 router.post('/register', upload.single("userImg"), validations,  userController.saveRegister);
