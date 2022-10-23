@@ -25,12 +25,17 @@
             <main>
                 <!-- ingresa -->
                 <div class="mover">
-                    <form action="/login" method="post" class="form-login">
+                    <form action="/user/login" method="POST" class="form-login">
                         <h5>Iniciar sesión con mi email</h5>
                         <!--<input class="cajita" type="checkbox" name="" value="">  -->
-                        <input class="controls" type="text" style="color: rgb(255, 255, 255) ;" name="usuario" value=""
+                        <input class="controls" type="text" style="color: rgb(255, 255, 255) ;" name="username" value=""
                             placeholder="Usuario" required minlength="3">
-                        <input class="controls" type="password" style="color: rgb(255, 255, 255);" name="contrasena"
+                            <% if (locals.errors && errors.username) { %>
+                                <div class="mensaje-de-error">
+                                    <%= errors.username.msg %> 
+                                </div> 
+                                <% } %> 
+                        <input class="controls" type="password" style="color: rgb(255, 255, 255);" name="password"
                             value="" placeholder="Contraseña" autocomplete="current-password" required minlength="3">
                         <div class="texto-login">
                             <a class="registrarme" ; padding: 6px;; href="/register"> Registrame</a>

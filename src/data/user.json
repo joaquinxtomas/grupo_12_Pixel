@@ -9,5 +9,16 @@
   "password": "$2a$10$5LTat6dO/adu1UVaWxQOQOOQW6zVQ.POIIC.KerU2EMacIfWEtHLi",
   "passwordConfirm": "$2a$10$ZjlPQqe/oS0uOWJWgAlzH.OEQ40RADFKH7whQELm7RQaX.j80zzfa",
   "avatar": "AVATAR-IMG1666377474615.jpg"
+ },
+ {
+  "id": 2,
+  "fullName": "Joaquin",
+  "username": "joacotomas",
+  "email": "asdasdasd@email.com",
+  "dateOfBirth": "2022-10-18",
+  "address": "1231",
+  "password": "$2a$10$6w5bJvZqWNu9r5LC6z23ZuZfkUSJ2VOAQflOKNL6Hr0rW6.On9Fxu",
+  "passwordConfirm": "$2a$10$8jtWDmcU740LWytwoRKG4ueLyM1coRh1pURV89omE3ycijzYNjgdi",
+  "avatar": "AVATAR-IMG1666566701326.png"
  }
 ]

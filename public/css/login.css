@@ -334,6 +334,19 @@ body {
 
 }
 
+/* ERRORES */
+
+.mensaje-de-error {
+    color: #FF4949;
+    margin-top: -15px;
+    position: absolute;
+    
+}
+
+.mensaje-de-error i {
+    padding: 5px;
+}
+
 /* FOOTER */
 
 footer {

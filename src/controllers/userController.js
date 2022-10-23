@@ -47,7 +47,30 @@ const userController = {
     },
 
     saveLogin:(req,res)=>{
-        
+        let userToLogin = User.findByField('email', req.body.email);
+
+        if(userToLogin){
+            let comparePasswords=bcrypt.compareSync(req.body.password === userToLogin.password);
+            if (comparePasswords){
+                return res.redirect('/')
+            }
+            return res.render ("login", {
+                errors:{
+                    email:{
+                        msg:"El email y/o la contraseña son incorrectos"
+                    }
+                }
+            })
+
+        }
+
+        return res.render("login",{
+            errors: {
+                email:{
+                    msg:"Este usuario no ha sido registrado"
+                }
+            }
+        })
     },
 
     productCart: (req,res) => {
