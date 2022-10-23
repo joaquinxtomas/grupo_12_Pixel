@@ -35,49 +35,99 @@
         </header>
         <main>
 
-            <form action="/" method="get">
-                <div class="caja-padre">
+            <form action="/user/register" method="POST" enctype="multipart/form-data">
+                <div class="caja-padre">  
                     <div class="registrate">
                         <h2>¡Registrate!</h2>
                         <img src="/img/form.svg" alt="undraw-form">
                     </div>
 
                     <div>
-                        <input type="text" name="fullName" placeholder="Nombre y apellido" id="nombre-apellido"
-                            required>
+                        <input type="text"
+                         name="fullName" 
+                         placeholder="Nombre y apellido" 
+                         id="nombre-apellido"
+                         class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> " 
+                         value="<%= locals.oldData ? oldData.fullName : null %>"
+                         >
+                         
+                    </div>
+                    <% if (locals.errors && errors.fullName) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.fullName.msg %> 
+                        
+                        </div> 
+                        <% } %> 
+
+                    <div>
+                        <input type="text" name="username" placeholder="Nombre de usuario" class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> " 
+                        value="<%= locals.oldData ? oldData.username : null %>">
+                    </div>
+                    <% if (locals.errors && errors.username) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.username.msg %> 
+                        
+                        </div> 
+                        <% } %>
+
+                    <div>
+                        <input type="email" name="email" placeholder="E-mail" id="email" class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> " 
+                        value="<%= locals.oldData ? oldData.email : null %>" >
+                    </div>
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.email.msg %> 
+                        
+                        </div> 
+                        <% } %>
+
+                    <div>
+                        <h4 class="aclaracion-1">Fecha de nacimiento</h4>
+                        <input type="date" name="dateOfBirth" id="nacimiento" class = "normal-input" >
                     </div>
 
                     <div>
-                        <input type="text" name="username" placeholder="Nombre de usuario" required>
+                        <input type="text" name="address" placeholder="Domicilio" class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> " 
+                        value="<%= locals.oldData ? oldData.address : null %>">
                     </div>
-
-                    <div>
-                        <input type="email" name="email" placeholder="E-mail" id="email" required>
-                    </div>
-
-                    <div>
-                        <h4 class="aclaracion">Fecha de nacimiento</h4>
-                        <input type="date" name="dateOfBirth" id="nacimiento" required>
-                    </div>
-
-                    <div>
-                        <input type="text" name="address" placeholder="Domicilio" required>
-                    </div>
+                    <% if (locals.errors && errors.address) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.address.msg %> 
+                        
+                        </div> 
+                        <% } %>
 
                     <div>
                         <h4 class="aclaracion">Foto de usuario</h4>
                         <div class="file-select">
                             <input type="file" name="userImg" accept=".png, .jpg">
                         </div>
+                        <% if(locals.errors && errors.userImg){ %>
+                            <div class="mensaje-de-errorImg">
+                                <i class="fas fa-exclamation-triangle"></i><%= errors.userImg.msg %> 
+                            </div> 
+                            <% } %> 
 
                         <div class="contraseña">
-                            <input class="password" type="password" name="password" placeholder="Contraseña" required>
+                            <input type="password" name="password" placeholder="Contraseña" class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%>" >
                         </div>
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="mensaje-de-error">
+                                <i class="fas fa-exclamation-triangle"></i><%= errors.password.msg %> 
+                            
+                            </div> 
+                            <% } %>
 
                         <div class="contraseña">
-                            <input class="password" type="password" name="passwordConfirm"
-                                placeholder="Confirmar contraseña" required>
+                            <input type="password" name="passwordConfirm"
+                                placeholder="Confirmar contraseña" class = "normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%>" >
                         </div>
+                        <% if (locals.errors && errors.passwordConfirm) { %>
+                            <div class="mensaje-de-error">
+                                <i class="fas fa-exclamation-triangle"></i><%= errors.passwordConfirm.msg %> 
+                            
+                            </div> 
+                            <% } %>
 
                         <div>
                             <button class="enviar" type="submit">Enviar</button>

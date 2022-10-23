@@ -4,6 +4,7 @@ const app = express()
 const methodOverride= require('method-override'); //configuración de PUT y DELETE
 
 
+
 const rutaMain = require('./src/routers/mainRoutes');
 const rutaProduct = require('./src/routers/productRoutes');
 const rutaUser = require('./src/routers/userRoutes');
