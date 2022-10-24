@@ -46,13 +46,13 @@ const productController = {
             req.body.descuento=0;
         }
 
-        let imageFile=""
+        let imageFile;
         req.file? imageFile=req.file.filename: imageFile="default-image.png";
 
 		let productCreated={
 			id:newIndex,
 			...req.body,
-            img:+imageFile
+            img:imageFile
 			
 		}
 
@@ -70,8 +70,9 @@ const productController = {
             if(productoN.id==req.params.id){
                 producto=productoN;
             } 
+
         });
-        return res.render('productEdit',{producto});
+        return res.render('productEdit',{producto:producto});
     },
 
     productUpdate:(req,res)=>{  //PUT del producto, se envía la infomación actualizada y se redirige.
