@@ -1,4 +1,3 @@
-
 [
  {
   "id": 1,
@@ -222,22 +221,12 @@
  },
  {
   "id": 23,
-  "titulo": "asdad",
-  "descripcionCorta": "sadasd",
-  "descripcionDetallada": "asdasd",
-  "categoria": "Monitores",
-  "precio": "213",
-  "descuento": "32",
-  "img": "PRODUCTO1666649967958.png"
- },
- {
-  "id": 24,
-  "titulo": "Bicicleta",
-  "descripcionCorta": "Bicicleta",
-  "descripcionDetallada": "adsdasda",
+  "titulo": "Computadora FULL HD",
+  "descripcionCorta": "Computadora ",
+  "descripcionDetallada": "Procesador ultra rápido, 16GB de ram.",
   "categoria": "PC",
-  "precio": "12",
-  "descuento": "2",
-  "img": "default-image.png"
+  "precio": "110000",
+  "descuento": "10",
+  "img": "PRODUCTO1666653491765.png"
  }
 ]

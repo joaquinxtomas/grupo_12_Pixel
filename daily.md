@@ -5,3 +5,13 @@ Reunion de daily del 30/09/2022:
 ● Si se encontró con algún impedimento: Encontramos impedimentos al realizar los CSS de los Partials.
 
 ● Qué va a hacer hoy: Hoy realizamos lo Routers y los CSS de los Partials.
+
+Reunion de daily del 24/10/2022:
+
+¿Que hicimos ayer?: Corregimos los controladores de edit, register y user. Corregimos errores minimos. 
+
+¿Se encontró algún impedimento?: Al editar un producto, los valores de los input tipo text solo conservan la primera palabra del string. Es decir, si el nombre original es "Bicicleta de montaña", guarda "Bicicleta". 
+
+¿Que haremos hoy?: Ultimar detalles, seguir investigando sobre el impedimento y organizar el tablero de trabajo.
+
+

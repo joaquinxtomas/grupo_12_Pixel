@@ -9,5 +9,37 @@
   "password": "$2a$10$on8FD9/DjAiEAmHAhIw3JOFuhaETS12KFIKPjZe.IxiQ4sTLNrcbq",
   "passwordConfirm": "$2a$10$YsqWs7dOwDrf5IqSCB6hl.8ac0tHRNJy4agk/YKK4.QFavRepwaeu",
   "avatar": "AVATAR-IMG1666650229549.png"
+ },
+ {
+  "id": 2,
+  "fullName": "Joaquin Palacios",
+  "username": "juanjo",
+  "email": "asdasdasd@email.com",
+  "dateOfBirth": "",
+  "address": "12314",
+  "password": "$2a$10$iFbYgle80oWCkmXU0b3F1.6mLgAu/95OrOukmU/niCwnye5Msceq6",
+  "passwordConfirm": "$2a$10$0AUZzDiMHVY99AholFtcGeS5EfjREBz7lVWcoXR.8EuPqtPs67d.C",
+  "avatar": "AVATAR-IMG1666651370577.jpg"
+ },
+ {
+  "id": 3,
+  "fullName": "Gonzalo ",
+  "username": "gonza1",
+  "email": "rerer@gmail.com",
+  "dateOfBirth": "2022-10-20",
+  "address": "213132",
+  "password": "$2a$10$NQQxTW1YPLP0OVCb2PJQiOt2RInUNQln5WlI9H87OVi0QmYfervX6",
+  "passwordConfirm": "$2a$10$8hfbyz/xWdRbi3xamvReoeWMiSBAuSLWM52wt4FAtGo2.cPVhInSa",
+  "avatar": "AVATAR-IMG1666652075110.jpg"
+ },
+ {
+  "id": 4,
+  "fullName": "Robert",
+  "username": "dasdasda",
+  "email": "juancarlos@perez.com",
+  "dateOfBirth": "2022-10-12",
+  "address": "131123",
+  "password": "$2a$10$OuXrhoTLoUc0KBy1bVkXYu87HspHCYkeMukz2OgAOGQ5ei7CobfYu",
+  "avatar": "AVATAR-IMG1666652148084.jpg"
  }
 ]

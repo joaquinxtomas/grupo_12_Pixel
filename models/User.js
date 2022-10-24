@@ -33,14 +33,14 @@ const User = {
     },
     create:function(userData){
         let allUsers=this.findAll();
+        delete userData.passwordConfirm;
         let newUser= {
             id:this.generateId(),
-            ...userData
+            ...userData            
         }
         allUsers.push(newUser);
         fs.writeFileSync(this.fileName,JSON.stringify(allUsers,null,' '));
         return newUser;
-
     },
 
     delete: function(id){
