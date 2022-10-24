@@ -27,7 +27,6 @@ router.get('/create', productController.productCreate);
 //store new product
 router.post('/create', upload.single("image"), productController.productSave); //multer middleware
 
-
 //route get edit form
 router.get ('/edit/:id', productController.productEdit);
 //update product
