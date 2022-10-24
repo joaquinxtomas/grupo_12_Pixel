@@ -47,6 +47,14 @@ const userController = {
     },
 
     saveLogin:(req,res)=>{
+        const resultValidation=validationResult(req);
+        if ( resultValidation.errors.length>0){
+            return res.render("login",{
+                errors:resultValidation.mapped(),
+                oldData:req.body
+            })
+        }
+
         let userToLogin = User.findByField('email', req.body.email);
 
         if(userToLogin){

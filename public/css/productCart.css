@@ -198,7 +198,9 @@ h2 {
     background-color: #080808;
     padding: 15px;
 }
-
+.productInfo{
+    margin-right: 10px;
+}
 .productInfo img {
     width: 90%;
     padding: 5px;
@@ -574,14 +576,17 @@ section p{
     
     
     section{
-        margin-left: 27%;
+        margin-left: 22%;
     }
     section p{
-        margin-left: 0%;
+        margin-right: 15px;
         margin-top: 5px;
     }
     .p-precio{
-        margin-left: 21%;
+        margin-left: 30%;
+    }
+    p .d{margin-left: 0px;
+        padding-left: 0px;
     }
      /*FOOTER*/
 

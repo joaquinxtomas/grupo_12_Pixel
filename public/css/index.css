@@ -456,7 +456,8 @@ main {
     border-radius: 5px;
     font-weight: bold;
     position: relative;
-    bottom: 62px
+    bottom: 62px;
+    
 }
 
 .productName {

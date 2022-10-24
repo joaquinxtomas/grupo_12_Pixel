@@ -188,6 +188,7 @@ body {
 .texto-login{
     display: flex;
     justify-content: space-between;
+    margin: 5px 0px;
 }
 
 .contraseña:hover {
@@ -213,13 +214,19 @@ body {
 
 .controls {
     width: 100%;
+    color: whitesmoke;
     border: 1px solid #757272;
-    margin-bottom: 15px;
+    margin: 15px 0px;
     padding: 11px 10px;
     background: #252323;
     font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.invalido{
+    border: solid 1px #FF4949;
+
 }
 
 .social {
@@ -521,7 +528,7 @@ footer {
 
     .form-login {
         position: relative;
-        height: 500px;
+        height: 100%;
         background: #4e4d4d;
         margin-bottom: 90px;
         margin-top: 90px;
@@ -619,7 +626,7 @@ footer {
     .form-login {
         border-radius: 5px;
         width: 70%;
-        height: 500px;
+        height: 100%;
         background: #4a4a4a;
         margin-bottom: 90px;
         margin-top: 90px;

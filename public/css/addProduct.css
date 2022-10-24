@@ -253,13 +253,14 @@ form {
     padding: 30px;
 }
 
+
 .añadir-producto {
     border-bottom: 1px solid #666;
 }
 
-.caja-padre div input {
+.normal-input {
     background-color: #252323;
-    color: #757272;
+    color: whitesmoke;
     font-size: 18px;
     border: none;
     border-radius: 5px;
@@ -271,8 +272,23 @@ form {
     border: 1px solid #757272;
 }
 
+
+
 .caja-padre input:hover {
     box-shadow: 0px 0px 3px black;
+}
+
+/* ESTILOS VALIDACIONES */
+
+.invalido{
+    border: solid 1px #FF4949;
+}
+
+.mensaje-de-error {
+    color: #FF4949;
+    margin-top: -15px;
+    position: absolute;
+    
 }
 
 form div {
@@ -299,20 +315,22 @@ form div {
 .large-description {
     width: 100%;
     background-color: #252323;
-    color: #ffffff;
+    color: whitesmoke;
     border: none;
     border-radius: 5px;
     height: 100px;
     max-width: 500px;
     padding-left: 5px;
     font-size: 18px;
-    color: #757272;
     border: 1px solid #757272;
 }
+
+
 
 .large-description::placeholder{
     padding-top: 5px;
 }
+
 
 .file-select {
     position: relative;
@@ -360,7 +378,6 @@ form div {
     max-width: 500px;
     padding-left: 5px;
     font-size: 18px;
-    color: #757272;
     border: 1px solid #757272;
 }
 

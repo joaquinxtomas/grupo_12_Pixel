@@ -2,6 +2,8 @@ const fs= require("fs");
 const path =require("path");
 const router = require("../routers/mainRoutes");
 
+const {validationResult}=require("express-validator")
+
 const productosJSON = fs.readFileSync(path.resolve(__dirname,'../data/productos.json'))
 let productos= JSON.parse(productosJSON,{encoding:"utf-8"})
 const productsFilePath = path.join(__dirname, '../data/productos.json')
@@ -26,15 +28,31 @@ const productController = {
         return res.render('addProduct')
     },
 
-    productSave:(req,res)=>{  //POST del producto, se envía la infomación y se redirige.
+    productSave:(req,res)=>{  //POST del producto, se envía la infomación se verifica y se redirige.
+        const resultValidation=validationResult(req);
+        if ( resultValidation.errors.length>0){
+            return res.render("addProduct",{
+                errors:resultValidation.mapped(),
+                oldData:req.body
+            })
+        }
+        
+        
         let indexMap = productos.map(product => product.id); 
 
 		let newIndex = Math.max(...indexMap) + 1; 
 
+        if(req.body.descuento==""){
+            req.body.descuento=0;
+        }
+
+        let imageFile=""
+        req.file? imageFile=req.file.filename: imageFile="default-image.png";
+
 		let productCreated={
 			id:newIndex,
 			...req.body,
-            img:req.file.filename
+            img:+imageFile
 			
 		}
 
