@@ -71,8 +71,9 @@ const productController = {
                 producto=productoN;
                 oldData:req.body
             } 
+
         });
-        return res.render('productEdit',{producto});
+        return res.render('productEdit',{producto:producto});
     },
 
     productUpdate:(req,res)=>{  //PUT del producto, se envía la infomación actualizada y se redirige.
