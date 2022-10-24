@@ -55,12 +55,18 @@
                                     <p class="final-value">
                                         $<%= valorFinal.toFixed(0) %>
                                     </p>
-                                    <p class="discount">
-                                        <%= producto.descuento %> %OFF
-                                    </p>
-                                    <p class="price">
-                                        $<%= producto.precio %>
-                                    </p>
+                                    <% if (producto.descuento!=0) { %>
+                                        <p class="discount" > 
+                                            <%= producto.descuento %> %OFF
+                                        </p>
+                                        <p class="price">
+                                            $<%= producto.precio %>
+                                        </p>
+                                    <% } else { %>
+                                     <br>
+                                     <br>
+                                        <% } %>
+
                                     <p class="short-description">
                                         <%= producto.descripcionCorta %>
                                     </p>

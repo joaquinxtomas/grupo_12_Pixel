@@ -74,8 +74,14 @@
                         <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
                         <div class="productInfo">
                             <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
-                            <p class="price">$<%= producto.precio %></p>
-                            <p class="discount"><%= producto.descuento %>%off</p>
+                            
+                            <% if (producto.descuento!=0) { %>
+                                <p class="price">$<%= producto.precio %></p>
+                                <p class="discount"><%= producto.descuento %> %off</p>
+                            <% } else { %>
+                                <br>
+                                
+                            <% } %>
                             <a href="/product/detail" class="description"><%= producto.titulo %></a>
                         </div>
                     </article>
@@ -84,8 +90,9 @@
         <section class="recomended">
             <h2>RECOMENDACIONES</h2>
             <div class="products">
-                <% // Shuffle array
-                    shuffled = productos.sort(() => 0.5 - Math.random());
+                <% // Shuffle 
+                    discount=productos.filter(producto =>producto.descuento!=0)
+                    shuffled = discount.sort(() => 0.5 - Math.random());
                     
                     // Get sub-array of first n elements after shuffled
                     n=4;
@@ -97,8 +104,14 @@
                     <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
                     <div class="productInfo">
                         <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
-                        <p class="price">$<%= producto.precio %> </p>
-                        <p class="discount"><%= producto.descuento %> %off</p>
+                        
+                        <% if (producto.descuento!=0) { %>
+                            <p class="price">$<%= producto.precio %> </p>
+                            <p class="discount"><%= producto.descuento %> %off</p>
+                        <% } else { %>
+                            <br>
+                        <% } %>
+                        
                         <a href="'/product/detail'" class="description"><%= producto.titulo %></a>
                     </div>
                 </article>

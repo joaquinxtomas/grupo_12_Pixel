@@ -31,5 +31,16 @@
   "password": "$2a$10$fdMTe5AsnDzBAD08SXmjAuh3Y.hT/dJWPXF/ipuzxU3BCigdEoefG",
   "passwordConfirm": "$2a$10$DlAQy7wF1aVPkKflNnIz4OKkCbGZU.o4QMduSPg5fJ1ATyP7SIVJ2",
   "avatar": "AVATAR-IMG1666567667534.jpg"
+ },
+ {
+  "id": 4,
+  "fullName": "nombre",
+  "username": "usuario",
+  "email": "email@email.com",
+  "dateOfBirth": "2022-10-24",
+  "address": "Dirección",
+  "password": "$2a$10$pwy5uvU.CPNIuJqhiFjGA.G/9SwOels8wdagqh6se/ytdiGXlbQf.",
+  "passwordConfirm": "$2a$10$8LGagqqq7G6zXQG59rzyKOMpCS2rW/g5rdOQivWdsW9yiBNDond3q",
+  "avatar": "AVATAR-IMG1666591092092.png"
  }
 ]

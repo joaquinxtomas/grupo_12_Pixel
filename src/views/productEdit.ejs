@@ -25,15 +25,30 @@
                     </div>
 
                     <div>
-                        <input type="text" name="titulo" placeholder="Nombre del producto" value=<%= producto.titulo %> >
+                        <input 
+                        type="text" 
+                        name="titulo" 
+                        placeholder="Nombre del producto"
+                        class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>"  
+                        value=<%= producto.titulo %> >
                     </div>
 
                     <div>
-                        <input type="text" name="descripcionCorta" placeholder="Descripcion breve" id="description" value=<%= producto.descripcionCorta %> >
+                        <input 
+                        type="text" 
+                        name="descripcionCorta" 
+                        placeholder="Descripcion breve" 
+                        id="description"
+                        class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>"  
+                        value=<%= producto.descripcionCorta %> >
                     </div>
 
                     <div>
-                        <textarea class= "large-description" name="descripcionDetallada" placeholder="Descripcion extensa" id="large-description"  > <%= producto.descripcionDetallada %></textarea>
+                        <textarea 
+                        class= "large-description" 
+                        name="descripcionDetallada" 
+                        placeholder="Descripcion extensa" 
+                        id="large-description"  ><%=producto.descripcionDetallada %></textarea>
                     </div>
 
 
@@ -54,11 +69,21 @@
                     </div>
 
                     <div>
-                        <input type="number" name="precio" placeholder="Precio" value=<%=producto.precio %> >
+                        <input 
+                        type="number" 
+                        name="precio" 
+                        placeholder="Precio"
+                        class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>" 
+                        value=<%=producto.precio %> >
                     </div>
 
                     <div>
-                        <input type="number" name="descuento" placeholder="Descuento" value=<%= producto.descuento %>>
+                        <input 
+                        type="number" 
+                        name="descuento" 
+                        placeholder="Descuento" 
+                        class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>" 
+                        value=<%= producto.descuento %>>
                     </div>
 
                     <div class="botonera">

@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
     /* font-family: 'Lato', sans-serif; */
+    font-family: 'Roboto', Arial;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', Arial;
     font-size: 12px;
     background-color: #080808;
 }
 
-/* HEADER */
-header {
+/*header*/
+/* HEADER TOP BAR */
+
+/* header {
     background-color: black;
 }
 
@@ -112,7 +114,6 @@ header {
 
 .badge:after {
     content: attr(value);
-    /* value is the number displayed next to the cart */
     font-size: 10px;
     background: red;
     border-radius: 50%;
@@ -121,11 +122,11 @@ header {
     left: -4px;
     top: -16px;
     opacity: 0.9;
-}
+} */
 
 /* NAVIGATION BAR */
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
     justify-content: space-around;
     display: none;
@@ -151,11 +152,11 @@ header {
 .nav-bar-button:hover {
     color: #4A4A4A;
     background-color: #7EFF00;
-}
+} */
 
 
 /* BURGUER MENU */
-.burger-menu {
+/* .burger-menu {
     text-align: center;
     font-size: 1.5em;
     border-bottom: solid 1px #61a120;
@@ -170,7 +171,7 @@ header {
     padding: 10px;
     color: #7eff00;
     margin-bottom: 15px;
-}
+} */
 
 /* BANNER SLIDER */
 
@@ -241,7 +242,6 @@ header {
 }
 
 
-
 /* main*/
 main {
     background-color: #1e1e22;
@@ -253,17 +253,24 @@ form {
     padding: 30px;
 }
 
-
-.añadir-producto {
+.registrate {
     border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.registrate img{
+    width: 100px;
+    display: none;
 }
 
 .normal-input {
     background-color: #252323;
     color: whitesmoke;
     font-size: 18px;
-    border: none;
     border-radius: 5px;
+    margin-top: 20px;
     height: 35px;
     width: 100%;
     max-width: 500px;
@@ -272,23 +279,20 @@ form {
     border: 1px solid #757272;
 }
 
-
-
 .caja-padre input:hover {
     box-shadow: 0px 0px 3px black;
 }
 
-/* ESTILOS VALIDACIONES */
-
-.invalido{
-    border: solid 1px #FF4949;
+.aclaracion-1{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: -20px;
 }
 
-.mensaje-de-error {
-    color: #FF4949;
-    margin-top: -15px;
-    position: absolute;
-    
+.aclaracion {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: -5px;
 }
 
 form div {
@@ -305,37 +309,11 @@ form div {
     box-shadow: 0px 0px 37px #000;
 }
 
-.aclaracion{
-    color: #ffffff;
-    font-size: 14px;
-    padding: 10px;
-    font-weight: normal;
-}
-
-.large-description {
-    width: 100%;
-    background-color: #252323;
-    color: whitesmoke;
-    border: none;
-    border-radius: 5px;
-    height: 100px;
-    max-width: 500px;
-    padding-left: 5px;
-    font-size: 18px;
-    border: 1px solid #757272;
-}
-
-
-
-.large-description::placeholder{
-    padding-top: 5px;
-}
-
-
 .file-select {
     position: relative;
     display: inline-block;
     margin-bottom: 5px;
+    top: 10px;
 }
 
 .file-select::before {
@@ -368,47 +346,45 @@ form div {
     content: 'Seleccionar Archivo 1';
 }
 
-.category {
-    width: 100%;
-    background-color: #252323;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    height: 35px;
-    max-width: 500px;
-    padding-left: 5px;
-    font-size: 18px;
-    border: 1px solid #757272;
+.contraseña {
+    display: flex;
+    align-items: center;
 }
 
-
-option {
-    font-size: 14px;
-}
 
 form div h2 {
     color: white;
 }
 
+form div h4 {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding-bottom: 8px;
+    font-weight: normal;
+    color: white;
+}
 
 form div button {
     margin: -10px;
 }
 
-.agregar {
+.enviar {
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    width: 150px;
+    width: 100%;
     height: 30px;
     background: #7EFF00;
+    margin-top: 10px;
     font-weight: bold;
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
     max-width: 300px;
 }
 
-.agregar:hover {
+.enviar:hover {
+    transform: scale(1.1);
     background-color: #98ff31;
 }
 
@@ -416,13 +392,15 @@ form div button {
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    width: 150px;
-    height: 30px;
+    width: 50%;
+    height: 27px;
     background-color: #7EFF00;
+    margin-top: 5px;
     font-weight: bold;
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
     max-width: 150px;
+
 }
 
 .borrar:hover {
@@ -431,6 +409,59 @@ form div button {
     box-shadow: 0px 0px 10px #000;
 }
 
+.borrar-datos {
+    border-bottom: 1px solid #666;
+    padding-top: 5px;
+}
+
+.ingreso h5 {
+    padding: 5px;
+    margin: 5px;
+}
+
+.google {
+    background-color: #1e1e22;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 3px;
+    color: white;
+    font-weight: normal;
+    box-shadow: 0px 0px 5px black;
+    transition: background-color 0.3s;
+}
+
+.google:hover {
+    background-color: rgb(219, 68, 55);
+}
+
+.google i {
+    margin-left: 10px;
+}
+
+.facebook {
+    background-color: #1e1e22;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 3px;
+    color: white;
+    font-weight: normal;
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.3s;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.facebook i {
+    margin-left: 10px;
+}
 /* WHATSAPP */
 .whatsapp {
     border-radius: 50%;
@@ -450,6 +481,32 @@ form div button {
     right: 28px;
     font-weight: bold;
 
+}
+
+/* ESTILOS VALIDACIONES */
+
+.invalido{
+    border: solid 1px #FF4949;
+}
+
+.mensaje-de-error {
+    color: #FF4949;
+    margin-top: -15px;
+    position: absolute;
+    
+}
+
+.mensaje-de-error i {
+    padding: 5px;
+}
+
+.mensaje-de-errorImg{
+    color: #FF4949;
+    margin-bottom: -20px;
+}
+
+.mensaje-de-errorImg i {
+    padding: 5px;
 }
 
 
@@ -546,9 +603,6 @@ footer {
     text-align: center;
 }
 
-.modal {
-    background-color: white;
-}
 
 @media (min-width:361px) {
     
@@ -558,6 +612,14 @@ footer {
 
     .informacion {
         justify-content: space-between;
+    }
+
+    .aclaracion-1 {
+        font-size: 16px;
+    }
+
+    .aclaracion {
+        font-size: 16px;
     }
     
     .lista1 h4 {
@@ -578,6 +640,10 @@ footer {
 
 @media (min-width:767px) {
     /* HEADER */
+
+    .registrate img {
+        display: initial;
+    }
 
     .logo2 img {
         display: none;
@@ -621,21 +687,15 @@ footer {
     .nav-bar {
         display: flex;
         font-size: 13px;
+
     }
 
-    .large-description{
-        font-size: 16px;
+    /*MAIN* hola/
+
+    main {
+        box-shadow: unset;
     }
 
-    /*MAIN*/
-
-    
-    .botonera{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: 1px #666 solid;
-    }
 
     /* FOOTER */
     .informacion {
@@ -693,7 +753,8 @@ footer {
 
     .file-select {
         display: flex;
-        left: 265px;
+        left: 250px;
+        top: 10px;
         width: 150px;
         margin-bottom: 5px;
         height: 40px;
@@ -703,29 +764,27 @@ footer {
         font-size: 14px;
     }
 
-    .category {
-        max-width: 700px;
-
+    .enviar {
+        font-size: 18px;
     }
 
-    .large-description{
-        max-width: 700px;
+    .ingreso {
+        display: flex;
+        margin-bottom: -10px;
+        margin-top: 10px;
     }
 
-    .agregar {
-        font-size: 16px;
+    .google {
+        flex: 5;
     }
 
-    .borrar {
-        font-size: 16px;
+    .facebook {
+        flex: 5;
     }
-
 
     .informacion {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-
 }
-

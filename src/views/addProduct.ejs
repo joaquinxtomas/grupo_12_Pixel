@@ -25,17 +25,50 @@
                     </div>
 
                     <div>
-                        <input type="text" name="titulo" placeholder="Nombre del producto">
+                        <input 
+                        type="text" 
+                        name="titulo" 
+                        placeholder="Nombre del producto" 
+                        class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>" 
+                        value="<%= locals.oldData ? oldData.titulo : null %>">
                     </div>
+                    <% if (locals.errors && errors.titulo) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.titulo.msg %> 
+                        
+                        </div> 
+                    <% } %> 
+
 
                     <div>
-                        <input type="text" name="descripcionCorta" placeholder="Descripcion breve" id="description">
+                        <input 
+                        type="text" 
+                        name="descripcionCorta" 
+                        placeholder="Descripcion breve" 
+                        id="description" 
+                        class = "normal-input <%= locals.errors && errors.descripcionCorta ? 'invalido' : null%>" 
+                        value="<%= locals.oldData ? oldData.descripcionCorta : null %>">
                     </div>
+                    <% if (locals.errors && errors.descripcionCorta) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.descripcionCorta.msg %> 
+                        
+                        </div> 
+                    <% } %> 
 
                     <div>
-                        <textarea class="large-description" name="descripcionDetallada" placeholder="Descripcion extensa"
-                            id="large-description"></textarea>
+                        <textarea 
+                        class="large-description" 
+                        name="descripcionDetallada" 
+                        placeholder="Descripcion detallada"
+                        id="large-description"><%= locals.oldData ? oldData.descripcionDetallada : null %></textarea>
                     </div>
+                    <% if (locals.errors && errors.descripcionDetallada) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.descripcionDetallada.msg %> 
+                        
+                        </div> 
+                    <% } %> 
 
 
                     <h4 class="aclaracion">Imagen del producto</h4>
@@ -43,24 +76,52 @@
                         <input type="file" name="image" id="image">
                     </div>
 
-
                     <div>
                         <select class="category" name="categoria" id="category">
-                            <option value="PC">PC</option>
-                            <option value="notebook">Notebook</option>
-                            <option value="Monitores">Monitores</option>
-                            <option value="Teclados">Teclados</option>
-                            <option value="Mouse">Mouse</option>
+                            <option value="" disabled selected hidden>Elige una categoría</option>
+                            <option value="PC"  <%= locals.oldData && oldData.categoria=="PC" ? "selected" : null %>>PC</option>
+                            <option value="Notebooks" <%= locals.oldData && oldData.categoria=="Notebooks" ? "selected" : null %>>Notebook</option>
+                            <option value="Monitores" <%= locals.oldData && oldData.categoria=="Monitores" ? "selected" : null %>>Monitores</option>
+                            <option value="Teclados" <%= locals.oldData && oldData.categoria=="Teclados" ? "selected" : null %>>Teclados</option>
+                            <option value="Mouse" <%= locals.oldData && oldData.categoria=="Mouse" ? "selected" : null %>>Mouse</option>
                         </select>
                     </div>
+                    <% if (locals.errors && errors.categoria) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.categoria.msg %> 
+                        
+                        </div> 
+                    <% } %> 
 
                     <div>
-                        <input type="number" name="precio" placeholder="Precio">
+                        <input 
+                        type="number" 
+                        name="precio" 
+                        placeholder="Precio" 
+                        class = "normal-input <%= locals.errors && errors.precio ? 'invalido' : null%>"
+                        value="<%= locals.oldData ? oldData.precio : null %>">
                     </div>
+                    <% if (locals.errors && errors.precio) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.precio.msg %> 
+                        
+                        </div> 
+                    <% } %> 
 
                     <div>
-                        <input type="number" name="descuento" placeholder="Descuento">
+                        <input 
+                        type="number" 
+                        name="descuento" 
+                        placeholder="Descuento" 
+                        class = "normal-input <%= locals.errors && errors.descuento ? 'invalido' : null%>"
+                        value="<%= locals.oldData ? oldData.descuento : null %>">
                     </div>
+                    <% if (locals.errors && errors.descuento) { %>
+                        <div class="mensaje-de-error">
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.descuento.msg %> 
+                        
+                        </div> 
+                    <% } %> 
 
                     <div class="botonera">
                         <div>
