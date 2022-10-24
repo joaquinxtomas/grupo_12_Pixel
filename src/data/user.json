@@ -20,5 +20,16 @@
   "password": "$2a$10$6w5bJvZqWNu9r5LC6z23ZuZfkUSJ2VOAQflOKNL6Hr0rW6.On9Fxu",
   "passwordConfirm": "$2a$10$8jtWDmcU740LWytwoRKG4ueLyM1coRh1pURV89omE3ycijzYNjgdi",
   "avatar": "AVATAR-IMG1666566701326.png"
+ },
+ {
+  "id": 3,
+  "fullName": "Julián Salvá",
+  "username": "juliansalva123",
+  "email": "juliansalva@gmail.com",
+  "dateOfBirth": "2022-10-23",
+  "address": "CALLE FALSA 123",
+  "password": "$2a$10$fdMTe5AsnDzBAD08SXmjAuh3Y.hT/dJWPXF/ipuzxU3BCigdEoefG",
+  "passwordConfirm": "$2a$10$DlAQy7wF1aVPkKflNnIz4OKkCbGZU.o4QMduSPg5fJ1ATyP7SIVJ2",
+  "avatar": "AVATAR-IMG1666567667534.jpg"
  }
 ]

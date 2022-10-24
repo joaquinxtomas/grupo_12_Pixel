@@ -259,7 +259,7 @@ form {
 
 .caja-padre div input {
     background-color: #252323;
-    color: #757272;
+    color: whitesmoke;
     font-size: 18px;
     border: none;
     border-radius: 5px;
@@ -299,14 +299,13 @@ form div {
 .large-description {
     width: 100%;
     background-color: #252323;
-    color: #ffffff;
+    color: whitesmoke;
     border: none;
     border-radius: 5px;
     height: 100px;
     max-width: 500px;
     padding-left: 5px;
     font-size: 18px;
-    color: #757272;
     border: 1px solid #757272;
 }
 
@@ -360,7 +359,6 @@ form div {
     max-width: 500px;
     padding-left: 5px;
     font-size: 18px;
-    color: #757272;
     border: 1px solid #757272;
 }
 
