@@ -1,1 +1,242 @@
-[{"id":1,"categoria":"PC","titulo":"Computador","descripcionCorta":"Computador","descripcionDetallada":"Nam si pericula sunt in mari, pericula sunt in terra, et pericula in falsis fratribus. ","precio":"20000","descuento":0,"img":"pc1.png"},{"id":2,"categoria":"COMPUTADORES","titulo":"Computador","descripcionCorta":"Computador de escritorio","descripcionDetallada":"La laptop HP 245 sigue el ritmo de estilos de trabajo móviles gracias a un diseño delgado y ligero. La hermosa pantalla con su angosto borde y relación de pantalla y cuerpo grande brinda amplio espacio para trabajar o reproducir contenido.","precio":20000,"descuento":0,"img":"pc2.png"},{"id":3,"categoria":"COMPUTADORES","titulo":"Computador","descripcionCorta":"Computador de escritorio","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"pc3.png"},{"id":4,"categoria":"COMPUTADORES","titulo":"Computador","descripcionCorta":"Computador de escritorio","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"pc4.png"},{"id":5,"categoria":"PC","titulo":"Laptop","descripcionCorta":"Notebook","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"30000","descuento":"10","img":"asus.png"},{"id":6,"categoria":"PC","titulo":"Laptop","descripcionCorta":"Notebook","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"30000","descuento":"0","img":"bangho.png"},{"id":7,"categoria":"NOTEBOOKS","titulo":"Laptop","descripcionCorta":"Notebook","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":30000,"descuento":0,"img":"hp.png"},{"id":8,"categoria":"NOTEBOOKS","titulo":"Laptop","descripcionCorta":"Notebook","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"lenovo.png"},{"id":9,"categoria":"PC","titulo":"Macbook","descripcionCorta":"Notebook","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"50000","descuento":"0","img":"macbook.png"},{"id":10,"categoria":"PC","titulo":"Mouse","descripcionCorta":"Mouse","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"25","img":"mouse1.png"},{"id":11,"categoria":"MOUSE","titulo":"Mouse","descripcionCorta":"Mouse económico","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"mouse2.png"},{"id":12,"categoria":"PC","titulo":"Mouse","descripcionCorta":"Mouse","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"0","img":"mouse3.png"},{"id":13,"categoria":"PC","titulo":"Mouse","descripcionCorta":"Mouse","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"0","img":"mouse4.png"},{"id":14,"categoria":"TECLADO","titulo":"Teclado","descripcionCorta":"Teclado gamer","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"teclado1.png"},{"id":15,"categoria":"PC","titulo":"Teclado","descripcionCorta":"Teclado","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"40","img":"teclado2.png"},{"id":16,"categoria":"TECLADO","titulo":"Teclado","descripcionCorta":"Teclado gamer","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"teclado3.png"},{"id":17,"categoria":"PC","titulo":"Teclado","descripcionCorta":"Teclado","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"25","img":"teclado4.png"},{"id":18,"categoria":"PC","titulo":"Monitor","descripcionCorta":"Monitor","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"50","img":"monitor1.png"},{"id":19,"categoria":"MONITOR","titulo":"Monitor","descripcionCorta":"Monitor LED","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"monitor2.png"},{"id":20,"categoria":"MONITOR","titulo":"Monitor","descripcionCorta":"Monitor LED","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":20000,"descuento":0,"img":"monitor3.png"},{"id":21,"categoria":"PC","titulo":"Monitor","descripcionCorta":"Monitor","descripcionDetallada":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","precio":"20000","descuento":"0","img":"monitor4.png"},{"id":22,"titulo":"Zapatillas","descripcionCorta":"Zapatillas","descripcionDetallada":"Zapatillas descripción extensa, características, etcétera.","categoria":"PC","precio":"60000","descuento":"75","img":"PRODUCTO1666567524052.png"}]
+[
+ {
+  "id": 1,
+  "categoria": "PC",
+  "titulo": "Computador",
+  "descripcionCorta": "Computador",
+  "descripcionDetallada": "Nam si pericula sunt in mari, pericula sunt in terra, et pericula in falsis fratribus. ",
+  "precio": "20000",
+  "descuento": 0,
+  "img": "pc1.png"
+ },
+ {
+  "id": 2,
+  "categoria": "COMPUTADORES",
+  "titulo": "Computador",
+  "descripcionCorta": "Computador de escritorio",
+  "descripcionDetallada": "La laptop HP 245 sigue el ritmo de estilos de trabajo móviles gracias a un diseño delgado y ligero. La hermosa pantalla con su angosto borde y relación de pantalla y cuerpo grande brinda amplio espacio para trabajar o reproducir contenido.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "pc2.png"
+ },
+ {
+  "id": 3,
+  "categoria": "COMPUTADORES",
+  "titulo": "Computador",
+  "descripcionCorta": "Computador de escritorio",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "pc3.png"
+ },
+ {
+  "id": 4,
+  "categoria": "COMPUTADORES",
+  "titulo": "Computador",
+  "descripcionCorta": "Computador de escritorio",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "pc4.png"
+ },
+ {
+  "id": 5,
+  "categoria": "PC",
+  "titulo": "Laptop",
+  "descripcionCorta": "Notebook",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "30000",
+  "descuento": "10",
+  "img": "asus.png"
+ },
+ {
+  "id": 6,
+  "categoria": "PC",
+  "titulo": "Laptop",
+  "descripcionCorta": "Notebook",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "30000",
+  "descuento": "0",
+  "img": "bangho.png"
+ },
+ {
+  "id": 7,
+  "categoria": "NOTEBOOKS",
+  "titulo": "Laptop",
+  "descripcionCorta": "Notebook",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 30000,
+  "descuento": 0,
+  "img": "hp.png"
+ },
+ {
+  "id": 8,
+  "categoria": "NOTEBOOKS",
+  "titulo": "Laptop",
+  "descripcionCorta": "Notebook",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "lenovo.png"
+ },
+ {
+  "id": 9,
+  "categoria": "PC",
+  "titulo": "Macbook",
+  "descripcionCorta": "Notebook",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "50000",
+  "descuento": "0",
+  "img": "macbook.png"
+ },
+ {
+  "id": 10,
+  "categoria": "PC",
+  "titulo": "Mouse",
+  "descripcionCorta": "Mouse",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "25",
+  "img": "mouse1.png"
+ },
+ {
+  "id": 11,
+  "categoria": "MOUSE",
+  "titulo": "Mouse",
+  "descripcionCorta": "Mouse económico",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "mouse2.png"
+ },
+ {
+  "id": 12,
+  "categoria": "PC",
+  "titulo": "Mouse",
+  "descripcionCorta": "Mouse",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "0",
+  "img": "mouse3.png"
+ },
+ {
+  "id": 13,
+  "categoria": "PC",
+  "titulo": "Mouse",
+  "descripcionCorta": "Mouse",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "0",
+  "img": "mouse4.png"
+ },
+ {
+  "id": 14,
+  "categoria": "TECLADO",
+  "titulo": "Teclado",
+  "descripcionCorta": "Teclado gamer",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "teclado1.png"
+ },
+ {
+  "id": 15,
+  "categoria": "PC",
+  "titulo": "Teclado",
+  "descripcionCorta": "Teclado",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "40",
+  "img": "teclado2.png"
+ },
+ {
+  "id": 16,
+  "categoria": "TECLADO",
+  "titulo": "Teclado",
+  "descripcionCorta": "Teclado gamer",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "teclado3.png"
+ },
+ {
+  "id": 17,
+  "categoria": "PC",
+  "titulo": "Teclado",
+  "descripcionCorta": "Teclado",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "25",
+  "img": "teclado4.png"
+ },
+ {
+  "id": 18,
+  "categoria": "PC",
+  "titulo": "Monitor",
+  "descripcionCorta": "Monitor",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "50",
+  "img": "monitor1.png"
+ },
+ {
+  "id": 19,
+  "categoria": "MONITOR",
+  "titulo": "Monitor",
+  "descripcionCorta": "Monitor LED",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "monitor2.png"
+ },
+ {
+  "id": 20,
+  "categoria": "MONITOR",
+  "titulo": "Monitor",
+  "descripcionCorta": "Monitor LED",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": 20000,
+  "descuento": 0,
+  "img": "monitor3.png"
+ },
+ {
+  "id": 21,
+  "categoria": "PC",
+  "titulo": "Monitor",
+  "descripcionCorta": "Monitor",
+  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "precio": "20000",
+  "descuento": "0",
+  "img": "monitor4.png"
+ },
+ {
+  "id": 22,
+  "titulo": "Zapatillas",
+  "descripcionCorta": "Zapatillas",
+  "descripcionDetallada": "Zapatillas descripción extensa, características, etcétera.",
+  "categoria": "PC",
+  "precio": "60000",
+  "descuento": "75",
+  "img": "PRODUCTO1666567524052.png"
+ },
+ {
+  "id": 23,
+  "titulo": "asdad",
+  "descripcionCorta": "sadasd",
+  "descripcionDetallada": "asdasd",
+  "categoria": "Monitores",
+  "precio": "213",
+  "descuento": "32",
+  "img": "PRODUCTO1666649967958.png"
+ },
+ {
+  "id": 24,
+  "titulo": "Bicicleta",
+  "descripcionCorta": "Bicicleta",
+  "descripcionDetallada": "adsdasda",
+  "categoria": "PC",
+  "precio": "12",
+  "descuento": "2",
+  "img": "default-image.png"
+ }
+]

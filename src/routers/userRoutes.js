@@ -34,7 +34,8 @@ const validations = [
     .isEmail().withMessage("Debes escribir un formato de email válido"),
     body('address').notEmpty().withMessage("Debes escribir tu dirección"),
     body('password').notEmpty().withMessage("Debes escribir tu contraseña"),
-    body('passwordConfirm').notEmpty().withMessage("Debes confirmar tu contraseña"),
+    body('passwordConfirm').notEmpty().withMessage("Debes confirmar tu contraseña")
+    ,
     body("userImg").custom ((value,{req}) =>{
         let file=req.file;
         if (!file){

@@ -46,19 +46,19 @@ const productController = {
             req.body.descuento=0;
         }
 
-        let imageFile=""
+        let imageFile;
         req.file? imageFile=req.file.filename: imageFile="default-image.png";
 
 		let productCreated={
 			id:newIndex,
 			...req.body,
-            img:+imageFile
+            img:imageFile
 			
 		}
 
         productos.push(productCreated); 
 
-		newProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
+		newProductsJSON = JSON.stringify(productos, null, ' ');
 		fs.writeFileSync(productsFilePath, newProductsJSON)
 
         res.redirect("/product/list");
@@ -69,6 +69,7 @@ const productController = {
         productos.forEach(productoN => { 
             if(productoN.id==req.params.id){
                 producto=productoN;
+                oldData:req.body
             } 
         });
         return res.render('productEdit',{producto});
@@ -97,7 +98,7 @@ const productController = {
 
         req.file? productos[indexEdit].img=req.file.filename: res.redirect("/product/list");
 
-        updatedProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
+        updatedProductsJSON = JSON.stringify(productos, null, ' ');
 		fs.writeFileSync(productsFilePath, updatedProductsJSON)
 
         res.redirect("/product/list");

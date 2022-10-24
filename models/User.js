@@ -7,6 +7,10 @@ const User = {
         return JSON.parse(fs.readFileSync(this.fileName,"utf-8"));
     },
 
+    findAll: function(){
+        return this.getData();
+    },
+
     generateId:function(){
         let allUsers=this.findAll();
         let lastUser=allUsers.pop();
@@ -16,14 +20,10 @@ const User = {
         return 1
     },
 
-    findAll: function(){
-        return this.getData();
-    },
-
     findByPk:function(id){
         let allUsers=this.findAll();
         let userFound=allUsers.find(unUsuario=>unUsuario.id===id);
-        return userFound    
+        return userFound;    
     },
 
     findByField:function(field,text){
