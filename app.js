@@ -1,7 +1,9 @@
-const express = require('express')
-const path = require('path')
-const app = express()
+const express = require('express');
+const path = require('path');
+const app = express();
 const methodOverride= require('method-override'); //configuración de PUT y DELETE
+const session=require('express-session');
+const cookies= require('cookie-parser');
 
 
 
@@ -9,7 +11,21 @@ const rutaMain = require('./src/routers/mainRoutes');
 const rutaProduct = require('./src/routers/productRoutes');
 const rutaUser = require('./src/routers/userRoutes');
 
+
+const userLoggedMIddleware=require("./middlewares/userLoggedMiddleware")
 //use cosas nativas
+app.use(session({  //la sesion se debe inicializar antes de usar el middleware de userLogged.
+    secret: "clave secreta 78-86-22", 
+    resave: false, 
+    saveUninitialized: false 
+}));
+
+
+app.use(cookies());
+
+app.use(userLoggedMIddleware);
+
+
 app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 

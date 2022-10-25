@@ -55,17 +55,25 @@ const userController = {
             })
         }
 
-        let userToLogin = User.findByField('email', req.body.email);
+        
+        let userToLogin = User.findByField('email', req.body.email); //find by username, not email.
 
         if(userToLogin){
-            let comparePasswords=bcrypt.compareSync(req.body.password === userToLogin.password);
+            let comparePasswords=bcrypt.compareSync(req.body.password, userToLogin.password);
             if (comparePasswords){
-                return res.redirect('/')
+                delete userToLogin.password;
+                req.session.userLogged=userToLogin;
+
+                if(req.body.rememberMe){ //si el checkbox llegó en el body, estaba "on"
+                    res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*1}) //cookie contiene email con duración de cinco minutos.
+                }
+
+                return res.redirect('/') 
             }
             return res.render ("login", {
                 errors:{
                     email:{
-                        msg:"El email y/o la contraseña son incorrectos"
+                        msg:"El email o la contraseña son incorrectos"
                     }
                 }
             })
@@ -75,7 +83,7 @@ const userController = {
         return res.render("login",{
             errors: {
                 email:{
-                    msg:"Este usuario no ha sido registrado"
+                    msg:"Este email de usuario no ha sido registrado"
                 }
             }
         })

@@ -185,18 +185,40 @@ body {
     background-image: url('bg.png');
 }
 
+.rememberMe{
+    margin-left: 10px;
+
+}
+
+.labelCheckbox{
+    color:whitesmoke;
+    transition:all 500ms ease;
+
+}
+
+.labelCheckbox:hover{
+    color:#7EFF00
+}
+
 .texto-login{
     display: flex;
     justify-content: space-between;
-    margin: 5px 0px;
+    margin: 10px 5px 0px;
+    
+}
+.contraseña{
+    transition:all 500ms ease;
+
 }
 
 .contraseña:hover {
     color: #7EFF00;
+    
 }
 
 .registrarme  {
     color:  rgb(168, 168, 168);
+    transition:all 500ms ease;
 }
 
 .registrarme:hover {

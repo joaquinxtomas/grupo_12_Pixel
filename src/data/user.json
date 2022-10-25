@@ -41,5 +41,15 @@
   "address": "131123",
   "password": "$2a$10$OuXrhoTLoUc0KBy1bVkXYu87HspHCYkeMukz2OgAOGQ5ei7CobfYu",
   "avatar": "AVATAR-IMG1666652148084.jpg"
+ },
+ {
+  "id": 5,
+  "fullName": "Juan Pérez",
+  "username": "jperez22",
+  "email": "jperez22@gmail.com",
+  "dateOfBirth": "2022-10-25",
+  "address": "CALLE FALSA 123",
+  "password": "$2a$10$nD8O1wUiE1HagqGthphbhOpVTSeUYdaDKPH2BOuYTNGUZoBO44qAK",
+  "avatar": "AVATAR-IMG1666680352762.png"
  }
 ]
