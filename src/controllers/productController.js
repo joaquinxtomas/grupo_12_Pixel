@@ -20,6 +20,9 @@ const productController = {
         });
         return res.render('productDetail',{producto});
     },
+    productListUser: (req,res) => {
+        return res.render('productListUser',{productos});
+    },
 
     productList: (req, res) => {
         return res.render('productList', {productos});
@@ -71,7 +74,7 @@ const productController = {
                 producto=productoN;
                 oldData:req.body
             } 
-
+            
         });
         return res.render('productEdit',{producto:producto});
     },
@@ -101,7 +104,7 @@ const productController = {
 
         updatedProductsJSON = JSON.stringify(productos, null, ' ');
 		fs.writeFileSync(productsFilePath, updatedProductsJSON)
-
+        
         res.redirect("/product/list");
     },
 

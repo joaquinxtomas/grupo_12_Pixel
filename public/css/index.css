@@ -620,7 +620,7 @@ footer {
     .products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 
     .products article {
@@ -723,11 +723,11 @@ footer {
     .products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+       /*  justify-content: space-between; */
     }
 
     .products article {
-
+        margin: 1%;
         width: 23%
     }
 

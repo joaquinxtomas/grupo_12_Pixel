@@ -1,7 +1,7 @@
 const User = require('../models/User')
 
 function userLoggedMIddleware(req,res,next){
-    res.locals.isLogged=false;
+    res.locals.isLogged=false; //por defecto, se asume que cuando se entra, no hay nadie loggeado.
     
     let emailInCookie=req.cookies.userEmail;
     let userFromCookie=User.findByField('email', emailInCookie)

@@ -23,7 +23,7 @@ app.use(session({  //la sesion se debe inicializar antes de usar el middleware d
 
 app.use(cookies());
 
-app.use(userLoggedMIddleware);
+app.use(userLoggedMIddleware); //middleware global, en toda la app.
 
 
 app.use(express.static(path.resolve(__dirname, 'public')));

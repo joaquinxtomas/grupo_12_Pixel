@@ -3,11 +3,13 @@ const router = express.Router();
 const path = require('path');
 const multer = require('multer');
 
-const { body } = require("express-validator");
-
+//controller
 let productController = require('../controllers/productController');
 
-//MULTER
+//express-validator-middlewares
+const validationsAddProduct=require('../../middlewares/validationsAddProductMiddleware')
+
+//MULTER SETUP
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -20,16 +22,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-const validationsAddProduct = [
-    body('titulo').notEmpty().withMessage(" Debes ingresar un nombre del producto"),
-    body('descripcionCorta').notEmpty().withMessage(" Debes ingresar una descripción corta"),
-    body('descripcionDetallada').notEmpty().withMessage(" Debes ingresar una descripción detallada"),
-    body('categoria').notEmpty().withMessage(" Debes ingresar una categoría"),
-    body('precio').notEmpty().withMessage(" Debes ingresar una valor"),
-    body('descuento').optional({checkFalsy: true}).isInt({min:0,max:100}).withMessage(" Debes ingresar una valor entre 0 y 100") //.optional({checkFalsy: true}) permite que el campo esté vacio, si tiene números, verifica.
-]
 
-router.get('/list', productController.productList);
+//ROUTES
+router.get('/list/admin', productController.productList); //ADMIN
+
+router.get('/list', productController.productListUser); //USER
 
 router.get('/detail/:id', productController.productDetail);
 

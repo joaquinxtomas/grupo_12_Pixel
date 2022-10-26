@@ -30,7 +30,7 @@
                         name="titulo" 
                         placeholder="Nombre del producto"
                         class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>"  
-                        value=<%= producto.titulo %> >
+                        value="<%= producto.titulo %>" >
                     </div>
 
                     <div>
@@ -40,7 +40,7 @@
                         placeholder="Descripcion breve" 
                         id="description"
                         class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>"  
-                        value=<%= producto.descripcionCorta %> >
+                        value="<%= producto.descripcionCorta %>" >
                     </div>
 
                     <div>
@@ -60,11 +60,11 @@
 
                     <div>
                         <select class="category" name="categoria" id="category" value= <%= producto.categoria %> >
-                            <option value="PC">PC</option>
-                            <option value="notebook">Notebook</option>
+                            <option value="Computadores">Computadores</option>
+                            <option value="Notebooks">Notebooks</option>
                             <option value="Monitores">Monitores</option>
                             <option value="Teclados">Teclados</option>
-                            <option value="Mouse">Mouse</option>
+                            <option value="Mouse">Mouse</option> <!-- ASIGNAR OLD PARA CATEGORIA -->
                         </select>
                     </div>
 
