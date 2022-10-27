@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', Arial;
+    background-image: url('../img//background/finalbackground.png');
     font-size: 12px;
     background-color: #080808;
 }
@@ -194,9 +194,14 @@ main {
 
 .route-text{
     color: whitesmoke;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-size: 1.5rem;
     margin: 10px 0px;
+    padding-left: 10px;
+    height: 30px;
+    width: 53%;
+
+    border-radius: 5px;
 }
 
 .main-container{
@@ -208,6 +213,7 @@ main {
     border-top-right-radius: 15px;
     padding:20px;
     border-top: #7EFF00 solid 3px;
+    box-shadow: 0px 0px 5px 0.5px #080808;
 }
 
 .prod-image{

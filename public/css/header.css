@@ -106,6 +106,7 @@
 /* NAVIGATION BAR */
 
 .nav-bar {
+    background-color: #000;
     display: flex;
     justify-content: space-around;
     display: none;

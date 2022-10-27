@@ -6,7 +6,7 @@
   "descripcionCorta": "Computador",
   "descripcionDetallada": "Nam si pericula sunt in mari, pericula sunt in terra, et pericula in falsis fratribus. ",
   "precio": "20000",
-  "descuento": 0,
+  "descuento": "0",
   "img": "pc1.png"
  },
  {

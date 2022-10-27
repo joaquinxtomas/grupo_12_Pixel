@@ -181,44 +181,27 @@ body {
 /* login */
 
 body {
-    font-family: arial;
-    background-image: url('bg.png');
+    font-family: "Lato", sans-serif;
 }
 
-.rememberMe{
-    margin-left: 10px;
-
+main {
+    background-image: url('../img//background/finalbackground.png');
 }
 
-.labelCheckbox{
-    color:whitesmoke;
-    transition:all 500ms ease;
 
-}
-
-.labelCheckbox:hover{
-    color:#7EFF00
-}
 
 .texto-login{
     display: flex;
     justify-content: space-between;
-    margin: 10px 5px 0px;
-    
-}
-.contraseña{
-    transition:all 500ms ease;
-
+    margin: 5px 0px;
 }
 
 .contraseña:hover {
     color: #7EFF00;
-    
 }
 
 .registrarme  {
     color:  rgb(168, 168, 168);
-    transition:all 500ms ease;
 }
 
 .registrarme:hover {
