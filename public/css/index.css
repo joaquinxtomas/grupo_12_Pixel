@@ -421,7 +421,7 @@ main {
     justify-content: flex-end;
     margin: 10px auto;
     background: linear-gradient(whitesmoke, #4A4A4A 40%);
-    box-shadow: 0 0.2rem 0.5rem rgba(202, 199, 255, 0.771);
+    /* box-shadow: 0 0.2rem 0.5rem rgba(202, 199, 255, 0.771); */
     margin: 1rem 0;
     border-radius: 0.5rem;
     transition: box-shadow 400ms ease;
@@ -731,7 +731,8 @@ footer {
 
     .products article {
         margin: 1%;
-        width: 23%
+        width: 23%;
+        box-shadow: 0 0.2rem 0.5rem rgba(202, 199, 255, 0.771);
     }
 
     /*FOOTER*/

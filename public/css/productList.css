@@ -296,10 +296,11 @@ main {
 
 .add-button:hover{
     background-color: #7EFF00;
+    
 }
 
-.add-button a:hover{
-    color: #080808;
+.add-button:hover a{
+    color: #4A4A4A;
 }
 
 
