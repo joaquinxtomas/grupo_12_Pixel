@@ -403,7 +403,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 main {
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 90%;
     padding: 20px 0;
 }
 
@@ -623,8 +623,12 @@ footer {
     }
 
     .products article {
-
+        margin: 1%;
         width: 48%
+    }
+
+    main{
+        width: 95%;
     }
 }
 

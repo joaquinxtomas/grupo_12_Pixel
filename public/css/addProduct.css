@@ -25,9 +25,6 @@ header {
 .logo2 img {
     height: 70px;
     margin-right: 40px;
-    border-radius: 16px;
-    border: #7EFF00 0.5px solid;
-    box-shadow:  -0.2rem -0.2rem 0.0rem -0.1rem #7EFF00;
 }
 
 .logo1 {

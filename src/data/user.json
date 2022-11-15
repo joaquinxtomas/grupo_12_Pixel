@@ -61,5 +61,15 @@
   "address": "CALLE FALSA 123",
   "password": "$2a$10$/nMv3/szyFgpO7m9ijoMNe5vejps.mHz6a34nJ1ep0NOZA7WOEorq",
   "avatar": "AVATAR-IMG1666747158036.jpg"
+ },
+ {
+  "id": 7,
+  "fullName": "Pepe Pirulo",
+  "username": "Pepepirulo",
+  "email": "pepepirulo@gmail.com",
+  "dateOfBirth": "2022-11-15",
+  "address": "CALLE FALSA 123",
+  "password": "$2a$10$H7sqactBlZLVRcsMTW3oou8OvQn3eZfsV9HMoDy5HGZ0MhIZRC0LK",
+  "avatar": "AVATAR-IMG1668476119598.png"
  }
 ]
