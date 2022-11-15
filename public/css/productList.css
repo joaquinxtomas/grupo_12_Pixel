@@ -267,11 +267,11 @@ main {
     padding: 20px 0;
 }
 
+
+
 .Category h2,
 .recomended h2 {
-    color: #FFFFFF;
-    -webkit-text-stroke: 0.1px black;
-    text-shadow: 0px 0px 5px #000;
+    color: #7EFF00;
     letter-spacing: 3px;
     margin: 10px 0px;
     border-bottom: 1px solid #4A4A4A;
@@ -701,7 +701,7 @@ footer {
 
     .edit-button-container:hover {
         background-color: #6bb324;
-        transform: scale(0.89);
+        transform: scale(0.98);
     }
 
     .edit-button {
@@ -716,7 +716,7 @@ footer {
 
 
     .action-button-delete:hover {
-        transform: scale(0.89);
+        transform: scale(0.98);
     }
 
     /*FOOTER*/
