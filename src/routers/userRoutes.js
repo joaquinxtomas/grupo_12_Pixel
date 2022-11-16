@@ -31,6 +31,8 @@ router.post('/login', validationsLogin, userController.saveLogin)
 router.get('/register', userController.register);
 router.post('/register', upload.single("userImg"), validationsRegister,  userController.saveRegister);
 
+router.get('/profile',userController.profile)
+
 router.get('/productCart', userController.productCart);
 
 module.exports = router;

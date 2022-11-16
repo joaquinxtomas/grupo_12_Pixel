@@ -81,5 +81,15 @@
   "address": "Pixel Headquarters, San Francisco",
   "password": "$2a$10$pkIGr4QuB.xYeJZTsxNHSe6oh6bHnDjABDvZpOpj.7XewrrSzPnxm",
   "avatar": "AVATAR-IMG1668481166427.png"
+ },
+ {
+  "id": 9,
+  "fullName": "Nahuel",
+  "username": "nahuel22",
+  "email": "nahu2@gmail.com",
+  "dateOfBirth": "2022-03-08",
+  "address": "233",
+  "password": "$2a$10$1ZcgHuKd2eG.vmLC/DEjKuTKzRiEXcaOdMqF/Nui/oF1O4KkClD9W",
+  "avatar": "AVATAR-IMG1668547886213.png"
  }
 ]

@@ -65,7 +65,7 @@ const userController = {
                 req.session.userLogged=userToLogin;
 
                 if(req.body.rememberMe){ //si el checkbox llegó en el body, estaba "on"
-                    res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*1}) //cookie contiene email con duración de cinco minutos.
+                    res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*5}) //cookie contiene email con duración de cinco minutos.
                 }
 
                 return res.redirect('/') 
@@ -87,6 +87,12 @@ const userController = {
                 }
             }
         })
+    },
+
+    profile: (req,res)=>{
+        let user = User.findAll()
+        res.render('userProfile',{user})
+
     },
 
     productCart: (req,res) => {

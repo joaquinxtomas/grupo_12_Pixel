@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Pixel E-Comerce</title>
+</head>
+
+<body>
+
+    <!--  HEADER -->
+    <%- include ("partials/header") %>
+        <!--  HEADER -->
+
+
+        <main>
+            <section>
+            <div class="contenedor-profile">
+            <div>
+                <h1>Hola, usuario!</h1>
+            </div>
+            <div class="avatar">
+                <img src="/img/default-image.png" alt="">
+            </div>
+            <div class="numero-user">
+                <h2>Numero de usuario: 234000</h2>
+            </div>
+            <div class="data-user">
+                <p>Nombre:<%= user.email %>   
+                    <a href="">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </a>
+                </p>
+                <p>Apellido:Usuario 
+                    <a href="">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </a>
+                </p>
+                <p>Email:Usuario 
+                    <a href="">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </a>
+                </p>
+            </div>
+            <div class="pedidos">
+                <a href="">Mis pedidos</a>
+            </div>
+        </div>
+    </section>
+        </main>
+
+         <!-- WHATSAPP -->
+         <%- include('./partials/whatsapp'); %>
+
+         <!-- FOOTER -->
+         <%- include('./partials/footer'); %>
