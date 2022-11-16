@@ -8,6 +8,9 @@ let productController = require('../controllers/productController');
 
 //express-validator-middlewares
 const validationsAddProduct=require('../../middlewares/validationsAddProductMiddleware')
+const adminMiddleware=require('../../middlewares/adminMiddleware')
+const authMiddleware=require('../../middlewares/authMiddleware')
+
 
 //MULTER SETUP
 
@@ -24,23 +27,23 @@ const upload = multer({ storage });
 
 
 //ROUTES
-router.get('/list/admin', productController.productList); //ADMIN
+router.get('/list/admin', authMiddleware ,productController.productList); //ADMIN
 
-router.get('/list', productController.productListUser); //USER
+router.get('/list', adminMiddleware, productController.productListUser); //USER
 
 router.get('/detail/:id', productController.productDetail);
 
 //route get create form
-router.get('/create', productController.productCreate);
+router.get('/create', authMiddleware, productController.productCreate);
 //store new product
 router.post('/create', upload.single("image"), validationsAddProduct, productController.productSave); //multer middleware
 
 //route get edit form
-router.get('/edit/:id', productController.productEdit);
+router.get('/edit/:id', authMiddleware, productController.productEdit);
 //update product
 router.put('/edit/:id', upload.single("image"), productController.productUpdate); //multer middleware
 //delete product
-router.delete('/delete/:id', productController.productDelete);
+router.delete('/delete/:id', authMiddleware,  productController.productDelete);
 
 
 module.exports = router;

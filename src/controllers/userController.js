@@ -34,7 +34,8 @@ const userController = {
             ...req.body,
             password:bcrypt.hashSync(req.body.password,10),
             passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
-            avatar: req.file.filename
+            avatar: req.file.filename,
+            admin: false
         }
 
         let userCreated = User.create(userToCreate);
@@ -63,6 +64,7 @@ const userController = {
             if (comparePasswords){
                 delete userToLogin.password;
                 req.session.userLogged=userToLogin;
+                console.log(req.session.userLogged)
 
                 if(req.body.rememberMe){ //si el checkbox llegó en el body, estaba "on"
                     res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*1}) //cookie contiene email con duración de cinco minutos.

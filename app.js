@@ -21,7 +21,7 @@ app.use(session({  //la sesion se debe inicializar antes de usar el middleware d
 }));
 
 
-app.use(cookies());
+app.use(cookies()); //se activan las cookies
 
 app.use(userLoggedMIddleware); //middleware global, en toda la app.
 

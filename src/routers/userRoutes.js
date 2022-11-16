@@ -9,6 +9,7 @@ let userController = require('../controllers/userController');
 //express-validator-middlewares
 const validationsRegister=require('../../middlewares/validationsRegisterMiddleware')
 const validationsLogin=require('../../middlewares/validationsLoginMiddleware')
+const guestMiddleware=require('../../middlewares/guestMiddleware')
 
 
 //multer setup
@@ -25,10 +26,10 @@ const upload = multer ({storage});
 
 
 //User routes
-router.get('/login', userController.login);
+router.get('/login', guestMiddleware , userController.login); //el middleware, redirige al perfil de usuario si este ya esta logeado
 router.post('/login', validationsLogin, userController.saveLogin)
 
-router.get('/register', userController.register);
+router.get('/register', guestMiddleware , userController.register);
 router.post('/register', upload.single("userImg"), validationsRegister,  userController.saveRegister);
 
 router.get('/productCart', userController.productCart);

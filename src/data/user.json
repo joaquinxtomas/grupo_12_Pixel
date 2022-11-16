@@ -8,7 +8,8 @@
   "address": "12314",
   "password": "$2a$10$on8FD9/DjAiEAmHAhIw3JOFuhaETS12KFIKPjZe.IxiQ4sTLNrcbq",
   "passwordConfirm": "$2a$10$YsqWs7dOwDrf5IqSCB6hl.8ac0tHRNJy4agk/YKK4.QFavRepwaeu",
-  "avatar": "AVATAR-IMG1666650229549.png"
+  "avatar": "AVATAR-IMG1666650229549.png",
+  "admin": false
  },
  {
   "id": 2,
@@ -19,7 +20,8 @@
   "address": "12314",
   "password": "$2a$10$iFbYgle80oWCkmXU0b3F1.6mLgAu/95OrOukmU/niCwnye5Msceq6",
   "passwordConfirm": "$2a$10$0AUZzDiMHVY99AholFtcGeS5EfjREBz7lVWcoXR.8EuPqtPs67d.C",
-  "avatar": "AVATAR-IMG1666651370577.jpg"
+  "avatar": "AVATAR-IMG1666651370577.jpg",
+  "admin": false
  },
  {
   "id": 3,
@@ -30,7 +32,8 @@
   "address": "213132",
   "password": "$2a$10$NQQxTW1YPLP0OVCb2PJQiOt2RInUNQln5WlI9H87OVi0QmYfervX6",
   "passwordConfirm": "$2a$10$8hfbyz/xWdRbi3xamvReoeWMiSBAuSLWM52wt4FAtGo2.cPVhInSa",
-  "avatar": "AVATAR-IMG1666652075110.jpg"
+  "avatar": "AVATAR-IMG1666652075110.jpg",
+  "admin": false
  },
  {
   "id": 4,
@@ -40,7 +43,8 @@
   "dateOfBirth": "2022-10-12",
   "address": "131123",
   "password": "$2a$10$OuXrhoTLoUc0KBy1bVkXYu87HspHCYkeMukz2OgAOGQ5ei7CobfYu",
-  "avatar": "AVATAR-IMG1666652148084.jpg"
+  "avatar": "AVATAR-IMG1666652148084.jpg",
+  "admin": false
  },
  {
   "id": 5,
@@ -50,7 +54,8 @@
   "dateOfBirth": "2022-10-25",
   "address": "CALLE FALSA 123",
   "password": "$2a$10$nD8O1wUiE1HagqGthphbhOpVTSeUYdaDKPH2BOuYTNGUZoBO44qAK",
-  "avatar": "AVATAR-IMG1666680352762.png"
+  "avatar": "AVATAR-IMG1666680352762.png",
+  "admin": false
  },
  {
   "id": 6,
@@ -60,7 +65,8 @@
   "dateOfBirth": "2022-10-25",
   "address": "CALLE FALSA 123",
   "password": "$2a$10$/nMv3/szyFgpO7m9ijoMNe5vejps.mHz6a34nJ1ep0NOZA7WOEorq",
-  "avatar": "AVATAR-IMG1666747158036.jpg"
+  "avatar": "AVATAR-IMG1666747158036.jpg",
+  "admin": false
  },
  {
   "id": 7,
@@ -70,7 +76,8 @@
   "dateOfBirth": "2022-11-15",
   "address": "CALLE FALSA 123",
   "password": "$2a$10$H7sqactBlZLVRcsMTW3oou8OvQn3eZfsV9HMoDy5HGZ0MhIZRC0LK",
-  "avatar": "AVATAR-IMG1668476119598.png"
+  "avatar": "AVATAR-IMG1668476119598.png",
+  "admin": false
  },
  {
   "id": 8,
@@ -80,6 +87,18 @@
   "dateOfBirth": "2022-11-14",
   "address": "Pixel Headquarters, San Francisco",
   "password": "$2a$10$pkIGr4QuB.xYeJZTsxNHSe6oh6bHnDjABDvZpOpj.7XewrrSzPnxm",
-  "avatar": "AVATAR-IMG1668481166427.png"
+  "avatar": "AVATAR-IMG1668481166427.png",
+  "admin": true
+ },
+ {
+  "id": 9,
+  "fullName": "Nuevo Usuario",
+  "username": "nuevoUsuario",
+  "email": "nuevoUsuario@gmail.com",
+  "dateOfBirth": "2022-11-16",
+  "address": "Cl 34 s 51 56",
+  "password": "$2a$10$pnTdECumUD.1ZtQWA5bQ8uwClGxOpovCpkqg8mY3WQEyKtsbW39ZK",
+  "avatar": "AVATAR-IMG1668625494306.jpg",
+  "admin": false
  }
 ]
