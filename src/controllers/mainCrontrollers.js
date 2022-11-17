@@ -14,7 +14,6 @@ const mainControllers = {
             console.log("el email guardado en sesion es UNDEFINED")
         }
         
-
         return res.render('index', { productos });
     }
 };

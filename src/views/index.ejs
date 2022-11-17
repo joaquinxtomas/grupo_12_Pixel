@@ -63,7 +63,7 @@
                     let shuffled = productos.sort(() => 0.5 - Math.random());
                     
                     // Get sub-array of first n elements after shuffled
-                    let n=12;
+                    let n=8;
                     let selected = shuffled.slice(0, n); %> 
 
                     <% selected.forEach(producto => { %>
@@ -77,7 +77,7 @@
                             
                             <% if (producto.descuento!=0) { %>
                                 <p class="price">$<%= producto.precio %></p>
-                                <p class="discount"><%= producto.descuento %> %off</p>
+                                <p class="discount"><%= producto.descuento %> %off</p> 
                             <% } else { %>
                                 <br>
                                 
