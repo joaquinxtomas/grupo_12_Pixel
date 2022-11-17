@@ -87,7 +87,8 @@
   "dateOfBirth": "2022-11-14",
   "address": "Pixel Headquarters, San Francisco",
   "password": "$2a$10$pkIGr4QuB.xYeJZTsxNHSe6oh6bHnDjABDvZpOpj.7XewrrSzPnxm",
-  "avatar": "AVATAR-IMG1668481166427.png"
+  "avatar": "AVATAR-IMG1668481166427.png",
+  "admin": true
  },
  {
   "id": 9,

@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../../css/productDetail.css"> <!-- OJO SE LE PUSO ../ PREGUNTAR -->
     <title>Detalle Producto</title>
+
+    <script>
+        function thumbChange(n){
+            if (n==0){
+                let thumb="../../img/<%= producto.img %>";
+                document.getElementById('mainImg').src= thumb;
+            } else {
+                let thumb="../../img/hp"+n+".png"
+                document.getElementById('mainImg').src= thumb;
+            }
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -20,12 +34,13 @@
         <section class="main-container">
             <div class="images">
                 <div class="main-image">
-                    <img class="prod-image" src="../../img/<%= producto.img %>" alt="img_hp">
+                    <img id='mainImg' class="prod-image" src="../../img/<%= producto.img %>" alt="img_hp">
                 </div>
                 <div class="container-views">
-                    <img class="view_prod" src="../../img/hp1.png" alt="img_hp1">
-                    <img class="view_prod" src="../../img/hp2.png" alt="img_hp2">
-                    <img class="view_prod" src="../../img/hp3.png" alt="img_hp3">
+                    <img id="thumb0" onclick="thumbChange(0)" class="view_prod" src="../../img/<%= producto.img %>" alt="img_hp0">
+                    <img id="thumb1" onclick="thumbChange(1)" class="view_prod" src="../../img/hp1.png" alt="img_hp1">
+                    <img id="thumb2" onclick="thumbChange(2)" class="view_prod" src="../../img/hp2.png" alt="img_hp2">
+                    <img id="thumb3" onclick="thumbChange(3)" class="view_prod" src="../../img/hp3.png" alt="img_hp3">
                 </div>
             </div>
             <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %>
@@ -33,12 +48,21 @@
                 <div class="box_texto_pago">
                     <h3 class="subtitulo_texto_pago">Precio</h3>
                     <p class="final-value">$<%= valorFinal.toFixed(0) %> </p>
+
+                    <% if (producto.descuento!=0) { %>
                     <div class="discount-container">
                         <p class="price">$<%= producto.precio %> </p>
                         <p class="discount"><%= producto.descuento %> %OFF </p>
                     </div>
+                    <% } else { %>
+                        <br>
+                        
+                    <% } %>
 
-
+                </div>
+                <div class="box_texto_pago">
+                    <h3 class="subtitulo_texto_pago">Descripción</h3>
+                    <p class="texto_pago"> <%=producto.descripcionCorta%> </p>
                 </div>
                 <div class="box_texto_pago">
                     <h3 class="subtitulo_texto_pago">Medios de Pago</h3>
@@ -101,35 +125,6 @@
 
         </section>
         <%- include('./partials/whatsapp'); %>
-        <!-- <section class="box_contenedor_ofertas">
-            <div class="box">
-                <h3 class="h3_oferta">Ofertas</h3>
-                <img src="img/asus.jpg" alt="img_oferta" height="70px">
-                <h3 class="nombre_oferta">ASUS</h3>
-                <p>Lorem ipsum dolor sit.</p>
-                <p>Velit eum culpa quas?</p>
-                <p>Quod tenetur inventore amet?</p>
-                <p>Harum suscipit dolorem nesciunt?</p>
-            </div>
-            <div class="box">
-                <h3 class="h3_oferta">Ofertas</h3>
-                <img src="img/lenovo.jpg" alt="img_oferta" height="70px">
-                <h3 class="nombre_oferta">LENOVO</h3>
-                <p>Lorem ipsum dolor sit.</p>
-                <p>Velit eum culpa quas?</p>
-                <p>Quod tenetur inventore amet?</p>
-                <p>Harum suscipit dolorem nesciunt?</p>
-            </div>
-            <div class="box">
-                <h3 class="h3_oferta">Ofertas</h3>
-                <img src="img/macbook.jpg" alt="img_oferta" height="70px">
-                <h3 class="nombre_oferta">MACBOOK</h3>
-                <p>Lorem ipsum dolor sit.</p>
-                <p>Velit eum culpa quas?</p>
-                <p>Quod tenetur inventore amet?</p>
-                <p>Harum suscipit dolorem nesciunt?</p>
-            </div>
-        </section> -->
 
     </main>
     <%- include('./partials/footer'); %>

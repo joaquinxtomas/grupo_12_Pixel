@@ -13,6 +13,7 @@ function userLoggedMIddleware(req,res,next){
     if (req.session.userLogged){ //si la session tiene algo, se le mete en las variables locales, para poderlo mostrar por ejs.
         res.locals.isLogged=true
         res.locals.userLogged=req.session.userLogged;
+        
     }
 
 
