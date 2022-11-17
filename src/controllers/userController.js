@@ -46,6 +46,11 @@ const userController = {
     login: (req,res) => { 
         return res.render('login');
     },
+    logout: (req,res) => {
+        req.session.destroy();
+        console.log(req.session);
+        return res.redirect('/');
+    },
 
     saveLogin:(req,res)=>{
         const resultValidation=validationResult(req);

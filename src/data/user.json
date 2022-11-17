@@ -133,5 +133,16 @@
   "password": "$2a$10$/9JkTDmXh5T5a1gem14qT.tpXoU88baDxu3cjXy4p3n3m77ot5PAO",
   "avatar": "AVATAR-IMG1668703131723.png",
   "admin": false
+ },
+ {
+  "id": 12,
+  "fullName": "Jorge Hernández",
+  "username": "jormate",
+  "email": "jorgelshz@gmail.com",
+  "dateOfBirth": "1971-12-13",
+  "address": "CuchaCucha 124",
+  "password": "$2a$10$0Owyax0LQOeLaW5c/TiHyuMBRV4O6H0hCj7R47SzXfuYdfthPN9lC",
+  "avatar": "AVATAR-IMG1668719028212.jpg",
+  "admin": false
  }
 ]

@@ -16,9 +16,11 @@
         <div class="icons-top-bar">
             <% if (locals.isLogged) { %>
              <a href="/user/profile"><i class="fa-regular fa-user"></i> <%= locals.userLogged.fullName %> </a>
-            <% } else { %>
+             <a href="/user/logout"> LogOut </a>
+             <% } else { %>
             <a href="/user/login"><i class="fa-regular fa-user"></i> Ingresar</a>
             <a href="/user/register">Registrarse</a>
+           
             <% } %>
             <a href="/user/productCart"><i class="fa badge" style="font-size:24px" value=5>&#xf07a;</i></a>
         </div>

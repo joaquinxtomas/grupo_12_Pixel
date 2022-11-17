@@ -30,6 +30,11 @@ router.get('/login', guestMiddleware , userController.login); //el middleware, r
 router.post('/login', validationsLogin, userController.saveLogin)
 
 router.get('/register', guestMiddleware , userController.register);
+
+// Logout:
+router.get('/logout', userController.logout);
+
+
 router.post('/register', upload.single("userImg"), validationsRegister,  userController.saveRegister);
 
 router.get('/profile',userController.profile)
