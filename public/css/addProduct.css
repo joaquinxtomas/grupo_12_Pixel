@@ -328,40 +328,38 @@ form div {
 }
 
 
-.file-select {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.file-select::before {
-    background-color: #7EFF00;
-    color: #000000;
-    font-weight: bold;
-    font-size: 12px;
+.contenedor-file {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contenedor-file input {
+    display: none;
+}
+
+.contenedor-file label {
+    display: block;
+    padding: 8px 21px;
+    border: none;
     border-radius: 5px;
-    content: 'Subir archivo';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    box-shadow: 0px 0px 10px black;
+    background-color: #7EFF00;
+    cursor: pointer;
+    width: 60%;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #000;
+    transition: all 0.3s;
+    font-size: 13px;
 }
 
-
-.file-select input[type="file"] {
-    opacity: 0;
-    width: 120px;
-    height: 10px;
-    display: inline-block;
+.contenedor-file label:hover{
+    background-color: #59b101;
 }
 
-#src-file1::before {
-    content: 'Seleccionar Archivo 1';
+.contenedor-file h3 {
+    padding-left: 10px;
+    color: #fff;
+    font-weight: normal;
 }
 
 .category {
@@ -685,18 +683,6 @@ footer {
     .caja-padre div input {
         max-width: 700px;
         font-size: 18px;
-    }
-
-    .file-select {
-        display: flex;
-        left: 265px;
-        width: 150px;
-        margin-bottom: 5px;
-        height: 40px;
-    }
-
-    .file-select::before {
-        font-size: 14px;
     }
 
     .category {

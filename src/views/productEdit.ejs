@@ -53,10 +53,13 @@
 
 
                     <h4 class="aclaracion">Imagen del producto</h4>
-                    <div class="file-select">
-                        <input type="file" name="image" accept=".png, .jpg">
+                    <div class="contenedor-file">
+                        <label for="archivo">Elige un archivo 
+                            <i class="fa-regular fa-folder-open"></i>
+                        </label>
+                        <input type="file" id="archivo" name="userImg" accept=".png, .jpg">
+                        <h3 id="nombre"></h3>
                     </div>
-
 
                     <div>
                         <select class="category" name="categoria" id="category" value= <%= producto.categoria %> >
@@ -98,6 +101,13 @@
                 </div>
 
             </form>
+            <script type="text/javascript">
+                let archivo = document.querySelector('#archivo');
+                archivo.addEventListener('change',()=>{
+                    document.querySelector('#nombre').innerText = 
+                    archivo.files[0].name
+                });
+            </script>
         </main>
 
         <!-- WHATSAPP -->

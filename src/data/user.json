@@ -121,5 +121,16 @@
   "password": "$2a$10$/tVCdNbzD9vaFGAZMrQwP.I65ajLQ37XJX.lp9XgX8j6O.IdPNmTC",
   "avatar": "AVATAR-IMG1668634946520.jpg",
   "admin": false
+ },
+ {
+  "id": 11,
+  "fullName": "Joaquin Pala",
+  "username": "joaco123",
+  "email": "jtp123@gmail.com",
+  "dateOfBirth": "2022-11-15",
+  "address": "1234",
+  "password": "$2a$10$/9JkTDmXh5T5a1gem14qT.tpXoU88baDxu3cjXy4p3n3m77ot5PAO",
+  "avatar": "AVATAR-IMG1668703131723.png",
+  "admin": false
  }
 ]

@@ -346,6 +346,8 @@ form div {
     content: 'Seleccionar Archivo 1';
 } */
 
+/* INPUT FILE */
+
 .contenedor-file {
     display: flex;
     justify-content: center;
