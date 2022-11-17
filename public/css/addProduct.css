@@ -362,6 +362,15 @@ form div {
     font-weight: normal;
 }
 
+.previsualizacion {
+    max-width: 100px;
+}
+
+#imgPreview {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
 .category {
     width: 100%;
     background-color: #252323;

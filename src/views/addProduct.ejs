@@ -70,13 +70,15 @@
                         </div> 
                     <% } %> 
 
-
+                    <div class="previsualización">
+                        <img id="imgPreview">
+                    </div>
                     <h4 class="aclaracion">Imagen del producto</h4>
                     <div class="contenedor-file">
                         <label for="archivo">Elige un archivo 
                             <i class="fa-regular fa-folder-open"></i>
                         </label>
-                        <input type="file" id="archivo" name="userImg" accept=".png, .jpg">
+                        <input type="file" id="archivo" name="userImg" accept=".png, .jpg" onchange="previewImage(event,'#imgPreview')">
                         <h3 id="nombre"></h3>
                     </div>
 
@@ -147,6 +149,15 @@
                     document.querySelector('#nombre').innerText = 
                     archivo.files[0].name
                 });
+
+                function previewImage(event, querySelector){
+                    const input = event.target;
+                    $imgPreview = document.querySelector(querySelector)
+                    if(!input.files.length)return
+                    file = input.files[0];
+                    objectURL=URL.createObjectURL(file);
+                    $imgPreview.src = objectURL
+                }
             </script>
         </main>
 
