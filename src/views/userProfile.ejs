@@ -22,26 +22,24 @@
             <section>
             <div class="contenedor-profile">
             <div>
-                <h1>Hola, usuario!</h1>
+                <h1>Hola, <%= user.fullName %>!</h1>
             </div>
             <div class="avatar">
-                <img src="/img/default-image.png" alt="">
+                <img src="/img/avatar/<%=user.avatar%> " alt="avatar">
             </div>
-            <div class="numero-user">
-                <h2>Numero de usuario: 234000</h2>
-            </div>
+
             <div class="data-user">
-                <p>Nombre:<%= user.email %>   
+                <p>Nombre: <%= user.fullName %>  
                     <a href="">
                     <i class="fa-regular fa-pen-to-square"></i>
                 </a>
                 </p>
-                <p>Apellido:Usuario 
+                <p>Username:<%= user.username %>  
                     <a href="">
                     <i class="fa-regular fa-pen-to-square"></i>
                 </a>
                 </p>
-                <p>Email:Usuario 
+                <p>Email:<%= user.email %>  
                     <a href="">
                     <i class="fa-regular fa-pen-to-square"></i>
                 </a>
@@ -49,6 +47,10 @@
             </div>
             <div class="pedidos">
                 <a href="">Mis pedidos</a>
+            </div>
+
+            <div class="cerrar-sesion">
+                <button>Cerrar sesión</button>
             </div>
         </div>
     </section>

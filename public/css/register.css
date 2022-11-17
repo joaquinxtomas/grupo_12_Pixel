@@ -309,7 +309,7 @@ form div {
     box-shadow: 0px 0px 37px #000;
 }
 
-.file-select {
+/* .file-select {
     position: relative;
     display: inline-block;
     margin-bottom: 5px;
@@ -344,7 +344,42 @@ form div {
 
 #src-file1::before {
     content: 'Seleccionar Archivo 1';
+} */
+
+.contenedor-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contenedor-file input {
+    display: none;
+}
+
+.contenedor-file label {
+    display: block;
+    padding: 8px 21px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7EFF00;
+    cursor: pointer;
+    width: 60%;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #000;
+    transition: all 0.3s;
+    font-size: 13px;
+}
+
+.contenedor-file label:hover{
+    background-color: #59b101;
+}
+
+.contenedor-file h3 {
+    padding-left: 10px;
+    color: #fff;
+    font-weight: normal;
+}
+
 
 .contraseña {
     display: flex;
@@ -381,6 +416,7 @@ form div button {
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
     max-width: 300px;
+    cursor: pointer;
 }
 
 .enviar:hover {
@@ -400,6 +436,7 @@ form div button {
     transition: all 0.2s;
     box-shadow: 0px 0px 5px #000;
     max-width: 150px;
+    cursor: pointer;
 
 }
 
@@ -751,17 +788,8 @@ footer {
         font-size: 18px;
     }
 
-    .file-select {
-        display: flex;
-        left: 250px;
-        top: 10px;
-        width: 150px;
-        margin-bottom: 5px;
-        height: 40px;
-    }
-
-    .file-select::before {
-        font-size: 14px;
+    .contenedor-file label{
+        width: 40%;
     }
 
     .enviar {
@@ -786,5 +814,6 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
+
 
 }

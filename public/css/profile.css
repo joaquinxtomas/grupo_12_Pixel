@@ -278,6 +278,8 @@ section {
 
 .data-user {
     font-size: 14px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .data-user p {
@@ -303,6 +305,21 @@ section {
     font-size: 15px;
     color: #000;
     font-weight: bold;
+}
+
+.cerrar-sesion button{
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    height: 30px;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.cerrar-sesion button:hover{
+    background-color:#202020 ;
 }
 
 

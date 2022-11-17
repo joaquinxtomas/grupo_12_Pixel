@@ -99,8 +99,12 @@
 
                     <div>
                         <h4 class="aclaracion">Foto de usuario</h4>
-                        <div class="file-select">
-                            <input type="file" name="userImg" accept=".png, .jpg">
+                        <div class="contenedor-file">
+                            <label for="archivo">Elige un archivo 
+                                <i class="fa-regular fa-folder-open"></i>
+                            </label>
+                            <input type="file" id="archivo" name="userImg" accept=".png, .jpg">
+                            <h3 id="nombre"></h3>
                         </div>
                         <% if(locals.errors && errors.userImg){ %>
                             <div class="mensaje-de-errorImg">
@@ -147,6 +151,15 @@
                     </div>
 
             </form>
+
+            <script type="text/javascript">
+                let archivo = document.querySelector('#archivo');
+                archivo.addEventListener('change',()=>{
+                    document.querySelector('#nombre').innerText = 
+                    archivo.files[0].name
+                });
+            </script>
+
             <%- include('./partials/whatsapp'); %>
         </main>
         <%- include('./partials/footer'); %>

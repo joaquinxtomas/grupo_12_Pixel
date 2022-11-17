@@ -15,7 +15,7 @@
         </form>
         <div class="icons-top-bar">
             <% if (locals.isLogged) { %>
-             <a href="/"><i class="fa-regular fa-user"></i> <%= locals.userLogged.fullName %> </a>
+             <a href="/user/profile"><i class="fa-regular fa-user"></i> <%= locals.userLogged.fullName %> </a>
             <% } else { %>
             <a href="/user/login"><i class="fa-regular fa-user"></i> Ingresar</a>
             <a href="/user/register">Registrarse</a>
@@ -28,7 +28,7 @@
     </div>
     <nav class="nav-bar">
 
-        <a href="/product/list/admin"> 
+        <a href="/product/list"> 
             <div class="nav-bar-button">
                 <p>Productos</p>
             </div>

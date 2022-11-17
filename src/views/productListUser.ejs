@@ -70,8 +70,7 @@
                                     </h2>
                                     <div class="products">
                                         <%let productosCategoria=productos.filter(producto=>producto.categoria==categoriaN)%>
-                                        <%productosCategoria.forEach(producto=> { 
-                                            console.log(producto)%>
+                                        <%productosCategoria.forEach(producto=> { %>
 
                                         <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %>
 
