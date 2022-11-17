@@ -42,3 +42,7 @@ app.use('/user', rutaUser);
 app.use('/product', rutaProduct);
 
 app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
+//error 404
+app.use((req,res,next)=>{
+    res.status(404).render("not-found")
+})
