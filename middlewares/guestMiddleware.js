@@ -2,7 +2,7 @@
 
 function guestMiddleware(req, res, next) {
     if (req.session.userLogged ) {
-        return res.send("ya estás logueado papi") //cambiar por un res.redirect a vista de User Profile cuando esté hecha
+        return res.redirect('/user/profile')//cambiar por un res.redirect a vista de User Profile cuando esté hecha
 
     }
 

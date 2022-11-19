@@ -447,6 +447,22 @@ main {
 
 }
 
+.container-product {
+    display: flex;
+}
+
+.price-discount {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    width: 20px;
+}
+
+.productInfo{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 60px;
+}
+
 .discount {
     background-color: darkred;
     width: 50px;
@@ -454,9 +470,6 @@ main {
     padding: 3px;
     border-radius: 5px;
     font-weight: bold;
-    position: relative;
-    bottom: 62px;
-    
 }
 
 .productName {
@@ -467,17 +480,25 @@ main {
 
 .final-value {
     font-size: 16px;
-    color: #7EFF00
+    color: #7EFF00;
 }
+
 
 .price {
     color: #cac7ff;
     font-size: 14px;
-    text-decoration: line-through
+    text-decoration: line-through;
+    width: 10px;
+
+}
+
+.price i {
+    text-decoration: none;
 }
 
 
 .description {
+    display: inline;
     font-size: 16px;
     color: #cac7ff;
     font-weight: bold;
@@ -490,12 +511,6 @@ main {
     color: #7EFF00
 }
 
-
-
-
-.productInfo {
-    padding: 5px
-}
 
 
 /* WHATSAPP */
@@ -791,5 +806,9 @@ footer {
     .informacion {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .price{
+        bottom: 7px;
     }
 }

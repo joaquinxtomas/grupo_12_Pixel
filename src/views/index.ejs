@@ -72,9 +72,13 @@
                     
                     <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
                         <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
+                        <div class="container-product">
                         <div class="productInfo">
                             <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
-                            
+                            <a href="/product/detail" class="description"><%= producto.titulo %></a>
+                        </div>
+
+                        <div class="price-discount">
                             <% if (producto.descuento!=0) { %>
                                 <p class="price">$<%= producto.precio %></p>
                                 <p class="discount"><%= producto.descuento %> %off</p> 
@@ -82,8 +86,8 @@
                                 <br>
                                 
                             <% } %>
-                            <a href="/product/detail" class="description"><%= producto.titulo %></a>
                         </div>
+                    </div>
                     </article>
                     <% }) %>
 
@@ -100,21 +104,25 @@
 
                     <% selected.forEach(producto => { %>
                     <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %> 
-                <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
-                    <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
-                    <div class="productInfo">
-                        <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
-                        
-                        <% if (producto.descuento!=0) { %>
-                            <p class="price">$<%= producto.precio %> </p>
-                            <p class="discount"><%= producto.descuento %> %off</p>
-                        <% } else { %>
-                            <br>
-                        <% } %>
-                        
-                        <a href="'/product/detail'" class="description"><%= producto.titulo %></a>
+                    <article onclick="location.href='/product/detail/<%=producto.id%>';" style="cursor: pointer;">
+                        <img src="/img/<%= producto.img %>" alt="producto" class="prod-image">
+                        <div class="container-product">
+                        <div class="productInfo">
+                            <p class="final-value">$<%= valorFinal.toFixed(0) %></p>
+                            <a href="/product/detail" class="description"><%= producto.titulo %></a>
+                        </div>
+
+                        <div class="price-discount">
+                            <% if (producto.descuento!=0) { %>
+                                <p class="price">$<%= producto.precio %></p>
+                                <p class="discount"><%= producto.descuento %> %off</p> 
+                            <% } else { %>
+                                <br>
+                                
+                            <% } %>
+                        </div>
                     </div>
-                </article>
+                    </article>
                 <% }) %>
             </div>
         </section>

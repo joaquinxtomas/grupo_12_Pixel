@@ -41,3 +41,16 @@ Retrospectiva del sprint 4:
 4. Hacer menos: Realizar modificaciones simultaneas en los mismos elementos que puedan generar conflictos.
 
 5. Dejar de hacer: Posponer tareas o aprender funciones sencillas. 
+
+
+Retrospectiva del sprint 5:
+
+1. Comenzar a hacer: Asignar tareas con más anticipación. Programacion en grupo.  
+
+2. Hacer más: Aumentar frecuencia de reuniones.  
+
+3. Continuar haciendo: Ayudarnos mutuamente con las reuniones por Meet y Zoom. Realizar los trabajos en tiempo y forma.
+
+4. Hacer menos: Realizar modificaciones simultaneas en los mismos elementos que puedan generar conflictos. 
+
+5. Dejar de hacer: Posponer tareas. 

@@ -15,3 +15,12 @@ Reunion de daily del 24/10/2022:
 ¿Que haremos hoy?: Ultimar detalles, seguir investigando sobre el impedimento y organizar el tablero de trabajo.
 
 
+Reunion de weekly del 10/11/2022: 
+
+Que hicimos esta semana?: Entidad de usuarios, funcionamiento login y register, vistas 404 y profile y middlewares.
+
+¿Se encontro algun impedimento?: No encontramos impedimentos. Logramos resolver todo el sprint. 
+
+¿Que hicimos hoy?: Terminamos el método de logout y arreglamos errores de vistas. 
+
+

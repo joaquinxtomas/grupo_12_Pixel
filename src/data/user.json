@@ -144,5 +144,16 @@
   "password": "$2a$10$0Owyax0LQOeLaW5c/TiHyuMBRV4O6H0hCj7R47SzXfuYdfthPN9lC",
   "avatar": "AVATAR-IMG1668719028212.jpg",
   "admin": false
+ },
+ {
+  "id": 13,
+  "fullName": "joaco",
+  "username": "joaco123",
+  "email": "joaco@gmail.com",
+  "dateOfBirth": "2022-11-16",
+  "address": "123",
+  "password": "$2a$10$geoSbTLWHX1IK8xCMrh0BeSlkPG0S7jeW6WafmKyoS6XkKzVgUZbO",
+  "avatar": "AVATAR-IMG1668734523751.png",
+  "admin": false
  }
 ]
