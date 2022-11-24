@@ -54,3 +54,4 @@ Retrospectiva del sprint 5:
 4. Hacer menos: Realizar modificaciones simultaneas en los mismos elementos que puedan generar conflictos. 
 
 5. Dejar de hacer: Posponer tareas. 
+

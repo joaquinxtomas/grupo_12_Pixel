@@ -23,4 +23,10 @@ Que hicimos esta semana?: Entidad de usuarios, funcionamiento login y register, 
 
 ¿Que hicimos hoy?: Terminamos el método de logout y arreglamos errores de vistas. 
 
+Reunion de weekly del 24/11/2022
 
+Que hicimos esta semana?: Comenzamos la exportacion de nuestra base de datos desde un archivo JSON a SQL.
+
+¿Se encontro algun impedimento?: No encontramos impedimentos, avanzamos rapidamente.
+
+¿Que hicimos hoy?: Creamos las tablas de usuarios y productos
