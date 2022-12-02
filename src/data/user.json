@@ -9,7 +9,7 @@
   "password": "$2a$10$on8FD9/DjAiEAmHAhIw3JOFuhaETS12KFIKPjZe.IxiQ4sTLNrcbq",
   "passwordConfirm": "$2a$10$YsqWs7dOwDrf5IqSCB6hl.8ac0tHRNJy4agk/YKK4.QFavRepwaeu",
   "avatar": "AVATAR-IMG1666650229549.png",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 2,
@@ -21,7 +21,7 @@
   "password": "$2a$10$iFbYgle80oWCkmXU0b3F1.6mLgAu/95OrOukmU/niCwnye5Msceq6",
   "passwordConfirm": "$2a$10$0AUZzDiMHVY99AholFtcGeS5EfjREBz7lVWcoXR.8EuPqtPs67d.C",
   "avatar": "AVATAR-IMG1666651370577.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 3,
@@ -33,7 +33,7 @@
   "password": "$2a$10$NQQxTW1YPLP0OVCb2PJQiOt2RInUNQln5WlI9H87OVi0QmYfervX6",
   "passwordConfirm": "$2a$10$8hfbyz/xWdRbi3xamvReoeWMiSBAuSLWM52wt4FAtGo2.cPVhInSa",
   "avatar": "AVATAR-IMG1666652075110.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 4,
@@ -44,7 +44,7 @@
   "address": "131123",
   "password": "$2a$10$OuXrhoTLoUc0KBy1bVkXYu87HspHCYkeMukz2OgAOGQ5ei7CobfYu",
   "avatar": "AVATAR-IMG1666652148084.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 5,
@@ -55,7 +55,7 @@
   "address": "CALLE FALSA 123",
   "password": "$2a$10$nD8O1wUiE1HagqGthphbhOpVTSeUYdaDKPH2BOuYTNGUZoBO44qAK",
   "avatar": "AVATAR-IMG1666680352762.png",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 6,
@@ -66,7 +66,7 @@
   "address": "CALLE FALSA 123",
   "password": "$2a$10$/nMv3/szyFgpO7m9ijoMNe5vejps.mHz6a34nJ1ep0NOZA7WOEorq",
   "avatar": "AVATAR-IMG1666747158036.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 7,
@@ -77,7 +77,7 @@
   "address": "CALLE FALSA 123",
   "password": "$2a$10$H7sqactBlZLVRcsMTW3oou8OvQn3eZfsV9HMoDy5HGZ0MhIZRC0LK",
   "avatar": "AVATAR-IMG1668476119598.png",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 8,
@@ -88,7 +88,7 @@
   "address": "Pixel Headquarters, San Francisco",
   "password": "$2a$10$pkIGr4QuB.xYeJZTsxNHSe6oh6bHnDjABDvZpOpj.7XewrrSzPnxm",
   "avatar": "AVATAR-IMG1668481166427.png",
-  "admin": true
+  "categoriaId": 1
  },
  {
   "id": 9,
@@ -99,7 +99,7 @@
   "address": "233",
   "password": "$2a$10$1ZcgHuKd2eG.vmLC/DEjKuTKzRiEXcaOdMqF/Nui/oF1O4KkClD9W",
   "avatar": "AVATAR-IMG1668547886213.png",
-  "admin": true
+  "categoriaId": 1
  },
  {
   "id": 9,
@@ -110,7 +110,7 @@
   "address": "Cl 34 s 51 56",
   "password": "$2a$10$pnTdECumUD.1ZtQWA5bQ8uwClGxOpovCpkqg8mY3WQEyKtsbW39ZK",
   "avatar": "AVATAR-IMG1668625494306.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 10,
@@ -121,7 +121,7 @@
   "address": "1234",
   "password": "$2a$10$/tVCdNbzD9vaFGAZMrQwP.I65ajLQ37XJX.lp9XgX8j6O.IdPNmTC",
   "avatar": "AVATAR-IMG1668634946520.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 11,
@@ -132,7 +132,7 @@
   "address": "1234",
   "password": "$2a$10$/9JkTDmXh5T5a1gem14qT.tpXoU88baDxu3cjXy4p3n3m77ot5PAO",
   "avatar": "AVATAR-IMG1668703131723.png",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 12,
@@ -143,7 +143,7 @@
   "address": "CuchaCucha 124",
   "password": "$2a$10$0Owyax0LQOeLaW5c/TiHyuMBRV4O6H0hCj7R47SzXfuYdfthPN9lC",
   "avatar": "AVATAR-IMG1668719028212.jpg",
-  "admin": false
+  "categoriaId": 0
  },
  {
   "id": 13,
@@ -154,6 +154,6 @@
   "address": "123",
   "password": "$2a$10$geoSbTLWHX1IK8xCMrh0BeSlkPG0S7jeW6WafmKyoS6XkKzVgUZbO",
   "avatar": "AVATAR-IMG1668734523751.png",
-  "admin": false
+  "categoriaId": 0
  }
 ]

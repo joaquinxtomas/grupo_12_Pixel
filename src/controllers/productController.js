@@ -1,12 +1,16 @@
 const fs= require("fs");
 const path =require("path");
 const router = require("../routers/mainRoutes");
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const {Op}= db.Sequelize;
 
 const {validationResult}=require("express-validator")
 
-const productosJSON = fs.readFileSync(path.resolve(__dirname,'../data/productos.json'))
+const productosJSON = fs.readFileSync(path.resolve(__dirname,'../data/productos.json')) 
 let productos= JSON.parse(productosJSON,{encoding:"utf-8"})
 const productsFilePath = path.join(__dirname, '../data/productos.json')
+
 
 
 const productController = {
@@ -20,13 +24,14 @@ const productController = {
         });
         return res.render('productDetail',{producto});
     },
-    productListUser: (req,res) => {
-        return res.render('productListUser',{productos});
-    },
+    //productListUser: (req,res) => {
+        //return res.render('productListUser',{productos});
+    //},
 
-    productList: (req, res) => {
-        return res.render('productList', {productos});
-    },
+    //productList: (req, res) => {
+        //return res.render('productList', {productos});
+    //},
+
     productCreate : (req,res)=> {
         return res.render('addProduct')
     },

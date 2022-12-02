@@ -1,7 +1,7 @@
 [
  {
   "id": 1,
-  "categoria": "Computadores",
+  "categoriaId": 1,
   "titulo": "Computador",
   "descripcionCorta": "Computador",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -11,7 +11,7 @@
  },
  {
   "id": 2,
-  "categoria": "Computadores",
+  "categoriaId": 1,
   "titulo": "Computador",
   "descripcionCorta": "Computador de escritorio",
   "descripcionDetallada": "La laptop HP 245 sigue el ritmo de estilos de trabajo móviles gracias a un diseño delgado y ligero. La hermosa pantalla con su angosto borde y relación de pantalla y cuerpo grande brinda amplio espacio para trabajar o reproducir contenido.",
@@ -21,7 +21,7 @@
  },
  {
   "id": 3,
-  "categoria": "Computadores",
+  "categoriaId": 1,
   "titulo": "Computador",
   "descripcionCorta": "Computador de escritorio",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -31,7 +31,7 @@
  },
  {
   "id": 4,
-  "categoria": "Computadores",
+  "categoriaId": 1,
   "titulo": "Computador",
   "descripcionCorta": "Computador de escritorio",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -41,7 +41,7 @@
  },
  {
   "id": 5,
-  "categoria": "Notebooks",
+  "categoriaId": 2,
   "titulo": "Laptop",
   "descripcionCorta": "Notebook",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -51,7 +51,7 @@
  },
  {
   "id": 6,
-  "categoria": "Notebooks",
+  "categoriaId": 2,
   "titulo": "Laptop",
   "descripcionCorta": "Notebook",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -61,7 +61,7 @@
  },
  {
   "id": 7,
-  "categoria": "Notebooks",
+  "categoriaId": 2,
   "titulo": "Laptop",
   "descripcionCorta": "Notebook",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -71,7 +71,7 @@
  },
  {
   "id": 8,
-  "categoria": "Notebooks",
+  "categoriaId": 2,
   "titulo": "Laptop",
   "descripcionCorta": "Notebook",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -81,7 +81,7 @@
  },
  {
   "id": 9,
-  "categoria": "Notebooks",
+  "categoriaId": 2,
   "titulo": "Macbook",
   "descripcionCorta": "Notebook",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -91,9 +91,9 @@
  },
  {
   "id": 10,
-  "categoria": "Mouse",
-  "titulo": "Mouse",
-  "descripcionCorta": "Mouse",
+  "categoriaId": 5,
+  "titulo": "Mouse redragon",
+  "descripcionCorta": "Mouse redragon",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "precio": "20000",
   "descuento": "25",
@@ -101,8 +101,8 @@
  },
  {
   "id": 11,
-  "categoria": "Mouse",
-  "titulo": "Mouse",
+  "categoriaId": 5,
+  "titulo": "Mouse redragon",
   "descripcionCorta": "Mouse económico",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "precio": 20000,
@@ -111,7 +111,7 @@
  },
  {
   "id": 12,
-  "categoria": "Mouse",
+  "categoriaId": 5,
   "titulo": "Mouse",
   "descripcionCorta": "Mouse",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -121,9 +121,9 @@
  },
  {
   "id": 13,
-  "categoria": "Mouse",
-  "titulo": "Mouse",
-  "descripcionCorta": "Mouse",
+  "categoriaId": 5,
+  "titulo": "Mouse redragon",
+  "descripcionCorta": "Mouse redragon",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "precio": "20000",
   "descuento": "0",
@@ -131,7 +131,7 @@
  },
  {
   "id": 14,
-  "categoria": "Teclados",
+  "categoriaId": 4,
   "titulo": "Teclado",
   "descripcionCorta": "Teclado gamer",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -141,7 +141,7 @@
  },
  {
   "id": 15,
-  "categoria": "Teclados",
+  "categoriaId": 4,
   "titulo": "Teclado",
   "descripcionCorta": "Teclado",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -151,7 +151,7 @@
  },
  {
   "id": 16,
-  "categoria": "Teclados",
+  "categoriaId": 4,
   "titulo": "Teclado",
   "descripcionCorta": "Teclado gamer",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -161,7 +161,7 @@
  },
  {
   "id": 17,
-  "categoria": "Teclados",
+  "categoriaId": 4,
   "titulo": "Teclado",
   "descripcionCorta": "Teclado",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -171,7 +171,7 @@
  },
  {
   "id": 18,
-  "categoria": "Monitores",
+  "categoriaId": 3,
   "titulo": "Monitor",
   "descripcionCorta": "Monitor",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -181,7 +181,7 @@
  },
  {
   "id": 19,
-  "categoria": "Monitores",
+  "categoriaId": 3,
   "titulo": "Monitor",
   "descripcionCorta": "Monitor LED",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -191,7 +191,7 @@
  },
  {
   "id": 20,
-  "categoria": "Monitores",
+  "categoriaId": 3,
   "titulo": "Monitor",
   "descripcionCorta": "Monitor LED",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -201,7 +201,7 @@
  },
  {
   "id": 21,
-  "categoria": "Monitores",
+  "categoriaId": 3,
   "titulo": "Monitor",
   "descripcionCorta": "Monitor",
   "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -214,7 +214,7 @@
   "titulo": "Zapatillas Air Plus",
   "descripcionCorta": "Zapatillas AIR PLUS descripción breve",
   "descripcionDetallada": "Zapatillas AIR PLUS descripción Detallada",
-  "categoria": "Computadores",
+  "categoriaId": 1,
   "precio": "2500",
   "descuento": "10",
   "img": "PRODUCTO1668651606960.png"
@@ -224,7 +224,7 @@
   "titulo": "NFT",
   "descripcionCorta": "NFT de los Josie and the turros",
   "descripcionDetallada": "NFT de los Josie and the turros",
-  "categoria": "Mouse",
+  "categoriaId": 5,
   "precio": "50000",
   "descuento": "5",
   "img": "PRODUCTO1668651692293.png"

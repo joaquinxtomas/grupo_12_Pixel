@@ -30,3 +30,11 @@ Que hicimos esta semana?: Comenzamos la exportacion de nuestra base de datos des
 ¿Se encontro algun impedimento?: No encontramos impedimentos, avanzamos rapidamente.
 
 ¿Que hicimos hoy?: Creamos las tablas de usuarios y productos
+
+Reunion de weekly del 24/11/2022
+
+Que hicimos esta semana?: Configuramos la base de datos. Realizamos la vista de listado de productos de administrador y users e hicimos funcionar el middleware de users usando el atributo de administrador como un foreign key. 
+
+¿Se encontro algun impedimento?: Los controladores no funcionaban a causa de un tipo de comentario. 
+
+Que haremos la proxima?: Terminaremos las rutas de productos, con el respectivo CRUD.

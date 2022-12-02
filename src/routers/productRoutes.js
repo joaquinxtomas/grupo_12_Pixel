@@ -5,6 +5,7 @@ const multer = require('multer');
 
 //controller
 let productController = require('../controllers/productController');
+let productControllerDb= require('../controllers/productControllerDb')
 
 //express-validator-middlewares
 const validationsAddProduct=require('../../middlewares/validationsAddProductMiddleware')
@@ -27,9 +28,9 @@ const upload = multer({ storage });
 
 
 //ROUTES
-router.get('/list/admin', authMiddleware ,productController.productList); //ADMIN
+router.get('/list/admin', authMiddleware ,productControllerDb.productList); //ADMIN
 
-router.get('/list', adminMiddleware, productController.productListUser); //USER
+router.get('/list', adminMiddleware, productControllerDb.productListUser); //USER
 
 router.get('/detail/:id', productController.productDetail);
 

@@ -35,7 +35,7 @@ const userController = {
             password:bcrypt.hashSync(req.body.password,10),
             passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
             avatar: req.file.filename,
-            admin: false
+            categoriaId: 0
         }
 
         let userCreated = User.create(userToCreate);
