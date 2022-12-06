@@ -202,12 +202,13 @@
  {
   "id": 21,
   "categoriaId": 3,
-  "titulo": "Monitor",
-  "descripcionCorta": "Monitor",
-  "descripcionDetallada": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "precio": "20000",
-  "descuento": "0",
-  "img": "monitor4.png"
+  "titulo": "Calavera",
+  "descripcionCorta": "asdasdasd",
+  "descripcionDetallada": "asdasdasdasd",
+  "precio": "123",
+  "descuento": "10",
+  "img": "monitor4.png",
+  "categoria": "Computadores"
  },
  {
   "id": 22,

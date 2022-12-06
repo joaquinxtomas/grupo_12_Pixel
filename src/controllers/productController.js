@@ -72,46 +72,46 @@ const productController = {
         //res.redirect("/product/list");
     //},
 
-    productEdit:(req,res)=>{ //Ruta a formulario de edición de producto
-        let producto;
-        productos.forEach(productoN => { 
-            if(productoN.id==req.params.id){
-                producto=productoN;
-                oldData:req.body
-            } 
+    //productEdit:(req,res)=>{ //Ruta a formulario de edición de producto
+        //let producto;
+        //productos.forEach(productoN => { 
+            //if(productoN.id==req.params.id){
+                //producto=productoN;
+                //oldData:req.body
+            //} 
             
-        });
-        return res.render('productEdit',{producto:producto});
-    },
+        //});
+        //return res.render('productEdit',{producto:producto});
+    //},
 
-    productUpdate:(req,res)=>{  //PUT del producto, se envía la infomación actualizada y se redirige.
-        let indexFind = req.params.id;
+    //productUpdate:(req,res)=>{  //PUT del producto, se envía la infomación actualizada y se redirige.
+        //let indexFind = req.params.id;
 
-		let {titulo, descripcionCorta, descripcionDetallada, precio, descuento, categoria } = req.body;
+		//let {titulo, descripcionCorta, descripcionDetallada, precio, descuento, categoria } = req.body;
 
-		let indexMap = productos.map(product => product.id);
+		//let indexMap = productos.map(product => product.id);
 
-		let indexEdit = indexMap.indexOf(+indexFind);
+		//let indexEdit = indexMap.indexOf(+indexFind);
 
-        titulo? productos[indexEdit].titulo = titulo: "";
+        //titulo? productos[indexEdit].titulo = titulo: "";
 
-		precio? productos[indexEdit].precio = precio: "";
+		//precio? productos[indexEdit].precio = precio: "";
 
-		descuento? productos[indexEdit].descuento = descuento: "";
+		//descuento? productos[indexEdit].descuento = descuento: "";
 
-		categoria? productos[indexEdit].categoria = categoria: "";
+		//categoria? productos[indexEdit].categoria = categoria: "";
 
-		descripcionCorta? productos[indexEdit].descripcionCorta = descripcionCorta: "";
+		//descripcionCorta? productos[indexEdit].descripcionCorta = descripcionCorta: "";
 
-        descripcionDetallada? productos[indexEdit].descripcionDetallada = descripcionDetallada: "";
+        //descripcionDetallada? productos[indexEdit].descripcionDetallada = descripcionDetallada: "";
 
-        req.file? productos[indexEdit].img=req.file.filename: res.redirect("/product/list");
+        //req.file? productos[indexEdit].img=req.file.filename: res.redirect("/product/list");
 
-        updatedProductsJSON = JSON.stringify(productos, null, ' ');
-		fs.writeFileSync(productsFilePath, updatedProductsJSON)
+        //updatedProductsJSON = JSON.stringify(productos, null, ' ');
+		//fs.writeFileSync(productsFilePath, updatedProductsJSON)
         
-        res.redirect("/product/list");
-    },
+        //res.redirect("/product/list");
+    //},
 
     //productDelete:(req,res)=>{ //Metodo eleminar producto
         //let deleteId=req.params.id;

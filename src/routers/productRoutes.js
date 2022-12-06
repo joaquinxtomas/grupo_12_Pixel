@@ -40,9 +40,9 @@ router.get('/create', authMiddleware, productControllerDb.productCreate);
 router.post('/create', upload.single("img"), validationsAddProduct, productControllerDb.productSave); //multer middleware
 
 //route get edit form
-router.get('/edit/:id', authMiddleware, productController.productEdit);
+router.get('/edit/:id', authMiddleware, productControllerDb.productEdit);
 //update product
-router.put('/edit/:id', upload.single("image"), productController.productUpdate); //multer middleware
+router.put('/edit/:id', upload.single("img"), productControllerDb.productUpdate); //multer middleware
 //delete product
 router.delete('/delete/:id', authMiddleware,  productControllerDb.productDelete);
 

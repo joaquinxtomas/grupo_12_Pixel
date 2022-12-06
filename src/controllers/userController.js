@@ -72,7 +72,7 @@ const userController = {
                 console.log(req.session.userLogged)
 
                 if(req.body.rememberMe){ //si el checkbox llegó en el body, estaba "on"
-                    res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*1}) //cookie contiene email con duración de cinco minutos.
+                    res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*10}) //cookie contiene email con duración de cinco minutos.
                 }
 
                 return res.redirect('/') 
