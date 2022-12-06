@@ -58,18 +58,14 @@
             </div>
         </div> -->
         <main>
-            <% let categorias=productos.map(producto=>producto.categoria); //create array with all categories for each%>
-            <%categorias=[...new Set(categorias)] //remove duplicates %>
-
-
-            <% categorias.forEach(categoriaN=> { %>                     
+            <% categorias.forEach(categoria=> { %>                     
 
                                 <section class="inSale">
                                     <h2>
-                                        <%=categoriaN%>
+                                        <%=categoria.nombre%>
                                     </h2>
                                     <div class="products">
-                                        <%let productosCategoria=productos.filter(producto=>producto.categoria==categoriaN)%>
+                                        <%let productosCategoria=productos.filter(producto=>producto.category.nombre==categoria.nombre)%>
                                         <%productosCategoria.forEach(producto=> { %>
 
                                         <% let valorFinal=producto.precio-(producto.precio*producto.descuento)/100 %>

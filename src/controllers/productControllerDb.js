@@ -12,8 +12,10 @@ const Product = require("../database/models/Product");
 const productControllerDb = {
     productListUser: async (req, res) => {
         try {
-            const productos = await db.Product.findAll();
-            res.render('productListUser', { productos })
+            const productos = await db.Product.findAll({include:{all:true}});
+            const categorias= await db.Category.findAll();
+            // res.send(productos)
+            res.render('productListUser', { productos, categorias })
         } catch (error) {
             console.log(error)
         }
