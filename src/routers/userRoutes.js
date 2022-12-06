@@ -5,6 +5,7 @@ const multer = require("multer")
 
 //controller
 let userController = require('../controllers/userController');
+let userControllerDb= require('../controllers/userControllerDb')
 
 //express-validator-middlewares
 const validationsRegister=require('../../middlewares/validationsRegisterMiddleware')
@@ -29,13 +30,13 @@ const upload = multer ({storage});
 router.get('/login', guestMiddleware , userController.login); //el middleware, redirige al perfil de usuario si este ya esta logeado
 router.post('/login', validationsLogin, userController.saveLogin)
 
-router.get('/register', guestMiddleware , userController.register);
+router.get('/register', guestMiddleware , userControllerDb.register);
 
 // Logout:
 router.get('/logout', userController.logout);
 
 
-router.post('/register', upload.single("userImg"), validationsRegister,  userController.saveRegister);
+router.post('/register', upload.single("avatar"), validationsRegister,  userControllerDb.saveRegister);
 
 router.get('/profile',userController.profile)
 

@@ -155,5 +155,38 @@
   "password": "$2a$10$geoSbTLWHX1IK8xCMrh0BeSlkPG0S7jeW6WafmKyoS6XkKzVgUZbO",
   "avatar": "AVATAR-IMG1668734523751.png",
   "categoriaId": 0
+ },
+ {
+  "id": 14,
+  "fullName": "Robert Gimenez",
+  "username": "dasdasda",
+  "email": "robert@gmail.com",
+  "dateOfBirth": "2022-12-14",
+  "address": "asdasd",
+  "password": "$2a$10$up3iwAT5tB.ZRuatgcJwweKZ5KLCxiiygJd1tdgdR8YH.qvzWLQeW",
+  "avatar": "AVATAR-IMG1670369513467.png",
+  "categoriaId": 0
+ },
+ {
+  "id": 15,
+  "fullName": "Jose maria",
+  "username": "josemaria12",
+  "email": "jose@gmail.com",
+  "dateOfBirth": "2021-12-27",
+  "address": "1234",
+  "password": "$2a$10$CXt7FUVkFmHkYTzHGuWNQ.EoW9U4z1p8nN6FqXXJmUi9dzBhbk5w6",
+  "avatar": "AVATAR-IMG1670369662098.png",
+  "categoriaId": 0
+ },
+ {
+  "id": 16,
+  "fullName": "Jose maria",
+  "username": "jose123",
+  "email": "jose123@gmail.com",
+  "dateOfBirth": "",
+  "address": "123",
+  "password": "$2a$10$VTPa5b0GB4h0dpI4hm4MduZ2ZGr/pn5ZpY4yahe.yYScuh2x1qLH6",
+  "avatar": "AVATAR-IMG1670369739591.png",
+  "categoriaId": 0
  }
 ]

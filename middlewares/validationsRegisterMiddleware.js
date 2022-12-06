@@ -2,7 +2,7 @@ const {body}=require("express-validator");
 
 const validationsRegister = [
     body('fullName').notEmpty().withMessage("Debes escribir tu nombre completo"),
-    body('username').notEmpty().withMessage("Debes escribir tu nombre de usuario"),
+    body('userName').notEmpty().withMessage("Debes escribir tu nombre de usuario"),
     body('email')
     .notEmpty().withMessage("Debes escribir un email").bail()
     .isEmail().withMessage("Debes escribir un formato de email válido"),
