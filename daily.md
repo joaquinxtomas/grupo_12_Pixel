@@ -31,10 +31,18 @@ Que hicimos esta semana?: Comenzamos la exportacion de nuestra base de datos des
 
 ¿Que hicimos hoy?: Creamos las tablas de usuarios y productos
 
-Reunion de weekly del 24/11/2022
+Reunion de weekly del 02/12/2022
 
 Que hicimos esta semana?: Configuramos la base de datos. Realizamos la vista de listado de productos de administrador y users e hicimos funcionar el middleware de users usando el atributo de administrador como un foreign key. 
 
 ¿Se encontro algun impedimento?: Los controladores no funcionaban a causa de un tipo de comentario. 
 
 Que haremos la proxima?: Terminaremos las rutas de productos, con el respectivo CRUD.
+
+Reunion de weekly del 05/12/2022
+
+Que hicimos esta semana?: Organizamos rutas de añadir y borrar productos (CRUD de productos)
+
+¿Se encontro algun impedimento?: Si, errores con multer que supimos solucionar. Teniamos entendido que no habia que añadir el indice del id ya que es auto increment, pero nos tocó hacerlo porque nos salía un error. "Error: Duplicate entry '0' for key 'PRIMARY'"
+
+Que haremos la proxima?: Terminaremos el proceso de CRUD de productos e iniciaremos el proceso de usuarios.

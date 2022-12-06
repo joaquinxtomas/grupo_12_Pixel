@@ -59,7 +59,7 @@
                     <div>
                         <textarea 
                         class="large-description" 
-                        name="descripcionDetallada" 
+                        name="longDesc" 
                         placeholder="Descripcion detallada"
                         id="large-description"><%= locals.oldData ? oldData.descripcionDetallada : null %></textarea>
                     </div>
@@ -78,7 +78,7 @@
                         <label for="archivo">Elige un archivo 
                             <i class="fa-regular fa-folder-open"></i>
                         </label>
-                        <input type="file" id="archivo" name="userImg" accept=".png, .jpg" onchange="previewImage(event,'#imgPreview')">
+                        <input type="file" id="archivo" name="img" accept=".png, .jpg" onchange="previewImage(event,'#imgPreview')">
                         <h3 id="nombre"></h3>
                     </div>
 

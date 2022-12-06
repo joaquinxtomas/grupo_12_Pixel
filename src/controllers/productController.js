@@ -15,15 +15,15 @@ const productsFilePath = path.join(__dirname, '../data/productos.json')
 
 const productController = {
 
-    productDetail: (req, res) => {
-        let producto;
-        productos.forEach(productoN => { 
-            if(productoN.id==req.params.id){
-                producto=productoN
-            } 
-        });
-        return res.render('productDetail',{producto});
-    },
+    // productDetail: (req, res) => {
+        // let producto;
+        // productos.forEach(productoN => { 
+            // if(productoN.id==req.params.id){
+                // producto=productoN
+            // } 
+        // });
+        // return res.render('productDetail',{producto});
+    // },
     //productListUser: (req,res) => {
         //return res.render('productListUser',{productos});
     //},
@@ -32,45 +32,45 @@ const productController = {
         //return res.render('productList', {productos});
     //},
 
-    productCreate : (req,res)=> {
-        return res.render('addProduct')
-    },
+    //productCreate : (req,res)=> {
+        //return res.render('addProduct')
+    //},
 
-    productSave:(req,res)=>{  //POST del producto, se envía la infomación se verifica y se redirige.
-        const resultValidation=validationResult(req);
-        if ( resultValidation.errors.length>0){
-            return res.render("addProduct",{
-                errors:resultValidation.mapped(),
-                oldData:req.body
-            })
-        }
+    //productSave:(req,res)=>{  //POST del producto, se envía la infomación se verifica y se redirige.
+        //const resultValidation=validationResult(req);
+        //if ( resultValidation.errors.length>0){
+        //    return res.render("addProduct",{
+        //        errors:resultValidation.mapped(),
+        //        oldData:req.body
+        //    })
+        //}
         
         
-        let indexMap = productos.map(product => product.id); 
+        //let indexMap = productos.map(product => product.id); 
 
-		let newIndex = Math.max(...indexMap) + 1; 
+		//let newIndex = Math.max(...indexMap) + 1; 
 
-        if(req.body.descuento==""){
-            req.body.descuento=0;
-        }
+        //if(req.body.descuento==""){
+        //    req.body.descuento=0;
+        //}
 
-        let imageFile;
-        req.file? imageFile=req.file.filename: imageFile="default-image.png";
+        //let imageFile;
+        //req.file? imageFile=req.file.filename: imageFile="default-image.png";
 
-		let productCreated={
-			id:newIndex,
-			...req.body,
-            img:imageFile
+		//let productCreated={
+			//id:newIndex,
+			//...req.body,
+            //img:imageFile
 			
-		}
+		//}
 
-        productos.push(productCreated); 
+        //productos.push(productCreated); 
 
-		newProductsJSON = JSON.stringify(productos, null, ' ');
-		fs.writeFileSync(productsFilePath, newProductsJSON)
+		//newProductsJSON = JSON.stringify(productos, null, ' ');
+		//fs.writeFileSync(productsFilePath, newProductsJSON)
 
-        res.redirect("/product/list");
-    },
+        //res.redirect("/product/list");
+    //},
 
     productEdit:(req,res)=>{ //Ruta a formulario de edición de producto
         let producto;
@@ -113,16 +113,16 @@ const productController = {
         res.redirect("/product/list");
     },
 
-    productDelete:(req,res)=>{ //Metodo eleminar producto
-        let deleteId=req.params.id;
-        let productosFiltered=productos.filter(producto=>producto.id!=deleteId);
+    //productDelete:(req,res)=>{ //Metodo eleminar producto
+        //let deleteId=req.params.id;
+        //let productosFiltered=productos.filter(producto=>producto.id!=deleteId);
 
-        productos = productosFiltered;
+        //productos = productosFiltered;
 
-        updatedProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
-		fs.writeFileSync(productsFilePath, updatedProductsJSON)
+        //updatedProductsJSON = JSON.stringify(productos, { encoding: "utf-8" });
+		//fs.writeFileSync(productsFilePath, updatedProductsJSON)
 
-        res.redirect("/product/list");
-    }
+        //res.redirect("/product/list");
+    //}
 };
 module.exports = productController;

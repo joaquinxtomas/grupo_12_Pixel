@@ -32,19 +32,19 @@ router.get('/list/admin', authMiddleware ,productControllerDb.productList); //AD
 
 router.get('/list', adminMiddleware, productControllerDb.productListUser); //USER
 
-router.get('/detail/:id', productController.productDetail);
+router.get('/detail/:id', productControllerDb.productDetail);//LISTO
 
 //route get create form
-router.get('/create', authMiddleware, productController.productCreate);
+router.get('/create', authMiddleware, productControllerDb.productCreate);
 //store new product
-router.post('/create', upload.single("image"), validationsAddProduct, productController.productSave); //multer middleware
+router.post('/create', upload.single("img"), validationsAddProduct, productControllerDb.productSave); //multer middleware
 
 //route get edit form
 router.get('/edit/:id', authMiddleware, productController.productEdit);
 //update product
 router.put('/edit/:id', upload.single("image"), productController.productUpdate); //multer middleware
 //delete product
-router.delete('/delete/:id', authMiddleware,  productController.productDelete);
+router.delete('/delete/:id', authMiddleware,  productControllerDb.productDelete);
 
 
 module.exports = router;
