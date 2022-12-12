@@ -43,69 +43,68 @@ const userController = {
         //return res.redirect("/user/login");
 
     //},
-    login: (req,res) => { 
-        return res.render('login');
-    },
-    logout: (req,res) => {
-        req.session.destroy();
-        console.log(req.session);
-        return res.redirect('/');
-    },
+    //login: (req,res) => { 
+        //return res.render('login');
+    //},
+    // logout: (req,res) => {
+    //     req.session.destroy();
+    //     console.log(req.session);
+    //     return res.redirect('/');
+    // },
 
-    saveLogin:(req,res)=>{
-        const resultValidation=validationResult(req);
-        if ( resultValidation.errors.length>0){
-            return res.render("login",{
-                errors:resultValidation.mapped(),
-                oldData:req.body
-            })
-        }
+    //saveLogin:(req,res)=>{
+        //const resultValidation=validationResult(req);
+        //if ( resultValidation.errors.length>0){
+            //return res.render("login",{
+                //errors:resultValidation.mapped(),
+                //oldData:req.body
+            //})
+        //}
 
         
-        let userToLogin = User.findByField('email', req.body.email); //find by username, not email.
+        //let userToLogin = User.findByField('email', req.body.email); //find by username, not email.
 
-        if(userToLogin){
-            let comparePasswords=bcrypt.compareSync(req.body.password, userToLogin.password);
-            if (comparePasswords){
-                delete userToLogin.password;
-                req.session.userLogged=userToLogin;
-                console.log(req.session.userLogged)
+    //     if(userToLogin){
+    //         let comparePasswords=bcrypt.compareSync(req.body.password, userToLogin.password);
+    //         if (comparePasswords){
+    //             delete userToLogin.password;
+    //             req.session.userLogged=userToLogin;
+    //             console.log(req.session.userLogged)
 
-                if(req.body.rememberMe){ //si el checkbox llegó en el body, estaba "on"
-                    res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*10}) //cookie contiene email con duración de cinco minutos.
-                }
+    //             if(req.body.rememberMe){ //si el checkbox llegó en el body, estaba "on"
+    //                res.cookie('userEmail',req.body.email, {maxAge: (1000*60)*10}) //cookie contiene //email con duración de cinco minutos.
+    //             }
 
-                return res.redirect('/') 
-            }
-            return res.render ("login", {
-                errors:{
-                    email:{
-                        msg:"El email o la contraseña son incorrectos"
-                    }
-                }
-            })
+    //             return res.redirect('/') 
+    //         }
+    //        return res.render ("login", {
+    //             errors:{
+    //                email:{
+    //                     msg:"El email o la contraseña son incorrectos"
+    //                }
+    //             }
+    //         })
 
-        }
+    //     }
 
-        return res.render("login",{
-            errors: {
-                email:{
-                    msg:"Este email de usuario no ha sido registrado"
-                }
-            }
-        })
-    },
+    //     return res.render("login",{
+    //         errors: {
+    //            email:{
+    //                msg:"Este email de usuario no ha sido registrado"
+    //             }
+    //         }
+    //     })
+    // }
+    // profile: (req,res)=>{
+    //     return res.render('userProfile',{
+    //         user:req.session.userLogged,
+    //     })
 
-    profile: (req,res)=>{
-        return res.render('userProfile',{
-            user:req.session.userLogged,
-        })
+    // },
 
-    },
-
-    productCart: (req,res) => {
-        return res.render('productCart');
-    }
+    // productCart: (req,res) => {
+    //     return res.render('productCart');
+    // }
 }
 
 module.exports = userController;

@@ -25,24 +25,15 @@
                 <h1>Hola, <%= user.fullName %>!</h1>
             </div>
             <div class="avatar">
-                <img src="/img/avatar/<%=user.avatar%> " alt="avatar">
+                <img src="/img/avatar/<%=user.avatar%>" alt="avatar">
             </div>
 
             <div class="data-user">
                 <p>Nombre: <%= user.fullName %>  
-                    <a href="">
-                    <i class="fa-regular fa-pen-to-square"></i>
-                </a>
                 </p>
-                <p>Username:<%= user.username %>  
-                    <a href="">
-                    <i class="fa-regular fa-pen-to-square"></i>
-                </a>
+                <p>Username: <%= user.userName %>  
                 </p>
-                <p>Email:<%= user.email %>  
-                    <a href="">
-                    <i class="fa-regular fa-pen-to-square"></i>
-                </a>
+                <p>Email: <%= user.email %>  
                 </p>
             </div>
             <div class="pedidos">
@@ -52,11 +43,14 @@
             <div class="cerrar-sesion">
                 <button>Cerrar sesión</button>
             </div>
-            <form action="" method="POST">
+            <div class="cerrar-sesion">
+                <a href="/user/profile/edit/<%= user.id %> ">Editar</a>
+            </div>
+<!--             <form action="" method="POST">
                 <div class="borrarCuenta">
                     <button type="submit">Borrar cuenta</button>
                 </div>
-            </form>
+            </form> -->
         </div>
     </section>
         </main>

@@ -12,41 +12,41 @@ const User = require("../database/models/User");
 
 
 let userControllerDb = {
-    register: (req,res) => {
+    register: (req, res) => {
         return res.render('register');
     },
 
-    saveRegister:async (req,res) =>{
+    saveRegister: async (req, res) => {
         try {
-            const resultValidation=validationResult(req);
-            if ( resultValidation.errors.length>0){
-                return res.render("register",{
-                    errors:resultValidation.mapped(),
-                    oldData:req.body
+            const resultValidation = validationResult(req);
+            if (resultValidation.errors.length > 0) {
+                return res.render("register", {
+                    errors: resultValidation.mapped(),
+                    oldData: req.body
                 })
             }
 
             let userInDb = await db.User.findOne({
-                where:{
-                    email:req.body.email
+                where: {
+                    email: req.body.email
                 }
             })
 
-            if (userInDb){
-                return res.render("register",{
+            if (userInDb) {
+                return res.render("register", {
                     errors: {
                         email: {
-                            msg:"Este email ya ha sido registrado"
+                            msg: "Este email ya ha sido registrado"
                         }
                     },
-                    oldData:req.body
+                    oldData: req.body
                 })
             }
 
             let userToCreate = {
                 ...req.body,
-                password:bcrypt.hashSync(req.body.password,10),
-                passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
+                password: bcrypt.hashSync(req.body.password, 10),
+                passwordConfirm: bcrypt.hashSync(req.body.passwordConfirm),
                 avatar: req.file.filename,
                 categoriaId: 1
             }
@@ -58,7 +58,147 @@ let userControllerDb = {
         } catch (error) {
             console.log(error)
         }
+    },
+    login: (req, res) => {
+        return res.render('login');
+    },
+    saveLogin: async (req, res) => {
+        try {
+            const resultValidation = validationResult(req);
+            if (resultValidation.errors.length > 0) {
+                return res.render("login", {
+                    errors: resultValidation.mapped(),
+                    oldData: req.body
+                })
+            }
+
+            let userToLogin = await db.User.findOne({
+                where: {
+                    email: req.body.email
+                }
+            });
+
+            if (userToLogin) {
+                let comparePasswords = bcrypt.compareSync(req.body.password, userToLogin.password);
+                if (comparePasswords) {
+                    delete userToLogin.password;
+                    req.session.userLogged = userToLogin;
+                    console.log(req.session.userLogged)
+
+                    if (req.body.rememberMe) { //si el checkbox llegó en el body, estaba "on"
+                        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 10 }) //cookie contiene //email con duración de cinco minutos.
+                    }
+
+                    return res.redirect('/')
+                }
+                return res.render("login", {
+                    errors: {
+                        email: {
+                            msg: "El email o la contraseña son incorrectos"
+                        }
+                    }
+                })
+            }
+            return res.render("login", {
+                errors: {
+                    email: {
+                        msg: "Este email de usuario no ha sido registrado"
+                    }
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
+
+    },
+    logout: (req, res) => {
+        req.session.destroy();
+        res.clearCookie("userEmail");
+        console.log(req.session);
+        return res.redirect('/');
+    },
+    profile: (req,res)=>{
+        return res.render('userProfile',{
+            user:req.session.userLogged,
+        })
+
+    },
+    profileEdit:(req,res)=>{
+        return res.render('profileEdit',{
+            user:req.session.userLogged
+        })
+    },
+    profileSave: async (req,res)=>{
+        try {
+            const resultValidation = validationResult(req);
+            if (resultValidation.errors.length > 0) {
+                return res.render("profileEdit", {
+                    errors: resultValidation.mapped(),
+                    user:req.session.userLogged,
+                    oldData: req.body
+                })
+            }
+
+            let userInDb = await db.User.findOne({
+                where: {
+                    email: req.body.email
+                }
+            })
+
+            if (userInDb && userInDb.email == req.session.userLogged.email){
+                let userToUpdate = {
+                    ...req.body,
+                    password:bcrypt.hashSync(req.body.password,10),
+                    passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
+                    avatar: req.file.filename,
+                    categoriaId: 1
+                }
+        
+                let userUpdated = await db.User.update(userToUpdate,{
+                    where:{
+                        id:req.params.id
+                    }
+                });
+    
+                res.redirect('/user/profile')
+            } else if(userInDb) {
+                return res.render("profileEdit", {
+                    user:req.session.userLogged,
+                    errors: {
+                        email: {
+                            msg: "Este email ya ha sido registrado"
+                        }
+                    },
+                    oldData: req.body
+                })
+            } else {
+                let userToUpdate = {
+                    ...req.body,
+                    password:bcrypt.hashSync(req.body.password,10),
+                    passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
+                    avatar: req.file.filename,
+                    categoriaId: 1
+                }
+        
+                let userUpdated = await db.User.update(userToUpdate,{
+                    where:{
+                        id:req.params.id
+                    }
+                });
+
+                res.redirect('/user/profile')
+            }
+        } catch (error) {
+            console.log(error)
+        }
+
+    },
+
+    productCart: (req,res) => {
+        return res.render('productCart');
     }
+
+
 
 }
 
