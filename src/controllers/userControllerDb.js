@@ -117,24 +117,24 @@ let userControllerDb = {
         console.log(req.session);
         return res.redirect('/');
     },
-    profile: (req,res)=>{
-        return res.render('userProfile',{
-            user:req.session.userLogged,
+    profile: (req, res) => {
+        return res.render('userProfile', {
+            user: req.session.userLogged,
         })
 
     },
-    profileEdit:(req,res)=>{
-        return res.render('profileEdit',{
-            user:req.session.userLogged
+    profileEdit: (req, res) => {
+        return res.render('profileEdit', {
+            user: req.session.userLogged
         })
     },
-    profileSave: async (req,res)=>{
+    profileSave: async (req, res) => {
         try {
             const resultValidation = validationResult(req);
             if (resultValidation.errors.length > 0) {
                 return res.render("profileEdit", {
                     errors: resultValidation.mapped(),
-                    user:req.session.userLogged,
+                    user: req.session.userLogged,
                     oldData: req.body
                 })
             }
@@ -145,25 +145,27 @@ let userControllerDb = {
                 }
             })
 
-            if (userInDb && userInDb.email == req.session.userLogged.email){
+            if (userInDb && userInDb.email == req.session.userLogged.email) {
                 let userToUpdate = {
                     ...req.body,
-                    password:bcrypt.hashSync(req.body.password,10),
-                    passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
+                    password: bcrypt.hashSync(req.body.password, 10),
+                    passwordConfirm: bcrypt.hashSync(req.body.passwordConfirm),
                     avatar: req.file.filename,
                     categoriaId: 1
                 }
-        
-                let userUpdated = await db.User.update(userToUpdate,{
-                    where:{
-                        id:req.params.id
+
+                let userUpdated = await db.User.update(userToUpdate, {
+                    where: {
+                        id: req.params.id
                     }
                 });
-    
-                res.redirect('/user/profile')
-            } else if(userInDb) {
+
+                req.session.destroy();
+                res.clearCookie("userEmail");
+                res.redirect('/user/login')
+            } else if (userInDb) {
                 return res.render("profileEdit", {
-                    user:req.session.userLogged,
+                    user: req.session.userLogged,
                     errors: {
                         email: {
                             msg: "Este email ya ha sido registrado"
@@ -174,19 +176,21 @@ let userControllerDb = {
             } else {
                 let userToUpdate = {
                     ...req.body,
-                    password:bcrypt.hashSync(req.body.password,10),
-                    passwordConfirm:bcrypt.hashSync(req.body.passwordConfirm), 
+                    password: bcrypt.hashSync(req.body.password, 10),
+                    passwordConfirm: bcrypt.hashSync(req.body.passwordConfirm),
                     avatar: req.file.filename,
                     categoriaId: 1
                 }
-        
-                let userUpdated = await db.User.update(userToUpdate,{
-                    where:{
-                        id:req.params.id
+
+                await db.User.update(userToUpdate, {
+                    where: {
+                        id: req.params.id
                     }
                 });
 
-                res.redirect('/user/profile')
+                req.session.destroy();
+                res.clearCookie("userEmail");
+                res.redirect('/user/login')
             }
         } catch (error) {
             console.log(error)
@@ -194,7 +198,7 @@ let userControllerDb = {
 
     },
 
-    productCart: (req,res) => {
+    productCart: (req, res) => {
         return res.render('productCart');
     }
 

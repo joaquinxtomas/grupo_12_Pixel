@@ -60,8 +60,6 @@ const productControllerDb = {
 
             //CONSULTAR 
             let productos = await db.Product.findAll();
-            let indexMap = productos.map(product => product.id);
-            let newIndex = Math.max(...indexMap) + 1;
 
             if (req.body.descuento == "") {
                 req.body.descuento = 0;
@@ -74,7 +72,6 @@ const productControllerDb = {
             req.file ? imageFile = req.file.filename : imageFile = "default-image.png"
 
             await db.Product.create({
-                id: newIndex,
                 titulo: req.body.titulo,
                 descripcionCorta: req.body.descripcionCorta,
                 longDesc: req.body.longDesc,

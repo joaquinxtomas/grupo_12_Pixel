@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Pixel E-Comerce</title>
 </head>
 
@@ -41,11 +42,12 @@
             </div>
 
             <div class="cerrar-sesion">
-                <button>Cerrar sesión</button>
-            </div>
-            <div class="cerrar-sesion">
+                <a href="/user/logout" id="logout">Cerrar sesión</a>
                 <a href="/user/profile/edit/<%= user.id %> ">Editar</a>
             </div>
+<!--             <div class="cerrar-sesion">
+                <a href="/user/profile/edit/<%= user.id %> ">Editar</a>
+            </div> -->
 <!--             <form action="" method="POST">
                 <div class="borrarCuenta">
                     <button type="submit">Borrar cuenta</button>
@@ -55,8 +57,13 @@
     </section>
         </main>
 
+
          <!-- WHATSAPP -->
          <%- include('./partials/whatsapp'); %>
 
          <!-- FOOTER -->
          <%- include('./partials/footer'); %>
+
+         <script src="/js/alert.js"></script>
+        </body>
+</html>
