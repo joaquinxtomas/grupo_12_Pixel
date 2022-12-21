@@ -55,3 +55,15 @@ Retrospectiva del sprint 5:
 
 5. Dejar de hacer: Posponer tareas. 
 
+Retrospectiva del sprint 6:
+
+1. Comenzar a hacer: No consideramos que debemos comenzar a realizar hábitos o tareas, sino mejorar los que ya tenemos.
+
+2. Hacer más: Aumentar frecuencia de reuniones.  
+
+3. Continuar haciendo: Ayudarnos mutuamente con las reuniones por Meet y Zoom. Realizar los trabajos en tiempo y forma. Seguir escribiendo código en grupo y en reuniones, ya que es mucho más simple de comprender.
+
+4. Hacer menos: Consideramos que las tareas que estamos realizando son correctas.
+
+5. Dejar de hacer: No deberíamos de dejar de hacer nada, ya que estamos trabajando de buena forma con el proyecto.
+
