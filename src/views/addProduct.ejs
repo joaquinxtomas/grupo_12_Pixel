@@ -61,11 +61,11 @@
                         class="large-description" 
                         name="longDesc" 
                         placeholder="Descripcion detallada"
-                        id="large-description"><%= locals.oldData ? oldData.descripcionDetallada : null %></textarea>
+                        id="large-description"><%= locals.oldData ? oldData.longDesc : null %></textarea>
                     </div>
-                    <% if (locals.errors && errors.descripcionDetallada) { %>
+                    <% if (locals.errors && errors.longDesc) { %>
                         <div class="mensaje-de-error">
-                            <i class="fas fa-exclamation-triangle"></i><%= errors.descripcionDetallada.msg %> 
+                            <i class="fas fa-exclamation-triangle"></i><%= errors.longDesc.msg %> 
                         
                         </div> 
                     <% } %> 

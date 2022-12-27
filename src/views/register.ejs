@@ -35,13 +35,14 @@
         </header>
         <main>
 
-            <form action="/user/register" method="POST" enctype="multipart/form-data">
+            <form action="/user/register" method="POST" enctype="multipart/form-data" id="form-registro">
                 <div class="caja-padre">
                     <div class="registrate">
                         <h2>¡Registrate!</h2>
                         <img src="/img/form.svg" alt="undraw-form">
                     </div>
 
+                    <ul id="listaErrores" style="color: white; background-color:pink;"></ul>
                     <div>
                         <input type="text" name="fullName" placeholder="Nombre y apellido" id="nombre-apellido"
                             class="normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> "
@@ -57,8 +58,8 @@
                         <% } %>
 
                             <div>
-                                <input type="text" name="userName" placeholder="Nombre de usuario"
-                                    class="normal-input  <%= locals.errors && errors.username ? 'invalido' : null%> "
+                                <input type="text" name="userName" placeholder="Nombre de usuario" id="userName"
+                                    class="normal-input <%= locals.errors && errors.username ? 'invalido' : null%> "
                                     value="<%= locals.oldData ? oldData.username : null %>">
                             </div>
                             <% if (locals.errors && errors.username) { %>
@@ -89,7 +90,7 @@
                                             </div>
 
                                             <div>
-                                                <input type="text" name="address" placeholder="Domicilio"
+                                                <input type="text" name="address" placeholder="Domicilio" id="address"
                                                     class="normal-input  <%= locals.errors && errors.address ? 'invalido' : null%> "
                                                     value="<%= locals.oldData ? oldData.address : null %>">
                                             </div>
@@ -102,11 +103,11 @@
                                                 <% } %>
 
 
-                                                    
+
                                                     <div>
                                                         <h4 class="aclaracion">Foto de usuario</h4>
                                                         <div class="contenedor-file">
-                                                            
+
                                                             <label for="archivo">Elige un archivo
                                                                 <i class="fa-regular fa-folder-open"></i>
                                                             </label>
@@ -123,7 +124,7 @@
 
                                                                 <div class="contraseña">
                                                                     <input type="password" name="password"
-                                                                        placeholder="Contraseña"
+                                                                        placeholder="Contraseña" id="password"
                                                                         class="normal-input  <%= locals.errors && errors.password? 'invalido' : null%>">
                                                                 </div>
                                                                 <% if (locals.errors && errors.password) { %>
@@ -136,7 +137,7 @@
 
                                                                         <div class="contraseña">
                                                                             <input type="password"
-                                                                                name="passwordConfirm"
+                                                                                name="passwordConfirm" id="re-password"
                                                                                 placeholder="Confirmar contraseña"
                                                                                 class="normal-input  <%= locals.errors && errors.passwordConfirm ? 'invalido' : null%>">
                                                                         </div>
@@ -177,20 +178,22 @@
 
             <script type="text/javascript">
                 let archivo = document.querySelector('#archivo');
-                archivo.addEventListener('change',()=>{
-                    document.querySelector('#nombre').innerText = 
-                    archivo.files[0].name
+                archivo.addEventListener('change', () => {
+                    document.querySelector('#nombre').innerText =
+                        archivo.files[0].name
                 });
 
-                function previewImage(event, querySelector){
+                function previewImage(event, querySelector) {
                     const input = event.target;
                     $imgPreview = document.querySelector(querySelector)
-                    if(!input.files.length)return
+                    if (!input.files.length) return
                     file = input.files[0];
-                    objectURL=URL.createObjectURL(file);
+                    objectURL = URL.createObjectURL(file);
                     $imgPreview.src = objectURL
                 }
             </script>
+
+            <script src="/js/validator.js"></script>
 
             <%- include('./partials/whatsapp'); %>
         </main>
