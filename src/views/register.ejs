@@ -42,7 +42,9 @@
                         <img src="/img/form.svg" alt="undraw-form">
                     </div>
 
-                    <ul id="listaErrores" style="color: white; background-color:pink;"></ul>
+                    <div>
+                        <ul id="listaErrores" style="border-radius: 10px; color: #FF4949; padding: 5px; list-style-type: none;"></ul>
+                    </div>
                     <div>
                         <input type="text" name="fullName" placeholder="Nombre y apellido" id="nombre-apellido"
                             class="normal-input  <%= locals.errors && errors.fullName ? 'invalido' : null%> "
@@ -71,7 +73,8 @@
                                 <% } %>
 
                                     <div>
-                                        <input type="email" name="email" placeholder="E-mail" id="email"
+                                        <!-- Cambio a TEXT para validacion de front -->
+                                        <input type="text" name="email" placeholder="E-mail" id="email"
                                             class="normal-input  <%= locals.errors && errors.email ? 'invalido' : null%> "
                                             value="<%= locals.oldData ? oldData.email : null %>">
                                     </div>

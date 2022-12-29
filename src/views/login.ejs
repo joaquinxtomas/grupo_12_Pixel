@@ -25,18 +25,19 @@
             <main>
                 <!-- ingresa -->
                 <div class="mover">
-                    <form action="/user/login" method="POST" class="form-login">
+                    <form action="/user/login" method="POST" class="form-login" id="formLogin">
                         <h5>Iniciar sesión con mi email</h5>
                         <!--<input class="cajita" type="checkbox" name="" value="">  -->
-                        <input class="controls <%= locals.errors && errors.email ? 'invalido' : null%> "  type="email"  name="email" value="<%= locals.oldData ? oldData.email : null %>"
-                            placeholder="Email" >
+                        <ul id="erroresLogin" style="border-radius: 10px; color: #FF4949; padding: 5px; list-style-type: none; text-align: center;"></ul>
+                        <input class="controls <%= locals.errors && errors.email ? 'invalido' : null%> "  type="text"  name="email" value="<%= locals.oldData ? oldData.email : null %>"
+                            placeholder="Email" id="emailLogin" >
                             <% if (locals.errors && errors.email) { %>
                                 <div class="mensaje-de-error">
                                     <i class="fas fa-exclamation-triangle"></i><%= errors.email.msg %> 
                                 </div> 
                                 <% } %> 
                         <input class="controls <%= locals.errors && errors.password ? 'invalido' : null%> " type="password"  name="password"
-                            value="" placeholder="Contraseña" autocomplete="current-password" >
+                            value="" placeholder="Contraseña" autocomplete="current-password" id="passwordLogin">
                             <% if (locals.errors && errors.password) { %>
                                 <div class="mensaje-de-error">
                                     <i class="fas fa-exclamation-triangle"></i><%= errors.password.msg %> 
@@ -69,6 +70,8 @@
             </main>
             <!-- FOOTER -->
             <%- include('./partials/footer'); %>
+
+            <script src="/js/validatorLogin.js"></script>
 </body>
 
 </html>

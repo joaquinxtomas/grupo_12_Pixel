@@ -18,8 +18,9 @@
         <!--  HEADER -->
 
         <main>
-            <form action="/product/create" method="POST" enctype="multipart/form-data">
+            <form action="/product/create" method="POST" enctype="multipart/form-data" id="formAdd">
                 <div class="caja-padre">
+                    <ul id="erroresProductos" style="border-radius: 10px; color: #FF4949; padding: 5px; list-style-type: none;"></ul>
                     <div class="añadir-producto" id="añadir-producto">
                         <h2>Añadir producto</h2>
                     </div>
@@ -28,6 +29,7 @@
                         <input 
                         type="text" 
                         name="titulo" 
+                        id="titulo"
                         placeholder="Nombre del producto" 
                         class = "normal-input <%= locals.errors && errors.titulo ? 'invalido' : null%>" 
                         value="<%= locals.oldData ? oldData.titulo : null %>">
@@ -165,6 +167,8 @@
 
             <!-- FOOTER -->
             <%- include('./partials/footer'); %>
+
+            <script src="/js/addProduct.js"></script>
 
 
 

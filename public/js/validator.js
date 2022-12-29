@@ -1,37 +1,67 @@
-window.addEventListener('load',()=>{
+window.addEventListener('load', () => {
     let formRegistro = document.querySelector('#form-registro')
 
     let fullName = document.querySelector('#nombre-apellido')
-
-    console.log(fullName);
-    let userName = document.querySelector('#userName')
     let email = document.querySelector('#email')
-    let address = document.querySelector('#address')
     let archivo = document.querySelector('#archivo')
-    let pasword = document.querySelector('#password');
-    let rePassword = document.querySelector('#re-password')
+    let password = document.querySelector('#password');
 
     let listaErrores = document.querySelector('#listaErrores')
 
-    formRegistro.addEventListener('submit',(e)=>{
+    formRegistro.addEventListener('submit', (e) => {
+        e.preventDefault()
         let errores = [];
 
-        if (fullName.value == ""){
+        if (fullName.value == "") {
+            console.log('funciona')
             errores.push('Debes escribir tu nombre completo')
-        }
-        if (fullName.value.length < 2){
+        } else if (fullName.value.length < 2) {
             errores.push('Debes escribir mas de dos caracteres')
         }
 
-        console.log(errores)
+        function validateEmail(value) {
+            var input = document.createElement('input');
+
+            input.type = 'email';
+            input.required = true;
+            input.value = value;
+
+            return typeof input.checkValidity === 'function' ? input.checkValidity() : /\S+@\S+\.\S+/.test(value);
+        }
+
+        if (email.value == "") {
+            console.log('funciona')
+            errores.push('Debes escribir tu email')
+        } else if (!validateEmail(email.value)) {
+            errores.push('Debes poner un email válido')
+        }
+
+        if (password.value == "") {
+            console.log('funciona')
+            errores.push('Debes escribir una contraseña')
+        } else if (password.value.length < 8) {
+            errores.push('Debes escribir mas de ocho caracteres')
+        }
+
+        console.log(archivo.value)
+
+        let filename = archivo.value.toLowerCase();
+        let extension = filename.split(".").pop();
+
+        let extensiones = ['jpg','png','jpeg']
+
+        if(!extensiones.includes(extension)){
+            errores.push('Debes colocar una imagen con una extension válida (.jpg,.png,.jpeg)')
+        }
 
         //No tira error
-
-        if (errores>0){
-            e.preventDefault()
+        listaErrores.innerHTML = ''
+        if (errores.length > 0) {
             for (let index = 0; index < errores.length; index++) {
-                listaErrores.innerHTML+=`<li>${errores[index]}</li>`
+                listaErrores.innerHTML += `<li>${errores[index]}</li>`
             }
+        } else {
+            formRegistro.submit();
         }
     })
 })
