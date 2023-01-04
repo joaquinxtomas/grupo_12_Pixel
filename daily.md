@@ -63,3 +63,11 @@ Que hicimos esta semana?: Terminamos el CRUD de usuarios y optimizamos las vista
 ¿Se encontro algun impedimento?: Al editar el perfil, se podia utilizar cualquier email (incluso existentes), pero lo supimos solucionar.
 
 Que haremos la proxima?: Ultimaremos detalles, retro y actualizacion del tablero de trabajo.
+
+Reunion de daily del 27/01/2022
+
+Que hicimos esta semana?: Culminamos la validación de los forms desde el front end.
+
+¿Se encontro algun impedimento?: No encontramos ningun impedimento, supimos resolver cada consigna.
+
+Que haremos la proxima?: Comenzaremos con el proximo sprint y arreglaremos detalles.
