@@ -7,6 +7,9 @@ const multer = require('multer');
 let productController = require('../controllers/productController');
 let productControllerDb= require('../controllers/productControllerDb')
 
+//apis
+let productDashboard = require('../data/apis/productDashboard')
+
 //express-validator-middlewares
 const validationsAddProduct=require('../../middlewares/validationsAddProductMiddleware')
 const adminMiddleware=require('../../middlewares/adminMiddleware')
@@ -45,6 +48,10 @@ router.get('/edit/:id', authMiddleware, productControllerDb.productEdit);
 router.put('/edit/:id', upload.single("img"), productControllerDb.productUpdate); //multer middleware
 //delete product
 router.delete('/delete/:id', authMiddleware,  productControllerDb.productDelete);
+
+//APIS ROUTES
+router.get('/api/products', productDashboard.productList)
+
 
 
 module.exports = router;

@@ -19,7 +19,6 @@ const productControllerDb = {
         } catch (error) {
             console.log(error)
         }
-
     },
 
     productList: async (req, res) => {
