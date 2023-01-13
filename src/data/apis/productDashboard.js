@@ -5,26 +5,33 @@ const sequelize = db.sequelize;
 const Product = db.Product;
 
 const productDashboard = {
+    sqlSearch:'select categorias.nombre, count(*) as "total" from products inner join categorias on categoriaId=categorias.id group by categorias.nombre',
     productList: async (req, res) => {
+        
         try {
             var productos = await db.Product.findAll({ include: { all: true } });
-            const categorias = await db.Category.findAll({ include: { all: true } });
-            // res.send(productos)
-            /* const mapped = productos.map(element => ({detail:true ,...element})) */
-            var array = [{ id: 1, name: 'foo' }, { id: 2, name: 'bar' }];
+            // const categorias = await db.Category.findAll({ include: { all: true } });
+            // let newProducts = productos.map(element => ({...element, detail:`product/api/detail/${element.id}`}));
 
-            productos.map(value => value.isApproved = true);
+            // SQL search to count by category
 
-            console.log(productos)
+
+            const categorias = await db.sequelize.query(productDashboard.sqlSearch, {type: sequelize.QueryTypes.SELECT})  
+
+
+            console.log(categorias)
 
             res.status(200).json(
                 {
                     meta: {
                         status: 200,
                         count: productos.length,
+                        countByCategory: categorias,
                         url: 'api/products'
                     },
-                    data: productos
+                    data: {
+                        products:productos
+                    }
 
                 }
             )
@@ -35,8 +42,3 @@ const productDashboard = {
 }
 
 module.exports = productDashboard
-
-
-
-
-
