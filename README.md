@@ -1,3 +1,5 @@
+Comando para iniciar la página: npm run dev 
+
 Enlace al tablero de trabajo:
 
 https://trello.com/b/MRgKXw2m/pixel-ecomerce
