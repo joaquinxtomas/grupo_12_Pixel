@@ -9,20 +9,22 @@
             <!-- logo-mobile -->
             <a onclick="location.href='/';" class="logo2"> <img src="/img/logo-pixel-mobile.png" alt="logo"></a>
             <form action='https://www.google.com/search?q=' method="get" class="search-bar">
-                <input type="text" placeholder="Monitores, teclados, tarjetas de video" name="q">
+                <input type="text" placeholder="Buscar monitores, teclados, tarjetas de video" name="q">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         </form>
         <div class="icons-top-bar">
             <% if (locals.isLogged) { %>
-             <a href="/user/profile"><i class="fa-regular fa-user"></i> <%= locals.userLogged.fullName %> </a>
-             <a href="/user/logout"> Logout </a>
-             <% } else { %>
-            <a href="/user/login"><i class="fa-regular fa-user"></i> Ingresar</a>
-            <a href="/user/register">Registrarse</a>
-           
-            <% } %>
-            <a href="/user/productCart"><i class="fa badge" style="font-size:24px" value=5>&#xf07a;</i></a>
+                <a href="/user/profile"><i class="fa-regular fa-user"></i>
+                    <%= locals.userLogged.fullName %>
+                </a>
+                <a href="/user/logout"> Logout </a>
+                <% } else { %>
+                    <a href="/user/login" class="icon-user"><i class="fa-regular fa-user"></i>  Ingresar</a>
+                    <a href="/user/register" class="icon-user">Registrarse</a>
+
+                    <% } %>
+                        <a href="/user/productCart" class="carrito-icon"><i class="fa badge" value=5>&#xf07a;</i></a>
         </div>
     </div>
 
@@ -31,22 +33,22 @@
             <label for="menu" class="nav-burger-label"> <!-- CLASS NAV__LABEL -->
                 <img src="/img/icon-burger.svg" alt="" class="burger-img"> <!-- CLASS NAV__IMG -->
             </label>
-                <input type="checkbox" id="menu" class="nav-burger-input"> <!-- CLASS NAV__INPUT -->
+            <input type="checkbox" id="menu" class="nav-burger-input"> <!-- CLASS NAV__INPUT -->
 
-                <div class="nav-menu-burger"> <!-- CLASS NAV__MENU -->
-                    <a href="/product/list" class="nav-burger-item">Productos</a> <!-- CLASS NAV__ITEM -->
-                    <a href="#" class="nav-burger-item">Arma tu PC</a> <!-- CLASS NAV__ITEM -->
-                    <a href="#" class="nav-burger-item">PC Armados</a>
-                    <a href="#" class="nav-burger-item">Quienes somos</a>
-                    <a href="#" class="nav-burger-item">Ayuda</a> <!-- CLASS NAV__ITEM -->
-                </div>
+            <div class="nav-menu-burger"> <!-- CLASS NAV__MENU -->
+                <a href="/product/list" class="nav-burger-item">Productos</a> <!-- CLASS NAV__ITEM -->
+                <a href="#" class="nav-burger-item">Arma tu PC</a> <!-- CLASS NAV__ITEM -->
+                <a href="#" class="nav-burger-item">PC Armados</a>
+                <a href="#" class="nav-burger-item">Quienes somos</a>
+                <a href="#" class="nav-burger-item">Ayuda</a> <!-- CLASS NAV__ITEM -->
+            </div>
         </div>
     </nav>
 
-    
+
     <nav class="nav-bar">
 
-        <a href="/product/list"> 
+        <a href="/product/list">
             <div class="nav-bar-button">
                 <p>Productos</p>
             </div>

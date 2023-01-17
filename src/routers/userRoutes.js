@@ -10,7 +10,8 @@ let userControllerDb= require('../controllers/userControllerDb')
 //express-validator-middlewares
 const validationsRegister=require('../../middlewares/validationsRegisterMiddleware')
 const validationsLogin=require('../../middlewares/validationsLoginMiddleware')
-const guestMiddleware=require('../../middlewares/guestMiddleware')
+const guestMiddleware=require('../../middlewares/guestMiddleware');
+const userDashboard = require('../data/apis/userDashboard');
 
 
 //multer setup
@@ -35,7 +36,6 @@ router.get('/register', guestMiddleware , userControllerDb.register);
 // Logout:
 router.get('/logout', userControllerDb.logout);
 
-
 router.post('/register', upload.single("avatar"), validationsRegister,  userControllerDb.saveRegister);
 
 router.get('/profile',userControllerDb.profile)
@@ -45,5 +45,10 @@ router.get('/profile/edit/:id',userControllerDb.profileEdit)
 router.post('/profile/edit/:id',upload.single('avatar'),validationsRegister, userControllerDb.profileSave)
 
 router.get('/productCart', userControllerDb.productCart);
+
+//APIS
+
+router.get('/api', userDashboard.userList)
+router.get('/api/detail/:id', userDashboard.userDetail)
 
 module.exports = router;

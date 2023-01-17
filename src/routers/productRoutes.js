@@ -50,8 +50,9 @@ router.put('/edit/:id', upload.single("img"), productControllerDb.productUpdate)
 router.delete('/delete/:id', authMiddleware,  productControllerDb.productDelete);
 
 //APIS ROUTES
-router.get('/api/products', productDashboard.productList)
+router.get('/api', productDashboard.productList)
 
+router.get('/api/detail/:id', productDashboard.productDetail)
 
 
 module.exports = router;

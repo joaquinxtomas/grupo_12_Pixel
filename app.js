@@ -4,6 +4,7 @@ const app = express();
 const methodOverride= require('method-override'); //configuración de PUT y DELETE
 const session=require('express-session');
 const cookies= require('cookie-parser');
+const cors = require('cors')
 
 
 
@@ -31,6 +32,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'src/views' ));
+
+app.use(cors())
 
 app.use(methodOverride('_method')); //configuración de PUT y DELETE
 

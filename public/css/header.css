@@ -2,7 +2,7 @@
 
 .top-header {
     display: flex;
-    width: 90vw;
+    width: 100%;
 }
 
 .logo2 img {
@@ -22,10 +22,11 @@
     justify-content: center;
     width: 80%;
     max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 60px;
+    background-color: rgba(66, 66, 66, 0.3);
+    border-radius: 5px;
     padding: 10px 10px;
     margin: auto;
+    box-shadow: 0px 0px 5px 0px #5c5c5c;
 }
 
 .search-bar input {
@@ -49,11 +50,15 @@
 
 .search-bar button {
     border: 0;
-    border-radius: 50%;
+    border-radius: 5px;
     width: 25px;
     height: 25px;
     background-color: rgba(128, 255, 0, 0.7);
     cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: rgba(108, 216, 0, 0.7);
 }
 
 
@@ -70,16 +75,25 @@
 }
 
 .icons-top-bar a {
+    display: flex;
     text-decoration: none;
     color: #7EFF00;
+    background: rgba(66, 66, 66, 0.3);
+    margin: 5px;
+    border-radius: 5px;
+    height: 40px;
     font-size: 14px;
     align-items: center;
     padding: 10px
 }
 
+.icons-top-bar a:hover{
+    background-color: rgba(66, 66, 66, 0.1) ;
+}
+
 .icons-top-bar {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
     justify-content: center;
     padding: 15px;
@@ -87,7 +101,7 @@
 
 .icons-top-bar a i {
     font-size: 18px;
-
+    margin-right: 3px;
 }
 
 .badge:after {
@@ -110,7 +124,7 @@
     display: flex;
     justify-content: space-around;
     display: none;
-    box-shadow: 0rem 0.6rem 3rem 0.5rem #7EFF00;
+    box-shadow: 0rem 0.6rem 2rem 0.5rem #7EFF00;
 }
 
 .nav-bar a {
@@ -180,7 +194,7 @@
 
 .nav-burger-label:hover{
     transform: scale(0.95);
-    background-color: #61c100;
+    background-color: #52aa00;
 }
 
 .burger-img {
@@ -260,20 +274,19 @@
 
     .logo1 {
         display: flex;
-        height: 100px;
+        height: 80px;
         padding: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .main-header-top-bar {
         display: flex;
         flex-direction: row;
-        border-bottom: solid 1px #cac7ff;
-        padding: 15px;
+        border-bottom: solid 1px #6d6d6d;
+        padding: 10px;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-
     }
 
     .search-bar {
@@ -282,17 +295,38 @@
 
     .icons-top-bar {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         width: 55%;
         justify-content: flex-end;
     }
 
-
-
     .icons-top-bar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
+        background: rgba(66, 66, 66, 0.3);
+        margin: 5px;
         color: #7EFF00;
-        font-size: 14px;
+        font-size: 13px;
+        height: 30px;
+        width: 80px;
+        border-radius: 5px;
+    }
+
+    .icons-top-bar a i{
+        font-size: 10px;
+        margin-right: 3px;
+    }
+
+    .carrito-icon{
+        display: flex;
+        justify-content: center;
+        width: 35px !important;
+    }
+
+    .carrito-icon i {
+        font-size: 10px;
     }
 
 
@@ -324,5 +358,19 @@
     .icons-top-bar {
 
         width: 40%;
+    }
+
+    .icons-top-bar a{
+        height: 40px;
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .carrito-icon {
+        width: 50px !important;
+    }
+
+    .carrito-icon i {
+        font-size: 18px !important;
     }
 }
