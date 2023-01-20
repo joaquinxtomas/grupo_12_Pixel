@@ -1,4 +1,8 @@
-Comando para iniciar la página: npm run dev 
+Comando para iniciar la página: npm run dev
+
+
+
+Comando para iniciar el front (React): npm start
 
 Enlace al tablero de trabajo:
 
