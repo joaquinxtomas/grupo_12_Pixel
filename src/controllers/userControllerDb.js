@@ -87,6 +87,7 @@ let userControllerDb = {
 
                     if (req.body.rememberMe) { //si el checkbox llegó en el body, estaba "on"
                         res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 10 }) //cookie contiene //email con duración de cinco minutos.
+                        console.log('La cookie se ha guardado el email: '+ req.body.email)
                     }
 
                     return res.redirect('/')

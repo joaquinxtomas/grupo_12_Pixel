@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS `categorias`;
 DROP TABLE IF EXISTS `userCategoria`;
 
 CREATE TABLE `users` (
-   `id` INT AUTO_INCREMENT,
+   `id` INT NOT NULL AUTO_INCREMENT,
    `fullName` VARCHAR(255) NOT NULL,
    `userName` VARCHAR(255) NOT NULL,
    `email` VARCHAR(255) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE `users` (
 );
 
 CREATE TABLE `products` (
-   `id` INT NOT NULL,
+   `id` INT NOT NULL AUTO_INCREMENT,
    `titulo` VARCHAR(255) NOT NULL,
    `descripcionCorta` VARCHAR(255) NOT NULL,
    `longDesc` TEXT(2000) NOT NULL,

@@ -61,13 +61,13 @@
 
                             <div>
                                 <input type="text" name="userName" placeholder="Nombre de usuario" id="userName"
-                                    class="normal-input <%= locals.errors && errors.username ? 'invalido' : null%> "
-                                    value="<%= locals.oldData ? oldData.username : null %>">
+                                    class="normal-input <%= locals.errors && errors.userName ? 'invalido' : null%> "
+                                    value="<%= locals.oldData ? oldData.userName : null %>">
                             </div>
-                            <% if (locals.errors && errors.username) { %>
+                            <% if (locals.errors && errors.userName) { %>
                                 <div class="mensaje-de-error">
                                     <i class="fas fa-exclamation-triangle"></i>
-                                    <%= errors.username.msg %>
+                                    <%= errors.userName.msg %>
 
                                 </div>
                                 <% } %>
