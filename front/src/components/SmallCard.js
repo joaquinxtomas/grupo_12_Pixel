@@ -1,9 +1,10 @@
 import React from 'react';
+import '../assets/css/style.css'
 
 function SmallCard(props){
     return(
         <React.Fragment>
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 mb-4 card-container">
                 <div className={`card border-left-${props.color} shadow bg-gray-200 h-100 py-2`}>
                     <div className="card-body">
                         <div className="row no-gutters align-items-center">

@@ -57,7 +57,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/estadisticas">
+                    <Link className="nav-link" to="/statistics">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Estadísticas</span>
                     </Link>
@@ -80,7 +80,7 @@ function SideBar(){
                 <Route exact path='/' element={<ContentWrapper/>} />
                 <Route path='/categories' element={<CategoriesInDb />} />
                 <Route path='/last-product' element={<LastProductInDb />} />
-                <Route path='/estadisticas' element={<ContentRow />} />
+                <Route path='/statistics' element={<ContentRow />} />
                 <Route path='/table' element={<Products />} />
                 <Route path='*' element={<Error404 />} />
             </Routes>

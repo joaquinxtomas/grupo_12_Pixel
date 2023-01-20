@@ -18,3 +18,7 @@
 .detail-pixel{
     background: #7EFF00 !important;
 }
+
+.card-container{
+    max-height: 120px;
+}

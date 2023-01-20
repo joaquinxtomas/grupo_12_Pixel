@@ -26,10 +26,10 @@ function Products () {
     return (
         <>
             {/*<!-- MOVIES LIST -->*/}
-            <h1 className="h3 mb-2 text-gray-800 m-5">Productos en la database</h1>
 
             {/*<!-- DataTales Example -->*/}
-            <div className="card shadow mb-4 m-5">
+            <div className="card shadow mb-4 m-5 bg-gray-200">
+            <h1 className="h3 text-gray-800 p-2">Productos en la base de datos</h1>
                 <div className="card-body bg-gray-200">
                     <div className="table-responsive">
                         <table className="table table-bordered table-striped" id="dataTable" width="100%">
@@ -37,7 +37,7 @@ function Products () {
                                 <tr className='text-dark'>
                                     <th>Id</th>
                                     <th>Titulo</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Descuento</th>
                                     <th>Detalle</th>
                                     <th>Precio</th>
@@ -48,7 +48,7 @@ function Products () {
                             <tr>
                                     <th>Id</th>
                                     <th>Titulo</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Descuento</th>
                                     <th>Detalle</th>
                                     <th>Precio</th>
