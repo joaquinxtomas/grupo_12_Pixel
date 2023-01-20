@@ -1,23 +1,18 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react';
 
-const ProductList = () => {
-    const [productos, setProductos] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:3000/product/api')
-            .then(respuesta => {
-                return respuesta.json()
-            })
-            .then(products => {
-                //console.log(movies)
-                setProductos({ products: products.data })
-                console.log(products)
-            })
-            .catch(error => console.log(error))
-    }, [])
+function ProductList(props){
     return (
-        <div>ProductList</div>
+        <React.Fragment>
+            <tr>
+                <th>{props.id}</th>
+                <th>{props.titulo}</th>
+                <th>{props.descripcionCorta}</th>
+                <th>{props.descuento}</th>
+                <th>{props.detail}</th>
+                <th>{props.precio}</th>
+                <th>{props.category.nombre}</th>
+            </tr>
+        </React.Fragment>
     )
 }
-
-export default ProductList
+export default ProductList;

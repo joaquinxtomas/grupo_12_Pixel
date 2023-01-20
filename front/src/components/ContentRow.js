@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import SmallCard from './SmallCard';
 
 
-function ContentRowMovies() {
+function ContentRow() {
 
     const [productos, setProductos] = useState([])
     const [usuarios, setUsuarios] = useState([])
@@ -31,7 +31,7 @@ function ContentRowMovies() {
     }, [])
 
     let productInDataBase = {
-        color: "primary",
+        color: "success",
         titulo: "Total de productos",
         valor: productos.meta?.count || "-",
         icono: "fas fa-shopping-cart"
@@ -45,7 +45,7 @@ function ContentRowMovies() {
     }
     
     let user = {
-        color: "warning",
+        color: "success",
         titulo: "Total de categorías",
         valor: productos.meta?.countByCategory.length || "-",
         icono: "fas fa-clipboard-list",
@@ -66,4 +66,4 @@ function ContentRowMovies() {
         </React.Fragment>
     )
 }
-export default ContentRowMovies;
+export default ContentRow;

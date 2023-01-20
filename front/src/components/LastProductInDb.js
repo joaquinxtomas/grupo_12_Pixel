@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import '../assets/css/style.css'
 
-function LastMovieInDb(){
+function LastProductInDb(){
 
     const [lastProduct, setLastProduct] = useState([])
 
@@ -26,17 +27,17 @@ function LastMovieInDb(){
                 <div className="card-header py-3">
                     <h5 className="m-0 font-weight-bold text-gray-800">Último producto</h5>
                 </div>
-                <div className="card-body">
+                <div className="card-body bg-gray-200">
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={`http://localhost:3000/img/${lastProduct.img}`} alt=" producto "/>
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 20 +'rem'}} src={`http://localhost:3000/img/${lastProduct.img}`} alt=" producto "/>
                     </div>
                     <h4>{lastProduct.titulo}</h4>
                     <p>{lastProduct.longDesc}</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
+                    <a className="btn detail-pixel text-dark fw-bold" target="_blank" rel="nofollow" href={`http://localhost:3000/product/detail/${lastProduct.id}`}>Ver detalle de producto</a>
                 </div>
             </div>
         </div>
     )
 }
 
-export default LastMovieInDb;
+export default LastProductInDb;

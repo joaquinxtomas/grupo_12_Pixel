@@ -1,23 +1,24 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/pixel-logo.png';
 import { Route, Link, Routes } from 'react-router-dom';
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import ContentRow from './ContentRow';
 import Error404 from './Error404';
 import Products from './Products';
+import CategoriesInDb from './Categories';
+import LastProductInDb from './LastProductInDb';
+import '../assets/css/style.css'
 
 function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav sidebar-dashboard sidebar sidebar-dark accordion" id="accordionSidebar ">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
-                    <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                    <div className="sidebar-brand-icon logo-pixel">
+                        <img className="w-75" src={image} alt="Digital House"/>
                     </div>
                 </Link>
 
@@ -40,31 +41,31 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" t/* o="/GenresInDb" */>
+                    <Link className="nav-link collapsed" to="/categories">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Genres</span>
+                        <span>Categorías</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" /* to="/LastMovieInDb" */>
+                    <Link className="nav-link" to="/last-product">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>LastMovieInDb</span>
+                        <span>Último producto</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" /* to="/ContentRowMovies" */>
+                    <Link className="nav-link" to="/estadisticas">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>ContentRowMovies</span>
+                        <span>Estadísticas</span>
                     </Link>
                 </li>
 
                 {/* tabla */}
                 <li className="nav-item">
-                    <Link className="nav-link" to='/list'>
+                    <Link className="nav-link" to='/table'>
                         <i className="fas fa-fw fa-film"></i>
                         <span>Tabla de productos</span>
                     </Link>
@@ -76,12 +77,12 @@ function SideBar(){
             {/*<!-- End of Sidebar -->*/}
 
             <Routes>
-                <Route exact path='/' element={<ContentWrapper />} />
-               {/*  <Route path='/GenresInDb' element={<GenresInDb />} />
-                <Route path='/LastMovieInDb' element={<LastMovieInDb />} />
-                <Route path='/ContentRowMovies' element={<ContentRowMovies />} />
-                <Route path='/table' element={<Movie />} />
-                <Route path='*' element={<Error404 />} /> */}
+                <Route exact path='/' element={<ContentWrapper/>} />
+                <Route path='/categories' element={<CategoriesInDb />} />
+                <Route path='/last-product' element={<LastProductInDb />} />
+                <Route path='/estadisticas' element={<ContentRow />} />
+                <Route path='/table' element={<Products />} />
+                <Route path='*' element={<Error404 />} />
             </Routes>
             
         </React.Fragment>

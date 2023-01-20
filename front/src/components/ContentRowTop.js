@@ -1,30 +1,30 @@
 import React from 'react';
-import imagenFondo from '../assets/images/mandalorian.jpg';
-import GenresInDb from './GenresInDb';
-import ContentRowMovies from './ContentRowMovies';
-import LastMovieInDb from './LastMovieInDb';
+import CategoriesInDb from './Categories';
+import ContentRow from './ContentRow';
+import LastProductInDb from './LastProductInDb';
+
 function ContentRowTop(){
     return(
         <React.Fragment>
 				{/*<!-- Content Row Top -->*/}
 				<div className="container-fluid">
 					<div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-						<h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+						<h1 className="h3 mb-0 mt-4 text-gray-800">Pixel Dashboard</h1>
 					</div>
 				
 					{/*<!-- Content Row Movies-->*/}
-					<ContentRowMovies />
+					<ContentRow />
 					{/*<!-- End movies in Data Base -->*/}
 					
 	
 					{/*<!-- Content Row Last Movie in Data Base -->*/}
 					<div className="row">
 						{/*<!-- Last Movie in DB -->*/}
-						<LastMovieInDb />
+						<LastProductInDb />
 						{/*<!-- End content row last movie in Data Base -->*/}
 
 						{/*<!-- Genres in DB -->*/}
-						<GenresInDb />
+						<CategoriesInDb />
 
 						{/*<!--End Genres In Db-->*/}		
 					</div>

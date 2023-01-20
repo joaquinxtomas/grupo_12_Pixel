@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Genre(props) {
+function Category(props) {
     return (
         <React.Fragment>
-            <div className="col-lg-6 mb-4">
-                <div className="card text-white bg-dark  shadow">
+            <div className="col-lg-8 mb-4 mx-auto">
+                <div className="card text-white bg-dark shadow">
                     <div className="card-body">
                         {props.nombre}: {props.total}
                     </div>
@@ -13,4 +13,4 @@ function Genre(props) {
         </React.Fragment>
     )
 }
-export default Genre;
+export default Category;
