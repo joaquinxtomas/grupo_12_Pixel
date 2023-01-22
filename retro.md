@@ -79,3 +79,16 @@ Retrospectiva del sprint 7:
 
 5. Dejar de hacer: No deberíamos de dejar de hacer nada, ya que estamos trabajando de buena forma con el proyecto.
 
+Retrospectiva del sprint 8:
+
+1. Comenzar a hacer: No consideramos que debemos comenzar a realizar hábitos o tareas, sino mejorar los que ya tenemos y expandir conocimientos de forma extracurricular al curso.
+
+2. Hacer más: Estamos realizando las tareas de forma correspondiente, creo que solo queda aprender más herramientas por nuestra cuenta.
+
+3. Continuar haciendo: Ayudarnos mutuamente con las reuniones por Meet y Zoom. Realizar los trabajos en tiempo y forma. Seguir escribiendo código en grupo y en reuniones, ya que es mucho más simple de comprender.
+
+4. Hacer menos: Consideramos que las tareas que estamos realizando son correctas y realizadas a tiempo.
+
+5. Dejar de hacer: No deberíamos de dejar de hacer nada, ya que estamos trabajando de buena forma con el proyecto.
+
+

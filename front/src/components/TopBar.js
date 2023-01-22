@@ -3,14 +3,14 @@ import foto from '../assets/images/logo-pixel-mobile.png';
 import '../assets/css/style.css'
 
 function TopBar(){
+
     return(
         <React.Fragment>
 				{/*<!-- Topbar -->*/}
 				<nav className="navbar navbar-expand navbar-light topbar static-top shadow nav-dashboard">
-
 					{/*<!-- Sidebar Toggle (Topbar) -->*/}
 					<button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">
-						<i className="fa fa-bars"></i>
+						<i className="fa fa-bars burger"></i>
 					</button>
 
 					{/*<!-- Topbar Navbar -->*/}

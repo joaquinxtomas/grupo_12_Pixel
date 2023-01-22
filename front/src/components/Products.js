@@ -28,11 +28,11 @@ function Products () {
             {/*<!-- MOVIES LIST -->*/}
 
             {/*<!-- DataTales Example -->*/}
-            <div className="card shadow mb-4 m-5 bg-gray-200">
+            <div className="card shadow mb-4 m-5 bg-gray-200 mx-auto d-flex align-items-center">
             <h1 className="h3 text-gray-800 p-2">Productos en la base de datos</h1>
                 <div className="card-body bg-gray-200">
-                    <div className="table-responsive">
-                        <table className="table table-bordered table-striped" id="dataTable" width="100%">
+                    <div className="table-responsive table-scroll">
+                        <table className="table table-bordered table-striped" id="dataTable">
                             <thead className='table-success'>
                                 <tr className='text-dark'>
                                     <th>Id</th>

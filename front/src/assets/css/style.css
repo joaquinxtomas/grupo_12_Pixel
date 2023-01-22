@@ -1,3 +1,7 @@
+#wrapper {
+    background: #d1d1d1;
+}
+
 #content {
     background: #d1d1d1;
 }
@@ -7,6 +11,10 @@
 }
 
 .sidebar-dashboard {
+    background: #4A4A4A;
+}
+
+footer {
     background: #4A4A4A;
 }
 
@@ -21,4 +29,14 @@
 
 .card-container{
     max-height: 120px;
+    height: 110px;
+}
+
+.table-scroll {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.burger {
+    display: none;
 }

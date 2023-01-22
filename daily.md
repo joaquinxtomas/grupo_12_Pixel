@@ -64,10 +64,36 @@ Que hicimos esta semana?: Terminamos el CRUD de usuarios y optimizamos las vista
 
 Que haremos la proxima?: Ultimaremos detalles, retro y actualizacion del tablero de trabajo.
 
-Reunion de daily del 27/01/2022
+Reunion de daily del 27/12/2022
 
 Que hicimos esta semana?: Culminamos la validación de los forms desde el front end.
 
 ¿Se encontro algun impedimento?: No encontramos ningun impedimento, supimos resolver cada consigna.
 
 Que haremos la proxima?: Comenzaremos con el proximo sprint y arreglaremos detalles.
+
+Reunion de daily del 10/01/2023
+
+Que hicimos esta semana?: Creamos las APIS correspondientes a productos y usuarios con sus respectivas relaciones. Las probamos en Postman hasta lograr su funcionamiento.
+
+¿Se encontro algun impedimento?: No encontramos ningun impedimento mayor, supimos resolver cada consigna.
+
+Que haremos la proxima?: Comenzaremos con el dashboard que consuma los datos de las APIS creadas.
+
+Reunion de daily del 17/01/2023
+
+Que hicimos esta semana?: Modificamos el dashboard de Movies para que consumiera las API de productos y usuarios. Modificamos el diseño.
+
+¿Se encontro algun impedimento?: No supimos utilizar de manera simultanea los dos componentes de navegación. 
+
+Que haremos la proxima?: Ultimaremos detalles y organizarnos para la entrega final.
+
+Reunion de daily del 22/01/2023
+
+Que hicimos esta semana?: Ultimamos detalles tanto del Front end como del Back end.
+
+¿Se encontro algun impedimento?: No tuvimos ningún impedimento.
+
+Que haremos la proxima?: Presentaremos la página completa. 
+
+<!-- FIN -->

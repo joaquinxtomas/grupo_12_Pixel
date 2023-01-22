@@ -56,7 +56,7 @@ function ContentRow() {
     return (
         <React.Fragment>
             {/*<!-- Content Row -->*/}
-            <div className="row">
+            <div className="row d-flex align-items-center mx-auto">
                 {
                     cardProps.map((producto, index) => {
                         return <SmallCard  {...producto} key={index} />

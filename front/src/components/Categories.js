@@ -1,6 +1,5 @@
-import React ,{ Component, useState, useEffect } from 'react';
+import React ,{ useState, useEffect } from 'react';
 import Category from './Category';
-import TopBar from './TopBar';
 
 
 function CategoriesInDb () {
@@ -23,7 +22,7 @@ function CategoriesInDb () {
         return (
             <React.Fragment>
                     {/*<!-- Categories in DB -->*/}
-                    <div className="col-lg-6 mb-4">					
+                    <div className="col-lg-6 mb-4 d-flex mx-auto align-items-center">					
                         <div className="card shadow mb-4">
                             <div className="card-header py-3">
                                 <h6 className="m-0 font-weight-bold text-gray-800">Total de productos por categoría</h6>
