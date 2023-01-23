@@ -79,7 +79,7 @@ let userControllerDb = {
             });
 
             if (userToLogin) {
-                let comparePasswords = bcrypt.compareSync(req.body.password, userToLogin.password);
+                let comparePasswords = bcrypt.compareSync(req.body.password, userToLogin.password); //verifca que la contraseña sea correcta
                 if (comparePasswords) {
                     delete userToLogin.password;
                     req.session.userLogged = userToLogin;

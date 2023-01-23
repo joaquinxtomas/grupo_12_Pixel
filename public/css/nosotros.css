@@ -25,10 +25,9 @@
 }
 
 .image-userPixel-george{
-    width: 100%;
+    width: 50%;
     border-radius: 50%;
     object-fit: cover;
-    padding: 30px;
     object-position: center;
     border: 3px solid #7EFF00;
     transition: all .3s;

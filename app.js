@@ -28,7 +28,7 @@ app.use(userLoggedMIddleware); //middleware global, en toda la app.
 
 
 app.use(express.static(path.resolve(__dirname, 'public')));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false })); //para usar metodo post
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'src/views' ));
@@ -46,7 +46,7 @@ app.use('/product', rutaProduct);
 
 app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
 //error 404
-app.use((req,res,next)=>{
+app.use((req,res,next)=>{ 
     res.status(404).render("not-found")
 })
 
