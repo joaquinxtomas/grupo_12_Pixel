@@ -137,9 +137,35 @@ const productControllerDb = {
         } catch (error) {
             console.log(error)
         }
-    }
+    },
+
+    searchByKeyWord: async (req, res) => {
+        const keyWord=req.query.keyWord
+        console.log(keyWord)
+
+        try {
+            
+            const searchResults = await db.Product.findAll(  //find all products that match the keyword
+                        { 
+                        where:{
+                            [Op.or]:[
+                                {titulo: {[Op.like]:`%${keyWord}%`}},
+                                {descripcionCorta: {[Op.like]:`%${keyWord}%`}},
+                                {longDesc: {[Op.like]:`%${keyWord}%`}}
+                            ]
+                        },
+                        include: { all: true , nested: true }
+                        
+                    });
+
+            return res.render('productSearch', {searchResults, keyWord})
+        } catch (error) {
+            console.log(error)
+        }
+        
 
 
+}
 }
 
 module.exports = productControllerDb;

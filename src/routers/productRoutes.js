@@ -48,6 +48,8 @@ router.get('/edit/:id', authMiddleware, productControllerDb.productEdit);
 router.put('/edit/:id', upload.single("img"), productControllerDb.productUpdate); //multer middleware
 //delete product
 router.delete('/delete/:id', authMiddleware,  productControllerDb.productDelete);
+//searh product
+router.get('/results',  productControllerDb.searchByKeyWord);
 
 //APIS ROUTES
 router.get('/api', productDashboard.productList)

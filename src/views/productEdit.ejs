@@ -45,9 +45,10 @@
 
                     <div>
                         <textarea 
-                        class= "large-description" 
-                        name="descripcionDetallada" 
+                        class= "large-description <%= locals.errors && errors.longDesc ? 'invalido' : null%>" 
+                        name="longDesc" 
                         placeholder="Descripcion extensa" 
+                        value="<%=producto.longDesc %>"
                         id="large-description"  ><%=producto.longDesc %></textarea>
                     </div>
 
