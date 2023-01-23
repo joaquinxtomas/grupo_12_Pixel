@@ -7,6 +7,7 @@ let mainControllerDb = require('../controllers/mainControllerDb');
 
 
 router.get('/', mainControllerDb.index);
+router.get('/nosotros', mainControllerDb.nosotros)
 
 
 module.exports = router;
